@@ -20,6 +20,11 @@ void CApp::OnLoop() {
         Enemy.MoveLeft = true;
         Enemy.MoveRight = false;
     }
+    if((Player.X - Enemy.X) > 500 || (Enemy.X - Player.X) > 500)
+    {
+        Enemy.MoveLeft = false;
+        Enemy.MoveRight = false;
+    }
 
     //Collision Events
     for(int i = 0;i < CEntityCol::EntityColList.size();i++) {
