@@ -128,7 +128,7 @@
 	"CPlayer.h"
 	"CEnemy.h"
 
-1328730530 g:\software\cbprojects\tutoria\define.h
+1328815086 g:\software\cbprojects\tutoria\define.h
 
 1213109940 g:\software\cbprojects\tutoria\cfps.h
 	<SDL.h>
@@ -153,7 +153,7 @@
 	<SDL.h>
 	"Define.h"
 
-1328755955 g:\software\cbprojects\tutoria\centity.h
+1328811787 g:\software\cbprojects\tutoria\centity.h
 	<vector>
 	"CArea.h"
 	"CAnimation.h"
@@ -176,7 +176,7 @@
 1328801838 source:g:\software\cbprojects\tutoria\capp_oninit.cpp
 	"CApp.h"
 
-1328807571 source:g:\software\cbprojects\tutoria\capp_onloop.cpp
+1328812010 source:g:\software\cbprojects\tutoria\capp_onloop.cpp
 	"CApp.h"
 
 1328739600 source:g:\software\cbprojects\tutoria\capp_onrender.cpp
@@ -411,7 +411,7 @@
 1328769680 g:\software\cbprojects\tutoria\cenemy.h
 	"CEntity.h"
 
-1328801894 source:g:\software\cbprojects\tutoria\cenemy.cpp
+1328808752 source:g:\software\cbprojects\tutoria\cenemy.cpp
 	"CEnemy.h"
 
 1328804991 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\canimation.cpp
@@ -435,7 +435,7 @@
 	"CPlayer.h"
 	"CEnemy.h"
 
-1328804991 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\define.h
+1328815987 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\define.h
 
 1328804991 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cfps.h
 	<SDL.h>
@@ -460,7 +460,7 @@
 	<SDL.h>
 	"Define.h"
 
-1328815783 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\centity.h
+1328815987 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\centity.h
 	<vector>
 	"CArea.h"
 	"CAnimation.h"
@@ -486,7 +486,7 @@
 1328804991 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_oninit.cpp
 	"CApp.h"
 
-1328808379 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_onloop.cpp
+1328815987 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_onloop.cpp
 	"CApp.h"
 
 1328804991 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_onrender.cpp

@@ -28,7 +28,7 @@ bool CApp::OnInit() {
     CEntity::EntityList.push_back(&Player);
     CEntity::EntityList.push_back(&Enemy);
 
-    Enemy.X = 1000;
+    Enemy.X = 500;
 
 	CCamera::CameraControl.TargetMode = TARGET_MODE_CENTER;
     CCamera::CameraControl.SetTarget(&Player.X, &Player.Y);

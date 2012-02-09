@@ -32,11 +32,14 @@ class CEntity {
 		static std::vector<CEntity*>    EntityList;
 
 	protected:
-		CAnimation      Anim_Control;
+
 
 		SDL_Surface*    Surf_Entity;
 
 	public:
+
+        CAnimation      Anim_Control;
+
 		float	X;
 		float	Y;
 		float   oldX;
