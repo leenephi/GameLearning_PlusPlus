@@ -1,0 +1,5 @@
+./tilesets/tiles.png
+3
+./maps/sky.map ./maps/sky.map ./maps/sky.map 
+./maps/ground.map ./maps/ground.map ./maps/ground.map 
+./maps/rock.map ./maps/rock.map ./maps/rock.map 

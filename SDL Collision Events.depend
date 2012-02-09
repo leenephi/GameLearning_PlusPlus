@@ -1,0 +1,416 @@
+# depslib dependency file v1.0
+1205845296 source:g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\canimation.cpp
+	"CAnimation.h"
+
+1201628320 g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\canimation.h
+	<SDL.h>
+
+1203688255 source:g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\capp.cpp
+	"CApp.h"
+
+1225457973 g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\capp.h
+	<SDL.h>
+	"Define.h"
+	"CFPS.h"
+	"CArea.h"
+	"CCamera.h"
+	"CEntity.h"
+	"CEvent.h"
+	"CSurface.h"
+	"CPlayer.h"
+
+1205611921 g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\define.h
+
+1213106378 g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\cfps.h
+	<SDL.h>
+
+1225195305 g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\carea.h
+	"CMap.h"
+
+1225195340 g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\cmap.h
+	<SDL.h>
+	<vector>
+	"CTile.h"
+	"CSurface.h"
+
+1205608997 g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\ctile.h
+	"Define.h"
+
+1205581141 g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\csurface.h
+	<SDL.h>
+	<SDL_image.h>
+
+1225195855 g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\ccamera.h
+	<SDL.h>
+	"Define.h"
+
+1249298440 g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\centity.h
+	<vector>
+	"CArea.h"
+	"CAnimation.h"
+	"CCamera.h"
+	"CFPS.h"
+	"CSurface.h"
+
+1193348371 g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\cevent.h
+	<SDL.h>
+
+1248952978 g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\cplayer.h
+	"CEntity.h"
+
+1205610416 source:g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\capp_oncleanup.cpp
+	"CApp.h"
+
+1249298795 source:g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\capp_onevent.cpp
+	"CApp.h"
+
+1225457989 source:g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\capp_oninit.cpp
+	"CApp.h"
+
+1249299032 source:g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\capp_onloop.cpp
+	"CApp.h"
+
+1225458173 source:g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\capp_onrender.cpp
+	"CApp.h"
+
+1249385028 source:g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\carea.cpp
+	"CArea.h"
+
+1225195863 source:g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\ccamera.cpp
+	"CCamera.h"
+
+1249298890 source:g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\centity.cpp
+	"CEntity.h"
+
+1193348424 source:g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\cevent.cpp
+	"CEvent.h"
+
+1213106364 source:g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\cfps.cpp
+	"CFPS.h"
+
+1225195351 source:g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\cmap.cpp
+	"CMap.h"
+
+1249384928 source:g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\cplayer.cpp
+	"CPlayer.h"
+
+1206530240 source:g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\csurface.cpp
+	"CSurface.h"
+
+1205581020 source:g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\ctile.cpp
+	"CTile.h"
+
+1248952578 g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\centitycol.h
+	<vector>
+	"CEntity.h"
+
+1248952673 source:g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\centitycol.cpp
+	"CEntity.h"
+
+1328727565 source:g:\software\cbprojects\tutoria\canimation.cpp
+	"CAnimation.h"
+
+1328713455 g:\software\cbprojects\tutoria\canimation.h
+	<SDL.h>
+
+1203691800 source:g:\software\cbprojects\tutoria\capp.cpp
+	"CApp.h"
+
+1328800521 g:\software\cbprojects\tutoria\capp.h
+	<SDL.h>
+	"Define.h"
+	"CFPS.h"
+	"CArea.h"
+	"CCamera.h"
+	"CEntity.h"
+	"CEvent.h"
+	"CSurface.h"
+	"CPlayer.h"
+	"CEnemy.h"
+
+1328730530 g:\software\cbprojects\tutoria\define.h
+
+1213109940 g:\software\cbprojects\tutoria\cfps.h
+	<SDL.h>
+
+1225198860 g:\software\cbprojects\tutoria\carea.h
+	"CMap.h"
+
+1225198920 g:\software\cbprojects\tutoria\cmap.h
+	<SDL.h>
+	<vector>
+	"CTile.h"
+	"CSurface.h"
+
+1205612580 g:\software\cbprojects\tutoria\ctile.h
+	"Define.h"
+
+1205584740 g:\software\cbprojects\tutoria\csurface.h
+	<SDL.h>
+	<SDL_image.h>
+
+1225199400 g:\software\cbprojects\tutoria\ccamera.h
+	<SDL.h>
+	"Define.h"
+
+1328755955 g:\software\cbprojects\tutoria\centity.h
+	<vector>
+	"CArea.h"
+	"CAnimation.h"
+	"CCamera.h"
+	"CFPS.h"
+	"CSurface.h"
+
+1193351940 g:\software\cbprojects\tutoria\cevent.h
+	<SDL.h>
+
+1248956520 g:\software\cbprojects\tutoria\cplayer.h
+	"CEntity.h"
+
+1205613960 source:g:\software\cbprojects\tutoria\capp_oncleanup.cpp
+	"CApp.h"
+
+1328730262 source:g:\software\cbprojects\tutoria\capp_onevent.cpp
+	"CApp.h"
+
+1328801838 source:g:\software\cbprojects\tutoria\capp_oninit.cpp
+	"CApp.h"
+
+1328801333 source:g:\software\cbprojects\tutoria\capp_onloop.cpp
+	"CApp.h"
+
+1328739600 source:g:\software\cbprojects\tutoria\capp_onrender.cpp
+	"CApp.h"
+
+1249388580 source:g:\software\cbprojects\tutoria\carea.cpp
+	"CArea.h"
+
+1225199460 source:g:\software\cbprojects\tutoria\ccamera.cpp
+	"CCamera.h"
+
+1328769827 source:g:\software\cbprojects\tutoria\centity.cpp
+	"CEntity.h"
+
+1248956220 source:g:\software\cbprojects\tutoria\centitycol.cpp
+	"CEntity.h"
+
+1193352000 source:g:\software\cbprojects\tutoria\cevent.cpp
+	"CEvent.h"
+
+1213109940 source:g:\software\cbprojects\tutoria\cfps.cpp
+	"CFPS.h"
+
+1225198920 source:g:\software\cbprojects\tutoria\cmap.cpp
+	"CMap.h"
+
+1328768964 source:g:\software\cbprojects\tutoria\cplayer.cpp
+	"CPlayer.h"
+
+1206533820 source:g:\software\cbprojects\tutoria\csurface.cpp
+	"CSurface.h"
+
+1205584620 source:g:\software\cbprojects\tutoria\ctile.cpp
+	"CTile.h"
+
+1325738639 g:\software\sdl\include\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_audio.h"
+	"SDL_cdrom.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_loadso.h"
+	"SDL_mutex.h"
+	"SDL_rwops.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_video.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 g:\software\sdl\include\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 g:\software\sdl\include\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1326110987 g:\software\sdl\include\sdl_config.h
+	"SDL_platform.h"
+	"SDL_config_dreamcast.h"
+	"SDL_config_macos.h"
+	"SDL_config_macosx.h"
+	"SDL_config_symbian.h"
+	"SDL_config_win32.h"
+	"SDL_config_os2.h"
+	"SDL_config_minimal.h"
+
+1325738639 g:\software\sdl\include\sdl_platform.h
+
+1326110994 g:\software\sdl\include\sdl_config_win32.h
+	"SDL_platform.h"
+
+1326111000 g:\software\sdl\include\begin_code.h
+
+1325738639 g:\software\sdl\include\close_code.h
+
+1325738639 g:\software\sdl\include\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 g:\software\sdl\include\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 g:\software\sdl\include\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 g:\software\sdl\include\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 g:\software\sdl\include\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1325738639 g:\software\sdl\include\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 g:\software\sdl\include\sdl_cdrom.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 g:\software\sdl\include\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 g:\software\sdl\include\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_active.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_quit.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 g:\software\sdl\include\sdl_active.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 g:\software\sdl\include\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keysym.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 g:\software\sdl\include\sdl_keysym.h
+
+1325738639 g:\software\sdl\include\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 g:\software\sdl\include\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 g:\software\sdl\include\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 g:\software\sdl\include\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1325738639 g:\software\sdl\include\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 g:\software\sdl\include\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 g:\software\sdl\include\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325814000 g:\software\sdl\include\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1328769680 g:\software\cbprojects\tutoria\cenemy.h
+	"CEntity.h"
+
+1328801894 source:g:\software\cbprojects\tutoria\cenemy.cpp
+	"CEnemy.h"
+

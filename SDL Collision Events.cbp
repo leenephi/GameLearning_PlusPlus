@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Tutoria" />
+		<Option pch_mode="0" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin\SDL Collision Events.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="bin" />
+				<Option object_output="obj" />
+				<Option deps_output="dep" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectResourceIncludeDirsRelation="0" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="Release;" />
+		</VirtualTargets>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="..\..\SDL\include" />
+		</Compiler>
+		<Linker>
+			<Add library="mingw32" />
+			<Add library="SDLmain" />
+			<Add library="SDL_image" />
+			<Add library="SDL" />
+			<Add directory="..\..\SDL\lib" />
+		</Linker>
+		<Unit filename="CAnimation.cpp" />
+		<Unit filename="CAnimation.h" />
+		<Unit filename="CApp.cpp" />
+		<Unit filename="CApp.h" />
+		<Unit filename="CApp_OnCleanup.cpp" />
+		<Unit filename="CApp_OnEvent.cpp" />
+		<Unit filename="CApp_OnInit.cpp" />
+		<Unit filename="CApp_OnLoop.cpp" />
+		<Unit filename="CApp_OnRender.cpp" />
+		<Unit filename="CArea.cpp" />
+		<Unit filename="CArea.h" />
+		<Unit filename="CCamera.cpp" />
+		<Unit filename="CCamera.h" />
+		<Unit filename="CEnemy.cpp" />
+		<Unit filename="CEnemy.h" />
+		<Unit filename="CEntity.cpp" />
+		<Unit filename="CEntity.h" />
+		<Unit filename="CEntityCol.cpp" />
+		<Unit filename="CEvent.cpp" />
+		<Unit filename="CEvent.h" />
+		<Unit filename="CFPS.cpp" />
+		<Unit filename="CFPS.h" />
+		<Unit filename="CMap.cpp" />
+		<Unit filename="CMap.h" />
+		<Unit filename="CPlayer.cpp" />
+		<Unit filename="CPlayer.h" />
+		<Unit filename="CSurface.cpp" />
+		<Unit filename="CSurface.h" />
+		<Unit filename="CTile.cpp" />
+		<Unit filename="CTile.h" />
+		<Unit filename="Define.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
