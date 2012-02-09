@@ -128,7 +128,7 @@
 	"CPlayer.h"
 	"CEnemy.h"
 
-1328730530 g:\software\cbprojects\tutoria\define.h
+1328815086 g:\software\cbprojects\tutoria\define.h
 
 1213109940 g:\software\cbprojects\tutoria\cfps.h
 	<SDL.h>
@@ -176,7 +176,7 @@
 1328801838 source:g:\software\cbprojects\tutoria\capp_oninit.cpp
 	"CApp.h"
 
-1328808157 source:g:\software\cbprojects\tutoria\capp_onloop.cpp
+1328812010 source:g:\software\cbprojects\tutoria\capp_onloop.cpp
 	"CApp.h"
 
 1328739600 source:g:\software\cbprojects\tutoria\capp_onrender.cpp
