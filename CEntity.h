@@ -55,7 +55,6 @@ class CEntity {
 		int		Type;
 
 		bool	Dead;
-		bool    isJumping;
 
 		int		Flags;
 

@@ -21,7 +21,7 @@ void CApp::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode) {
 
 		case SDLK_SPACE: {
 		    Player.Jump();
-		    Player.isJumping = true;
+		    Player.IsJumping = true;
 		    break;
 		}
 
