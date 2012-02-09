@@ -11,7 +11,7 @@ void CApp::OnLoop() {
 
         CEntity::EntityList[i]->OnLoop();
     }
-
+    //jumping mob
     Enemy.CanJump = false;
 
     if((Player.X - Enemy.X < 250) && Enemy.X < Player.X) {
