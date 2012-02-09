@@ -11,7 +11,7 @@ bool CApp::OnInit() {
         return false;
     }
 
-    if(CArea::AreaControl.OnLoad("./maps/1.area") == false) {
+    if(CArea::AreaControl.OnLoad("./maps/level1.area") == false) {
     	return false;
     }
 

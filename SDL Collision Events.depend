@@ -107,16 +107,16 @@
 1248952673 source:g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\centitycol.cpp
 	"CEntity.h"
 
-1328727565 source:g:\software\cbprojects\tutoria\canimation.cpp
+1328820204 source:g:\software\cbprojects\tutoria\canimation.cpp
 	"CAnimation.h"
 
-1328713455 g:\software\cbprojects\tutoria\canimation.h
+1328820204 g:\software\cbprojects\tutoria\canimation.h
 	<SDL.h>
 
-1203691800 source:g:\software\cbprojects\tutoria\capp.cpp
+1328822920 source:g:\software\cbprojects\tutoria\capp.cpp
 	"CApp.h"
 
-1328800521 g:\software\cbprojects\tutoria\capp.h
+1328816971 g:\software\cbprojects\tutoria\capp.h
 	<SDL.h>
 	"Define.h"
 	"CFPS.h"
@@ -128,9 +128,9 @@
 	"CPlayer.h"
 	"CEnemy.h"
 
-1328815086 g:\software\cbprojects\tutoria\define.h
+1328824368 g:\software\cbprojects\tutoria\define.h
 
-1213109940 g:\software\cbprojects\tutoria\cfps.h
+1328820204 g:\software\cbprojects\tutoria\cfps.h
 	<SDL.h>
 
 1225198860 g:\software\cbprojects\tutoria\carea.h
@@ -149,11 +149,11 @@
 	<SDL.h>
 	<SDL_image.h>
 
-1225199400 g:\software\cbprojects\tutoria\ccamera.h
+1328820204 g:\software\cbprojects\tutoria\ccamera.h
 	<SDL.h>
 	"Define.h"
 
-1328811787 g:\software\cbprojects\tutoria\centity.h
+1328822920 g:\software\cbprojects\tutoria\centity.h
 	<vector>
 	"CArea.h"
 	"CAnimation.h"
@@ -170,25 +170,25 @@
 1205613960 source:g:\software\cbprojects\tutoria\capp_oncleanup.cpp
 	"CApp.h"
 
-1328807571 source:g:\software\cbprojects\tutoria\capp_onevent.cpp
+1328822920 source:g:\software\cbprojects\tutoria\capp_onevent.cpp
 	"CApp.h"
 
-1328801838 source:g:\software\cbprojects\tutoria\capp_oninit.cpp
+1328824245 source:g:\software\cbprojects\tutoria\capp_oninit.cpp
 	"CApp.h"
 
-1328812010 source:g:\software\cbprojects\tutoria\capp_onloop.cpp
+1328822920 source:g:\software\cbprojects\tutoria\capp_onloop.cpp
 	"CApp.h"
 
 1328739600 source:g:\software\cbprojects\tutoria\capp_onrender.cpp
 	"CApp.h"
 
-1249388580 source:g:\software\cbprojects\tutoria\carea.cpp
+1328820204 source:g:\software\cbprojects\tutoria\carea.cpp
 	"CArea.h"
 
-1225199460 source:g:\software\cbprojects\tutoria\ccamera.cpp
+1328820204 source:g:\software\cbprojects\tutoria\ccamera.cpp
 	"CCamera.h"
 
-1328769827 source:g:\software\cbprojects\tutoria\centity.cpp
+1328822920 source:g:\software\cbprojects\tutoria\centity.cpp
 	"CEntity.h"
 
 1248956220 source:g:\software\cbprojects\tutoria\centitycol.cpp
@@ -197,13 +197,13 @@
 1193352000 source:g:\software\cbprojects\tutoria\cevent.cpp
 	"CEvent.h"
 
-1213109940 source:g:\software\cbprojects\tutoria\cfps.cpp
+1328820204 source:g:\software\cbprojects\tutoria\cfps.cpp
 	"CFPS.h"
 
 1225198920 source:g:\software\cbprojects\tutoria\cmap.cpp
 	"CMap.h"
 
-1328807257 source:g:\software\cbprojects\tutoria\cplayer.cpp
+1328818947 source:g:\software\cbprojects\tutoria\cplayer.cpp
 	"CPlayer.h"
 
 1206533820 source:g:\software\cbprojects\tutoria\csurface.cpp
@@ -411,7 +411,7 @@
 1328769680 g:\software\cbprojects\tutoria\cenemy.h
 	"CEntity.h"
 
-1328808752 source:g:\software\cbprojects\tutoria\cenemy.cpp
+1328820197 source:g:\software\cbprojects\tutoria\cenemy.cpp
 	"CEnemy.h"
 
 1328819219 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\canimation.cpp
