@@ -26,9 +26,9 @@ class CFPS {
 		void    OnLoop();
 
 	public:
-		int     GetFPS();
+		const int     GetFPS();
 
-		float   GetSpeedFactor();
+		const float   GetSpeedFactor();
 };
 
 //==============================================================================

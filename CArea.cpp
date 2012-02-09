@@ -7,6 +7,7 @@ CArea CArea::AreaControl;
 //=============================================================================
 CArea::CArea() {
     AreaSize = 0;
+    Surf_Tileset = NULL;
 }
 
 //=============================================================================
@@ -21,7 +22,7 @@ bool CArea::OnLoad(char* File) {
 
     char TilesetFile[255];
 
-    fscanf(FileHandle, "%s\n", TilesetFile);
+    fscanf(FileHandle, "%s255\n", TilesetFile);
 
     if((Surf_Tileset = CSurface::OnLoad(TilesetFile)) == false) {
         fclose(FileHandle);
@@ -35,7 +36,7 @@ bool CArea::OnLoad(char* File) {
         for(int Y = 0;Y < AreaSize;Y++) {
             char MapFile[255];
 
-            fscanf(FileHandle, "%s ", MapFile);
+            fscanf(FileHandle, "%s255 ", MapFile);
 
             CMap tempMap;
             if(tempMap.OnLoad(MapFile) == false) {
