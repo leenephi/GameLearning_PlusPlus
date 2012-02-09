@@ -30,6 +30,17 @@ int CApp::OnExecute() {
     return 0;
 }
 
+void CApp::Reset()
+{
+            Player.isJumping = false;
+            Player.MoveLeft = false;
+            Player.MoveRight = false;
+            Enemy.MoveLeft = false;
+            Enemy.MoveRight = false;
+            Player.X = 0;
+            Enemy.X = 1000;
+}
+
 //==============================================================================
 int main(int argc, char* argv[]) {
     CApp theApp;
