@@ -15,15 +15,21 @@ void CApp::OnLoop() {
     if((Player.X - Enemy.X < 250) && Enemy.X < Player.X) {
         Enemy.MoveRight = true;
         Enemy.MoveLeft = false;
+        Enemy.Anim_Control.Oscillate = true;
+
     }
     else if((Enemy.X - Player.X < 250) && Enemy.X > Player.X) {
         Enemy.MoveLeft = true;
         Enemy.MoveRight = false;
+        Enemy.Anim_Control.Oscillate = true;
+
     }
     if((Player.X - Enemy.X) > 250 || (Enemy.X - Player.X) > 250)
     {
         Enemy.MoveLeft = false;
         Enemy.MoveRight = false;
+        Enemy.Anim_Control.Oscillate = false;
+
     }
 
     //Collision Events
