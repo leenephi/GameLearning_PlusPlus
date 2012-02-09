@@ -10,6 +10,11 @@ CEntity::CEntity() {
 
 	X = 0;
 	Y = 0;
+	oldX = 0;
+	oldY = 0;
+
+	IsJumping = isJumping = false;
+
 
 	Width 	= 0;
 	Height 	= 0;
@@ -218,7 +223,7 @@ void CEntity::StopMove() {
 }
 
 //==============================================================================
-bool CEntity::Collides(int oX, int oY, int oW, int oH) {
+const bool CEntity::Collides(int oX, int oY, int oW, int oH) {
     int left1, left2;
     int right1, right2;
     int top1, top2;
@@ -250,7 +255,7 @@ bool CEntity::Collides(int oX, int oY, int oW, int oH) {
 }
 
 //==============================================================================
-bool CEntity::PosValid(int NewX, int NewY) {
+const bool CEntity::PosValid(int NewX, int NewY) {
 	bool Return = true;
 
 	int StartX 	= (NewX + Col_X) / TILE_SIZE;
@@ -282,7 +287,7 @@ bool CEntity::PosValid(int NewX, int NewY) {
 }
 
 //------------------------------------------------------------------------------
-bool CEntity::PosValidTile(CTile* Tile) {
+const bool CEntity::PosValidTile(CTile* Tile) {
 	if(Tile == NULL) {
 		return true;
 	}

@@ -33,12 +33,12 @@ void CFPS::OnLoop() {
 }
 
 //=============================================================================
-int CFPS::GetFPS() {
+const int CFPS::GetFPS() {
     return NumFrames;
 }
 
 //------------------------------------------------------------------------------
-float CFPS::GetSpeedFactor() {
+const float CFPS::GetSpeedFactor() {
     return SpeedFactor;
 }
 

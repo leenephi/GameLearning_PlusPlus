@@ -34,7 +34,7 @@ class CAnimation {
 
 		void SetCurrentFrame(int Frame);
 
-		int GetCurrentFrame();
+		const int GetCurrentFrame();
 };
 
 //==============================================================================

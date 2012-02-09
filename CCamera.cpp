@@ -20,7 +20,7 @@ void CCamera::OnMove(int MoveX, int MoveY) {
 }
 
 //==============================================================================
-int CCamera::GetX() {
+const int CCamera::GetX() {
 	if(TargetX != NULL) {
 		if(TargetMode == TARGET_MODE_CENTER) {
 			return *TargetX - (WWIDTH / 2);
@@ -33,7 +33,7 @@ int CCamera::GetX() {
 }
 
 //------------------------------------------------------------------------------
-int CCamera::GetY() {
+const int CCamera::GetY() {
 	if(TargetY != NULL) {
 		if(TargetMode == TARGET_MODE_CENTER) {
 			return *TargetY - (WHEIGHT / 2);

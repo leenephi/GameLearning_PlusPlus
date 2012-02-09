@@ -110,12 +110,12 @@ class CEntity {
 		void 	StopMove();
 
 	public:
-		bool    Collides(int oX, int oY, int oW, int oH);
+		const bool    Collides(int oX, int oY, int oW, int oH);
 
 	private:
-		bool 	PosValid(int NewX, int NewY);
+		const bool 	PosValid(int NewX, int NewY);
 
-		bool 	PosValidTile(CTile* Tile);
+		const bool 	PosValidTile(CTile* Tile);
 
 		bool 	PosValidEntity(CEntity* Entity, int NewX, int NewY);
 };
