@@ -22,11 +22,11 @@ void CPlayer::OnLoop() {
 //-----------------------------------------------------------------------------
 void CPlayer::OnRender(SDL_Surface* Surf_Display) {
     if(Surf_Entity == NULL || Surf_Display == NULL) return;
-	//if (isJumping == true) {
-    //    CSurface::OnDraw(Surf_Display, Surf_Entity, X - CCamera::CameraControl.GetX(), Y - CCamera::CameraControl.GetY() + 2, CurrentFrameCol * Width, (CurrentFrameRow + 5) * Height, Width, Height);
-	//} else {
+	if (IsJumping == true) {
+        CSurface::OnDraw(Surf_Display, Surf_Entity, X - CCamera::CameraControl.GetX(), Y - CCamera::CameraControl.GetY() + 2, CurrentFrameCol * Width, (CurrentFrameRow + 5) * Height, Width, Height);
+	} else {
         CSurface::OnDraw(Surf_Display, Surf_Entity, X - CCamera::CameraControl.GetX(), Y - CCamera::CameraControl.GetY() + 2, CurrentFrameCol * Width, (CurrentFrameRow + Anim_Control.GetCurrentFrame() + 6) * Height, Width, Height);
-	//}
+	}
 }
 
 //------------------------------------------------------------------------------
@@ -36,11 +36,11 @@ void CPlayer::OnCleanup() {
 
 //------------------------------------------------------------------------------
 void CPlayer::OnAnimate() {
-	if(IsJumping == true) {
+	/*if(IsJumping == true) {
 	    Anim_Control.MaxFrames = 0;
         Anim_Control.CurrentFrame = -1;
 	}else
-
+    */
 	if(SpeedX != 0) {
 		Anim_Control.MaxFrames = 13;
 	}else{
