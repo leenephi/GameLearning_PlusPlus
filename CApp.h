@@ -51,6 +51,8 @@ class CApp : public CEvent {
         void OnRender();
 
         void OnCleanup();
+
+        void Reset();
 };
 
 //==============================================================================

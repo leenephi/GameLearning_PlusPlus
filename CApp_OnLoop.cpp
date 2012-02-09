@@ -12,13 +12,31 @@ void CApp::OnLoop() {
         CEntity::EntityList[i]->OnLoop();
     }
 
+    Enemy.CanJump = false;
+
     if((Player.X - Enemy.X < 250) && Enemy.X < Player.X) {
+        if(Enemy.MoveRight)
+        {
+            if(Enemy.oldX == Enemy.X){
+                Enemy.CanJump = true;
+                Enemy.Jump();
+            }
+        }
         Enemy.MoveRight = true;
         Enemy.MoveLeft = false;
+        Enemy.oldX = Enemy.X;
     }
     else if((Enemy.X - Player.X < 250) && Enemy.X > Player.X) {
+        if(Enemy.MoveLeft)
+        {
+            if(Enemy.oldX == Enemy.X){
+                Enemy.CanJump = true;
+                Enemy.Jump();
+            }
+        }
         Enemy.MoveLeft = true;
         Enemy.MoveRight = false;
+        Enemy.oldX = Enemy.X;
     }
     if((Player.X - Enemy.X) > 250 || (Enemy.X - Player.X) > 250)
     {
@@ -35,9 +53,13 @@ void CApp::OnLoop() {
 
         if(EntityA->OnCollision(EntityB)) {
             EntityB->OnCollision(EntityA);
+            if((Player.Y + Player.Height) > (Enemy.Y + Enemy.Height))
+            {
+                Reset();
+            }
+
         }
     }
-
     CEntityCol::EntityColList.clear();
 
     CFPS::FPSControl.OnLoop();

@@ -27,13 +27,7 @@ void CApp::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode) {
 
         case SDLK_ESCAPE: {
 
-            Player.isJumping = false;
-            Player.MoveLeft = false;
-            Player.MoveRight = false;
-            Enemy.MoveLeft = false;
-            Enemy.MoveRight = false;
-            Player.X = 0;
-            Enemy.X = 1000;
+            CApp::Reset();
             break;
         }
 
