@@ -53,7 +53,7 @@ void CAnimation::SetCurrentFrame(int Frame) {
 }
 
 //------------------------------------------------------------------------------
-int CAnimation::GetCurrentFrame() {
+const int CAnimation::GetCurrentFrame() {
     return CurrentFrame;
 }
 

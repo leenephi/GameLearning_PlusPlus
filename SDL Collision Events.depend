@@ -414,10 +414,10 @@
 1328808752 source:g:\software\cbprojects\tutoria\cenemy.cpp
 	"CEnemy.h"
 
-1328804991 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\canimation.cpp
+1328819219 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\canimation.cpp
 	"CAnimation.h"
 
-1328804991 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\canimation.h
+1328819112 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\canimation.h
 	<SDL.h>
 
 1328813150 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp.cpp
@@ -437,7 +437,7 @@
 
 1328815987 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\define.h
 
-1328804991 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cfps.h
+1328819657 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cfps.h
 	<SDL.h>
 
 1328804991 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\carea.h
@@ -456,11 +456,11 @@
 	<SDL.h>
 	<SDL_image.h>
 
-1328804991 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\ccamera.h
+1328819414 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\ccamera.h
 	<SDL.h>
 	"Define.h"
 
-1328815987 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\centity.h
+1328819847 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\centity.h
 	<vector>
 	"CArea.h"
 	"CAnimation.h"
@@ -483,25 +483,25 @@
 1328813163 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_onevent.cpp
 	"CApp.h"
 
-1328804991 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_oninit.cpp
+1328815987 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_oninit.cpp
 	"CApp.h"
 
-1328815987 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_onloop.cpp
+1328816501 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_onloop.cpp
 	"CApp.h"
 
 1328804991 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_onrender.cpp
 	"CApp.h"
 
-1328804991 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\carea.cpp
+1328819203 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\carea.cpp
 	"CArea.h"
 
-1328804991 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\ccamera.cpp
+1328819432 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\ccamera.cpp
 	"CCamera.h"
 
 1328804991 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cenemy.cpp
 	"CEnemy.h"
 
-1328804991 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\centity.cpp
+1328819848 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\centity.cpp
 	"CEntity.h"
 
 1328804991 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\centitycol.cpp
@@ -510,7 +510,7 @@
 1328804991 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cevent.cpp
 	"CEvent.h"
 
-1328804991 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cfps.cpp
+1328819673 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cfps.cpp
 	"CFPS.h"
 
 1328804991 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cmap.cpp

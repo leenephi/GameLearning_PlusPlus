@@ -35,8 +35,8 @@ class CCamera {
 		void OnMove(int MoveX, int MoveY);
 
 	public:
-		int GetX();
-		int GetY();
+		const int GetX();
+		const int GetY();
 
 	public:
 		void SetPos(int X, int Y);
