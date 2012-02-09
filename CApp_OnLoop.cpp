@@ -17,7 +17,7 @@ void CApp::OnLoop() {
     if((Player.X - Enemy.X < 250) && Enemy.X < Player.X) {
         if(Enemy.MoveRight)
         {
-            if(Enemy.oldX == Enemy.X){
+            if(Enemy.oldX == Enemy.X && Enemy.oldY >= Enemy.Y){
                 Enemy.CanJump = true;
                 Enemy.Jump();
             }
@@ -29,12 +29,12 @@ void CApp::OnLoop() {
 
         Enemy.Anim_Control.Oscillate = true;
 
-
+//
     }
     else if((Enemy.X - Player.X < 250) && Enemy.X > Player.X) {
         if(Enemy.MoveLeft)
         {
-            if(Enemy.oldX == Enemy.X){
+            if(Enemy.oldX == Enemy.X && Enemy.oldY >= Enemy.Y){
                 Enemy.CanJump = true;
                 Enemy.Jump();
             }
@@ -43,6 +43,7 @@ void CApp::OnLoop() {
         Enemy.MoveRight = false;
 
         Enemy.oldX = Enemy.X;
+        Enemy.oldY = Enemy.Y;
 
         Enemy.Anim_Control.Oscillate = true;
 

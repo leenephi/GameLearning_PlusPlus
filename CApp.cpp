@@ -32,13 +32,15 @@ int CApp::OnExecute() {
 
 void CApp::Reset()
 {
-            Player.isJumping = false;
+            Player.IsJumping = false;
             Player.MoveLeft = false;
             Player.MoveRight = false;
             Enemy.MoveLeft = false;
             Enemy.MoveRight = false;
             Player.X = 0;
-            Enemy.X = 1000;
+            Player.Y = 0;
+            Enemy.X = 500;
+            Enemy.Y = 0;
 }
 
 //==============================================================================
