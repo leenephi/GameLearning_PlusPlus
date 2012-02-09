@@ -170,13 +170,13 @@
 1205613960 source:g:\software\cbprojects\tutoria\capp_oncleanup.cpp
 	"CApp.h"
 
-1328730262 source:g:\software\cbprojects\tutoria\capp_onevent.cpp
+1328807571 source:g:\software\cbprojects\tutoria\capp_onevent.cpp
 	"CApp.h"
 
 1328801838 source:g:\software\cbprojects\tutoria\capp_oninit.cpp
 	"CApp.h"
 
-1328801333 source:g:\software\cbprojects\tutoria\capp_onloop.cpp
+1328807571 source:g:\software\cbprojects\tutoria\capp_onloop.cpp
 	"CApp.h"
 
 1328739600 source:g:\software\cbprojects\tutoria\capp_onrender.cpp
@@ -203,7 +203,7 @@
 1225198920 source:g:\software\cbprojects\tutoria\cmap.cpp
 	"CMap.h"
 
-1328768964 source:g:\software\cbprojects\tutoria\cplayer.cpp
+1328807257 source:g:\software\cbprojects\tutoria\cplayer.cpp
 	"CPlayer.h"
 
 1206533820 source:g:\software\cbprojects\tutoria\csurface.cpp

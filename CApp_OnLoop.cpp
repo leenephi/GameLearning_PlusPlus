@@ -12,15 +12,15 @@ void CApp::OnLoop() {
         CEntity::EntityList[i]->OnLoop();
     }
 
-    if((Player.X - Enemy.X < 500) && Enemy.X < Player.X) {
+    if((Player.X - Enemy.X < 250) && Enemy.X < Player.X) {
         Enemy.MoveRight = true;
         Enemy.MoveLeft = false;
     }
-    else if((Enemy.X - Player.X < 500) && Enemy.X > Player.X) {
+    else if((Enemy.X - Player.X < 250) && Enemy.X > Player.X) {
         Enemy.MoveLeft = true;
         Enemy.MoveRight = false;
     }
-    if((Player.X - Enemy.X) > 500 || (Enemy.X - Player.X) > 500)
+    if((Player.X - Enemy.X) > 250 || (Enemy.X - Player.X) > 250)
     {
         Enemy.MoveLeft = false;
         Enemy.MoveRight = false;
