@@ -42,6 +42,8 @@ class CEntity {
 
 		float	X;
 		float	Y;
+		float   oldX;
+		float   oldY;
 
 		int		Width;
 		int		Height;
@@ -64,6 +66,7 @@ class CEntity {
 		float	AccelX;
 		float	AccelY;
 
+    public:
 		bool	CanJump;
 		bool    IsJumping;
 
