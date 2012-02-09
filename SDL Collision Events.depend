@@ -420,7 +420,7 @@
 1328819112 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\canimation.h
 	<SDL.h>
 
-1328813150 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp.cpp
+1328820256 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp.cpp
 	"CApp.h"
 
 1328813120 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp.h
@@ -480,7 +480,7 @@
 1328804991 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_oncleanup.cpp
 	"CApp.h"
 
-1328813163 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_onevent.cpp
+1328820118 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_onevent.cpp
 	"CApp.h"
 
 1328815987 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_oninit.cpp
@@ -501,7 +501,7 @@
 1328804991 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cenemy.cpp
 	"CEnemy.h"
 
-1328819848 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\centity.cpp
+1328820118 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\centity.cpp
 	"CEntity.h"
 
 1328804991 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\centitycol.cpp
@@ -516,7 +516,7 @@
 1328819887 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cmap.cpp
 	"CMap.h"
 
-1328808379 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cplayer.cpp
+1328820118 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cplayer.cpp
 	"CPlayer.h"
 
 1328804991 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\csurface.cpp
