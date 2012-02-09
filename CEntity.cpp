@@ -13,7 +13,7 @@ CEntity::CEntity() {
 	oldX = 0;
 	oldY = 0;
 
-	IsJumping = isJumping = false;
+	IsJumping = false;
 
 
 	Width 	= 0;
