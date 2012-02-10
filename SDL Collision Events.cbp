@@ -40,6 +40,14 @@
 		<Unit filename="CAnimation.h" />
 		<Unit filename="CApp.cpp" />
 		<Unit filename="CApp.h" />
+		<Unit filename="CAppState.cpp" />
+		<Unit filename="CAppState.h" />
+		<Unit filename="CAppStateGame.cpp" />
+		<Unit filename="CAppStateGame.h" />
+		<Unit filename="CAppStateIntro.cpp" />
+		<Unit filename="CAppStateIntro.h" />
+		<Unit filename="CAppStateManager.cpp" />
+		<Unit filename="CAppStateManager.h" />
 		<Unit filename="CApp_OnCleanup.cpp" />
 		<Unit filename="CApp_OnEvent.cpp" />
 		<Unit filename="CApp_OnInit.cpp" />
@@ -70,6 +78,7 @@
 		<Extensions>
 			<code_completion />
 			<debugger />
+			<envvars />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

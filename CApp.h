@@ -8,16 +8,14 @@
 
 #include "Define.h"
 
+#include "CAppStateManager.h"
 #include "CFPS.h"
 
-#include "CArea.h"
-#include "CCamera.h"
-#include "CEntity.h"
+
 #include "CEvent.h"
 #include "CSurface.h"
 
-#include "CPlayer.h"
-#include "CEnemy.h"
+
 
 //==============================================================================
 class CApp : public CEvent {
@@ -26,9 +24,6 @@ class CApp : public CEvent {
 
         SDL_Surface*    Surf_Display;
 
-        CPlayer			Player;
-
-        CEnemy          Enemy;
 
     public:
         CApp();
@@ -40,10 +35,6 @@ class CApp : public CEvent {
 
         void OnEvent(SDL_Event* Event);
 
-        	void OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode);
-
-        	void OnKeyUp(SDLKey sym, SDLMod mod, Uint16 unicode);
-
             void OnExit();
 
         void OnLoop();
@@ -52,7 +43,7 @@ class CApp : public CEvent {
 
         void OnCleanup();
 
-        void Reset();
+
 };
 
 //==============================================================================
