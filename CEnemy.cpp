@@ -2,7 +2,14 @@
 #include "CEnemy.h"
 
 //=============================================================================
-CEnemy::CEnemy() {
+
+std::vector<CEnemy*> 	CEnemy::EnemyList;
+
+CEnemy::CEnemy(int startX, int startY) {
+
+    X = startX;
+    Y = startY;
+
 }
 
 //=============================================================================
@@ -13,7 +20,8 @@ bool CEnemy::OnLoad(char* File, int Width, int Height, int MaxFrames) {
 
     Anim_Control.SetFrameRate(100);
     Anim_Control.Oscillate = true;
-    MaxSpeedX = 2;
+    MaxSpeedX = 3;
+    X = 500;
 
     return true;
 }
@@ -21,16 +29,8 @@ bool CEnemy::OnLoad(char* File, int Width, int Height, int MaxFrames) {
 //-----------------------------------------------------------------------------
 void CEnemy::OnLoop() {
 
-    /*if(X < Player.X) {
-        MoveRight = true;
-    }
-    else if(X > Player.X) {
-        MoveLeft = true;
-    }
-    */
-
-
 	CEntity::OnLoop();
+
 }
 
 //-----------------------------------------------------------------------------

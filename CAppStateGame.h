@@ -17,9 +17,6 @@ class CAppStateGame : public CAppState {
 
         CPlayer			Player;
 
-        CEnemy          Enemy;
-
-
     private:
         CAppStateGame();
 

@@ -420,7 +420,7 @@
 1328819112 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\canimation.h
 	<SDL.h>
 
-1328896307 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp.cpp
+1328899588 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp.cpp
 	"CApp.h"
 
 1328895392 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp.h
@@ -445,7 +445,7 @@
 	"CTile.h"
 	"CSurface.h"
 
-1328804991 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\ctile.h
+1328904202 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\ctile.h
 	"Define.h"
 
 1328804991 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\csurface.h
@@ -456,7 +456,7 @@
 	<SDL.h>
 	"Define.h"
 
-1328820142 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\centity.h
+1328904180 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\centity.h
 	<vector>
 	"CArea.h"
 	"CAnimation.h"
@@ -470,7 +470,7 @@
 1328804991 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cplayer.h
 	"CEntity.h"
 
-1328804991 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cenemy.h
+1328904134 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cenemy.h
 	"CEntity.h"
 
 1328896277 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_oncleanup.cpp
@@ -533,7 +533,7 @@
 1328898706 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cappstategame.cpp
 	"CAppStateGame.h"
 
-1328899614 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cappstategame.h
+1328903679 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cappstategame.h
 	"CAppState.h"
 	"CArea.h"
 	"CCamera.h"
