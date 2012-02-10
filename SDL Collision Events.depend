@@ -113,10 +113,10 @@
 1328820204 g:\software\cbprojects\tutoria\canimation.h
 	<SDL.h>
 
-1328822920 source:g:\software\cbprojects\tutoria\capp.cpp
+1328894391 source:g:\software\cbprojects\tutoria\capp.cpp
 	"CApp.h"
 
-1328816971 g:\software\cbprojects\tutoria\capp.h
+1328894254 g:\software\cbprojects\tutoria\capp.h
 	<SDL.h>
 	"Define.h"
 	"CFPS.h"
@@ -142,7 +142,7 @@
 	"CTile.h"
 	"CSurface.h"
 
-1205612580 g:\software\cbprojects\tutoria\ctile.h
+1328890695 g:\software\cbprojects\tutoria\ctile.h
 	"Define.h"
 
 1205584740 g:\software\cbprojects\tutoria\csurface.h
@@ -153,7 +153,7 @@
 	<SDL.h>
 	"Define.h"
 
-1328822920 g:\software\cbprojects\tutoria\centity.h
+1328891643 g:\software\cbprojects\tutoria\centity.h
 	<vector>
 	"CArea.h"
 	"CAnimation.h"
@@ -173,10 +173,10 @@
 1328822920 source:g:\software\cbprojects\tutoria\capp_onevent.cpp
 	"CApp.h"
 
-1328824245 source:g:\software\cbprojects\tutoria\capp_oninit.cpp
+1328899787 source:g:\software\cbprojects\tutoria\capp_oninit.cpp
 	"CApp.h"
 
-1328822920 source:g:\software\cbprojects\tutoria\capp_onloop.cpp
+1328894774 source:g:\software\cbprojects\tutoria\capp_onloop.cpp
 	"CApp.h"
 
 1328739600 source:g:\software\cbprojects\tutoria\capp_onrender.cpp
@@ -408,10 +408,10 @@
 	"begin_code.h"
 	"close_code.h"
 
-1328769680 g:\software\cbprojects\tutoria\cenemy.h
+1328895947 g:\software\cbprojects\tutoria\cenemy.h
 	"CEntity.h"
 
-1328820197 source:g:\software\cbprojects\tutoria\cenemy.cpp
+1328895976 source:g:\software\cbprojects\tutoria\cenemy.cpp
 	"CEnemy.h"
 
 1328819219 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\canimation.cpp

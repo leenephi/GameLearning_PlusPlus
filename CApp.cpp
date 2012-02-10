@@ -35,12 +35,8 @@ void CApp::Reset()
             Player.IsJumping = false;
             Player.MoveLeft = false;
             Player.MoveRight = false;
-            Enemy.MoveLeft = false;
-            Enemy.MoveRight = false;
             Player.X = 0;
             Player.Y = 0;
-            Enemy.X = 500;
-            Enemy.Y = 0;
 }
 
 //==============================================================================

@@ -21,14 +21,19 @@ bool CApp::OnInit() {
     	return false;
     }
 
-    if(Enemy.OnLoad("enemy.png", 34, 47, 3) == false) {
-        return false;
-    }
-
     CEntity::EntityList.push_back(&Player);
-    CEntity::EntityList.push_back(&Enemy);
 
-    Enemy.X = 500;
+    CEnemy::EnemyList.push_back(new CEnemy(500, 0));
+    CEnemy::EnemyList.push_back(new CEnemy(1000, 0));
+    CEnemy::EnemyList.push_back(new CEnemy(250, 0));
+
+    for(int i=0; i < CEnemy::EnemyList.size(); i++) {
+        if(CEnemy::EnemyList[i]->OnLoad("enemy.png", 34, 47, 3) == false) {
+            return false;
+        }
+
+        CEntity::EntityList.push_back(CEnemy::EnemyList[i]);
+    }
 
 	CCamera::CameraControl.TargetMode = TARGET_MODE_CENTER;
     CCamera::CameraControl.SetTarget(&Player.X, &Player.Y);

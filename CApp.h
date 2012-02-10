@@ -28,8 +28,6 @@ class CApp : public CEvent {
 
         CPlayer			Player;
 
-        CEnemy          Enemy;
-
     public:
         CApp();
 

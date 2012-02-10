@@ -5,7 +5,10 @@
 
 class CEnemy : public CEntity {
     public:
-        CEnemy();
+
+        static std::vector<CEnemy*>    EnemyList;
+
+        CEnemy(int startX, int startY);
 
 		bool OnLoad(char* File, int Width, int Height, int MaxFrames);
 
