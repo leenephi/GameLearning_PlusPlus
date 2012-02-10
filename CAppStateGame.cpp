@@ -47,6 +47,13 @@ void CAppStateGame::OnKeyUp(SDLKey sym, SDLMod mod, Uint16 unicode) {
 	}
 }
 
+void CAppStateGame::AddEnemy(float x, float y) {
+
+        CEnemy* newenemy = new CEnemy(x, y);
+
+        CEnemy::EnemyList.push_back(newenemy);
+
+}
 
 void CAppStateGame::OnActivate() {
     CArea::AreaControl.OnLoad("./maps/level1.area");
@@ -55,12 +62,10 @@ void CAppStateGame::OnActivate() {
 
     CEntity::EntityList.push_back(&Player);
 
+    AddEnemy(500, 0);
 
-    CEnemy::EnemyList.push_back(new CEnemy(500, 0));
+    AddEnemy(600, 0);
 
-    CEnemy::EnemyList.push_back(new CEnemy(1000, 0));
-
-    CEnemy::EnemyList.push_back(new CEnemy(250, 0));
 
     for(int i=0; i < CEnemy::EnemyList.size(); i++) {
 

@@ -5,10 +5,10 @@
 
 std::vector<CEnemy*> 	CEnemy::EnemyList;
 
-CEnemy::CEnemy(int startX, int startY) {
+CEnemy::CEnemy(float x, float y) {
 
-    X = startX;
-    Y = startY;
+    X = x;
+    Y = y;
 
 }
 
@@ -58,6 +58,14 @@ void CEnemy::OnAnimate() {
 //------------------------------------------------------------------------------
 bool CEnemy::OnCollision(CEntity* Entity) {
     return true;
+}
+
+void CEnemy::AddEnemy(float x, float y) {
+
+    CEnemy* newenemy = new CEnemy(x, y);
+
+    EnemyList.push_back(newenemy);
+
 }
 
 //=============================================================================
