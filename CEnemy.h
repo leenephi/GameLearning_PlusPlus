@@ -8,7 +8,7 @@ class CEnemy : public CEntity {
 
         static std::vector<CEnemy*>    EnemyList;
 
-        CEnemy(int startX, int startY);
+        CEnemy(float x, float y);
 
 		bool OnLoad(char* File, int Width, int Height, int MaxFrames);
 
@@ -21,6 +21,8 @@ class CEnemy : public CEntity {
         void OnAnimate();
 
         bool OnCollision(CEntity* Entity);
+
+        void AddEnemy(float x, float y);
 };
 
 #endif // CENEMY_H_INCLUDED

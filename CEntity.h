@@ -118,6 +118,7 @@ class CEntity {
 		const bool 	PosValidTile(CTile* Tile);
 
 		bool 	PosValidEntity(CEntity* Entity, int NewX, int NewY);
+
 };
 
 //==============================================================================
@@ -131,6 +132,7 @@ class CEntityCol {
 
 	public:
 		CEntityCol();
+
 };
 
 //==============================================================================

@@ -36,6 +36,8 @@ class CAppStateGame : public CAppState {
 
        void Reset();
 
+       void AddEnemy(float x, float y);
+
     public:
         static CAppStateGame* GetInstance();
 };
