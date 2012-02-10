@@ -64,7 +64,7 @@ void CAppStateGame::OnActivate() {
 
     AddEnemy(500, 0);
 
-    AddEnemy(600, 0);
+    //AddEnemy(600, 0);
 
 
     for(int i=0; i < CEnemy::EnemyList.size(); i++) {
