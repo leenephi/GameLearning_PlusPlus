@@ -34,9 +34,9 @@ class CAppStateGame : public CAppState {
 
         void OnRender(SDL_Surface* Surf_Display);
 
-       void Reset();
+        void Reset();
 
-       void AddEnemy(float x, float y);
+        void AddEnemy(float x, float y, char* File, int Width, int Height, int MaxFrames);
 
     public:
         static CAppStateGame* GetInstance();

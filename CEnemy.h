@@ -6,9 +6,7 @@
 class CEnemy : public CEntity {
     public:
 
-        static std::vector<CEnemy*>    EnemyList;
-
-        CEnemy(float x, float y);
+        CEnemy(float x, float y, char* File, int Width, int Height, int MaxFrames);
 
 		bool OnLoad(char* File, int Width, int Height, int MaxFrames);
 
@@ -22,7 +20,7 @@ class CEnemy : public CEntity {
 
         bool OnCollision(CEntity* Entity);
 
-        void AddEnemy(float x, float y);
+        // void AddEnemy(float x, float y, char* File, int Width, int Height, int MaxFrames);
 };
 
 #endif // CENEMY_H_INCLUDED

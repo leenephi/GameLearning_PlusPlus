@@ -19,11 +19,11 @@
 	<File name="CAppState.h" open="0" top="0" tabpos="0">
 		<Cursor position="363" topLine="0" />
 	</File>
-	<File name="CAppStateGame.cpp" open="1" top="1" tabpos="3">
-		<Cursor position="191" topLine="36" />
+	<File name="CAppStateGame.cpp" open="1" top="1" tabpos="6">
+		<Cursor position="930" topLine="36" />
 	</File>
-	<File name="CAppStateGame.h" open="1" top="0" tabpos="6">
-		<Cursor position="580" topLine="19" />
+	<File name="CAppStateGame.h" open="1" top="0" tabpos="9">
+		<Cursor position="580" topLine="0" />
 	</File>
 	<File name="CAppStateIntro.cpp" open="1" top="0" tabpos="0">
 		<Cursor position="834" topLine="15" />
@@ -37,7 +37,7 @@
 	<File name="CAppStateManager.h" open="0" top="0" tabpos="0">
 		<Cursor position="0" topLine="6" />
 	</File>
-	<File name="CApp_OnCleanup.cpp" open="1" top="0" tabpos="4">
+	<File name="CApp_OnCleanup.cpp" open="1" top="0" tabpos="7">
 		<Cursor position="310" topLine="0" />
 	</File>
 	<File name="CApp_OnEvent.cpp" open="0" top="0" tabpos="1">
@@ -64,11 +64,11 @@
 	<File name="CCamera.h" open="0" top="0" tabpos="5">
 		<Cursor position="574" topLine="1" />
 	</File>
-	<File name="CEnemy.cpp" open="1" top="0" tabpos="2">
+	<File name="CEnemy.cpp" open="1" top="0" tabpos="5">
 		<Cursor position="278" topLine="0" />
 	</File>
-	<File name="CEnemy.h" open="1" top="0" tabpos="5">
-		<Cursor position="188" topLine="4" />
+	<File name="CEnemy.h" open="1" top="0" tabpos="8">
+		<Cursor position="188" topLine="0" />
 	</File>
 	<File name="CEntity.cpp" open="0" top="0" tabpos="3">
 		<Cursor position="6822" topLine="296" />
@@ -76,19 +76,19 @@
 	<File name="CEntity.h" open="0" top="0" tabpos="8">
 		<Cursor position="2166" topLine="110" />
 	</File>
-	<File name="CEntityCol.cpp" open="1" top="0" tabpos="0">
+	<File name="CEntityCol.cpp" open="1" top="0" tabpos="1">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="CEvent.cpp" open="1" top="0" tabpos="0">
+	<File name="CEvent.cpp" open="1" top="0" tabpos="2">
 		<Cursor position="941" topLine="111" />
 	</File>
 	<File name="CEvent.h" open="0" top="0" tabpos="2">
 		<Cursor position="251" topLine="45" />
 	</File>
-	<File name="CFPS.cpp" open="1" top="0" tabpos="0">
+	<File name="CFPS.cpp" open="1" top="0" tabpos="3">
 		<Cursor position="365" topLine="0" />
 	</File>
-	<File name="CFPS.h" open="1" top="0" tabpos="1">
+	<File name="CFPS.h" open="1" top="0" tabpos="4">
 		<Cursor position="0" topLine="0" />
 	</File>
 	<File name="CMap.cpp" open="0" top="0" tabpos="1">
