@@ -47,32 +47,19 @@ void CAppStateGame::OnKeyUp(SDLKey sym, SDLMod mod, Uint16 unicode) {
 	}
 }
 
-void CAppStateGame::AddEnemy(float x, float y) {
-
-        CEnemy* newenemy = new CEnemy(x, y);
-
-        CEnemy::EnemyList.push_back(newenemy);
-
-}
-
 void CAppStateGame::OnActivate() {
     CArea::AreaControl.OnLoad("./maps/level1.area");
 
     Player.OnLoad("player.png", 33, 56, 13);
+    Player.Type = ENTITY_TYPE_PLAYER;
 
     CEntity::EntityList.push_back(&Player);
 
-    AddEnemy(500, 0);
+    AddEnemy(500, 0, "enemy.png", 34, 47, 3);
 
-    //AddEnemy(600, 0);
+    AddEnemy(600, 0, "enemy.png", 34, 47, 3);
 
-
-    for(int i=0; i < CEnemy::EnemyList.size(); i++) {
-
-        CEnemy::EnemyList[i]->OnLoad("enemy.png", 34, 47, 3);
-
-        CEntity::EntityList.push_back(CEnemy::EnemyList[i]);
-    }
+    AddEnemy(700, 0, "enemy.png", 34, 47, 3);
 
 	CCamera::CameraControl.TargetMode = TARGET_MODE_CENTER;
     CCamera::CameraControl.SetTarget(&Player.X, &Player.Y);
@@ -99,48 +86,50 @@ void CAppStateGame::OnLoop() {
 
         CEntity::EntityList[i]->OnLoop();
     }
+
     //jumping mob
-
-    for(int i = 0; i < CEnemy::EnemyList.size(); i++) {
-        CEnemy::EnemyList[i]->CanJump = false;
-        if((Player.X - CEnemy::EnemyList[i]->X < 500) && CEnemy::EnemyList[i]->X < Player.X) {
-            if(CEnemy::EnemyList[i]->MoveRight)
+    for(int i = 0; i < CEntity::EntityList.size(); i++) {
+        // continue with next entity if this one is not an enemy.. for example, a player, who then wouldn't be able to jump
+        if(CEntity::EntityList[i]->Type != ENTITY_TYPE_ENEMY) continue;
+        CEntity::EntityList[i]->CanJump = false;
+        if((Player.X - CEntity::EntityList[i]->X < 500) && CEntity::EntityList[i]->X < Player.X) {
+            if(CEntity::EntityList[i]->MoveRight)
             {
-                if(CEnemy::EnemyList[i]->oldX == CEnemy::EnemyList[i]->X && CEnemy::EnemyList[i]->oldY >= CEnemy::EnemyList[i]->Y){
-                    CEnemy::EnemyList[i]->CanJump = true;
-                    CEnemy::EnemyList[i]->Jump();
+                if(CEntity::EntityList[i]->oldX == CEntity::EntityList[i]->X && CEntity::EntityList[i]->oldY >= CEntity::EntityList[i]->Y){
+                    CEntity::EntityList[i]->CanJump = true;
+                    CEntity::EntityList[i]->Jump();
                 }
             }
-            CEnemy::EnemyList[i]->MoveRight = true;
-            CEnemy::EnemyList[i]->MoveLeft = false;
+            CEntity::EntityList[i]->MoveRight = true;
+            CEntity::EntityList[i]->MoveLeft = false;
 
-            CEnemy::EnemyList[i]->oldX = CEnemy::EnemyList[i]->X;
+            CEntity::EntityList[i]->oldX = CEntity::EntityList[i]->X;
 
-            CEnemy::EnemyList[i]->Anim_Control.Oscillate = true;
+            CEntity::EntityList[i]->Anim_Control.Oscillate = true;
         }
-        else if((CEnemy::EnemyList[i]->X - Player.X < 500) && CEnemy::EnemyList[i]->X > Player.X) {
-            if(CEnemy::EnemyList[i]->MoveLeft)
+        else if((CEntity::EntityList[i]->X - Player.X < 500) && CEntity::EntityList[i]->X > Player.X) {
+            if(CEntity::EntityList[i]->MoveLeft)
             {
-                if(CEnemy::EnemyList[i]->oldX == CEnemy::EnemyList[i]->X && CEnemy::EnemyList[i]->oldY >= CEnemy::EnemyList[i]->Y){
-                    CEnemy::EnemyList[i]->CanJump = true;
-                    CEnemy::EnemyList[i]->Jump();
+                if(CEntity::EntityList[i]->oldX == CEntity::EntityList[i]->X && CEntity::EntityList[i]->oldY >= CEntity::EntityList[i]->Y){
+                    CEntity::EntityList[i]->CanJump = true;
+                    CEntity::EntityList[i]->Jump();
                 }
             }
-            CEnemy::EnemyList[i]->MoveLeft = true;
-            CEnemy::EnemyList[i]->MoveRight = false;
+            CEntity::EntityList[i]->MoveLeft = true;
+            CEntity::EntityList[i]->MoveRight = false;
 
-            CEnemy::EnemyList[i]->oldX = CEnemy::EnemyList[i]->X;
-            CEnemy::EnemyList[i]->oldY = CEnemy::EnemyList[i]->Y;
+            CEntity::EntityList[i]->oldX = CEntity::EntityList[i]->X;
+            CEntity::EntityList[i]->oldY = CEntity::EntityList[i]->Y;
 
-            CEnemy::EnemyList[i]->Anim_Control.Oscillate = true;
+            CEntity::EntityList[i]->Anim_Control.Oscillate = true;
 
 
         }
-        if((Player.X - CEnemy::EnemyList[i]->X) > 250 || (CEnemy::EnemyList[i]->X - Player.X) > 250)
+        if((Player.X - CEntity::EntityList[i]->X) > 250 || (CEntity::EntityList[i]->X - Player.X) > 250)
         {
-            CEnemy::EnemyList[i]->MoveLeft = false;
-            CEnemy::EnemyList[i]->MoveRight = false;
-            CEnemy::EnemyList[i]->Anim_Control.Oscillate = false;
+            CEntity::EntityList[i]->MoveLeft = false;
+            CEntity::EntityList[i]->MoveRight = false;
+            CEntity::EntityList[i]->Anim_Control.Oscillate = false;
 
         }
     }
@@ -154,10 +143,10 @@ void CAppStateGame::OnLoop() {
 
         if(EntityA->OnCollision(EntityB)) {
             EntityB->OnCollision(EntityA);
-            if((Player.Y + Player.Height) > (CEnemy::EnemyList[i]->Y + CEnemy::EnemyList[i]->Height))
+            /*if((Player.Y + Player.Height) > (CEntity::EntityList[i]->Y))
             {
                 Reset();
-            }
+            }*/
 
         }
     }
@@ -197,4 +186,14 @@ void CAppStateGame::Reset()
             Player.MoveRight = false;
             Player.X = 0;
             Player.Y = 0;
+}
+
+void CAppStateGame::AddEnemy(float x, float y, char* File, int Width, int Height, int MaxFrames) {
+
+    CEnemy* newenemy = new CEnemy(x, y, File, Width, Height, MaxFrames);
+
+    newenemy->Type = ENTITY_TYPE_ENEMY;
+
+    CEntity::EntityList.push_back(newenemy);
+
 }
