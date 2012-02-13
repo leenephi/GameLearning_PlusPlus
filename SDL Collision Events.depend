@@ -149,7 +149,7 @@
 	<SDL.h>
 	"Define.h"
 
-1329149617 g:\software\cbprojects\tutoria\centity.h
+1329162515 g:\software\cbprojects\tutoria\centity.h
 	<vector>
 	"CArea.h"
 	"CAnimation.h"
@@ -184,7 +184,7 @@
 1329149616 source:g:\software\cbprojects\tutoria\ccamera.cpp
 	"CCamera.h"
 
-1329149616 source:g:\software\cbprojects\tutoria\centity.cpp
+1329162501 source:g:\software\cbprojects\tutoria\centity.cpp
 	"CEntity.h"
 
 1329149617 source:g:\software\cbprojects\tutoria\centitycol.cpp
@@ -196,8 +196,7 @@
 1329149617 source:g:\software\cbprojects\tutoria\cfps.cpp
 	"CFPS.h"
 
-1329149617 source:g:\software\cbprojects\tutoria\cmap.cpp
-	<id.h>
+1329150284 source:g:\software\cbprojects\tutoria\cmap.cpp
 	"CMap.h"
 	"CEnemy.h"
 
@@ -406,10 +405,10 @@
 	"begin_code.h"
 	"close_code.h"
 
-1329149616 g:\software\cbprojects\tutoria\cenemy.h
+1329162358 g:\software\cbprojects\tutoria\cenemy.h
 	"CEntity.h"
 
-1329149677 source:g:\software\cbprojects\tutoria\cenemy.cpp
+1329162573 source:g:\software\cbprojects\tutoria\cenemy.cpp
 	"CEnemy.h"
 
 1329149076 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\canimation.cpp
@@ -556,7 +555,7 @@
 	"CAppStateGame.h"
 	"CAppStateMenu.h"
 
-1329149616 g:\software\cbprojects\tutoria\cappstatemanager.h
+1329161821 g:\software\cbprojects\tutoria\cappstatemanager.h
 	"CAppState.h"
 
 1329149616 g:\software\cbprojects\tutoria\cappstate.h
@@ -565,7 +564,7 @@
 1329149616 source:g:\software\cbprojects\tutoria\cappstate.cpp
 	"CAppState.h"
 
-1329149616 source:g:\software\cbprojects\tutoria\cappstateintro.cpp
+1329161821 source:g:\software\cbprojects\tutoria\cappstateintro.cpp
 	"CAppStateIntro.h"
 	"CAppStateManager.h"
 
@@ -573,10 +572,11 @@
 	"CAppState.h"
 	"CSurface.h"
 
-1329149616 source:g:\software\cbprojects\tutoria\cappstatemanager.cpp
+1329161821 source:g:\software\cbprojects\tutoria\cappstatemanager.cpp
 	"CAppStateManager.h"
 	"CAppStateIntro.h"
 	"CAppStateGame.h"
+	"CAppStateMenu.h"
 
 1329149716 g:\software\cbprojects\tutoria\cappstategame.h
 	"CAppState.h"
@@ -587,8 +587,9 @@
 	"CPlayer.h"
 	"CEnemy.h"
 
-1329150169 source:g:\software\cbprojects\tutoria\cappstategame.cpp
+1329162553 source:g:\software\cbprojects\tutoria\cappstategame.cpp
 	"CAppStateGame.h"
+	"CAppStateManager.h"
 	<cmath>
 
 1328828528 source:d:\programming\codeblocks\projects\tutoria\canimation.cpp
@@ -934,6 +935,14 @@
 	"CSurface.h"
 
 1329155432 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cappstatemenu.cpp
+	"CAppStateMenu.h"
+	"CAppStateManager.h"
+
+1329161821 g:\software\cbprojects\tutoria\cappstatemenu.h
+	"CAppState.h"
+	"CSurface.h"
+
+1329161821 source:g:\software\cbprojects\tutoria\cappstatemenu.cpp
 	"CAppStateMenu.h"
 	"CAppStateManager.h"
 

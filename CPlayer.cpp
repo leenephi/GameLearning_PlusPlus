@@ -20,7 +20,7 @@ bool CPlayer::OnLoad(char* File, int Width, int Height, int MaxFrames)
 //-----------------------------------------------------------------------------
 void CPlayer::OnLoop()
 {
-    CEntity::OnLoop();
+    CEntity::OnLoop(X, Y);
 }
 
 //-----------------------------------------------------------------------------

@@ -94,7 +94,7 @@ public:
 public:
     virtual bool OnLoad(char* File, int Width, int Height, int MaxFrames);
 
-    virtual void OnLoop();
+    virtual void OnLoop(float playerX, float playerY);
 
     virtual void OnRender(SDL_Surface* Surf_Display);
 

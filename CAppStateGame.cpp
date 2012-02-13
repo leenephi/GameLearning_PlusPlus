@@ -102,63 +102,8 @@ void CAppStateGame::OnLoop()
     {
         if(!CEntity::EntityList[i]) continue;
 
-        CEntity::EntityList[i]->OnLoop();
-    }
+        CEntity::EntityList[i]->OnLoop(Player.X, Player.Y);
 
-    //jumping and chasing mobs
-    for(int i = 0; i < CEntity::EntityList.size(); i++)
-    {
-        // continue with next entity if this one is not an enemy.. for example, a player, who then wouldn't be able to jump
-        if(CEntity::EntityList[i]->Type != ENTITY_TYPE_ENEMY) continue;
-        CEntity::EntityList[i]->CanJump = false;
-        if((Player.X - CEntity::EntityList[i]->X < 500) &&
-           (CEntity::EntityList[i]->X < Player.X) &&
-           (abs(CEntity::EntityList[i]->Y) - Player.Y) < 250)
-        {
-            if(CEntity::EntityList[i]->MoveRight)
-            {
-                if(CEntity::EntityList[i]->oldX == CEntity::EntityList[i]->X && CEntity::EntityList[i]->oldY >= CEntity::EntityList[i]->Y)
-                {
-                    CEntity::EntityList[i]->CanJump = true;
-                    CEntity::EntityList[i]->Jump();
-                }
-            }
-            CEntity::EntityList[i]->MoveRight = true;
-            CEntity::EntityList[i]->MoveLeft = false;
-
-            CEntity::EntityList[i]->oldX = CEntity::EntityList[i]->X;
-
-            CEntity::EntityList[i]->Anim_Control.Oscillate = true;
-        }
-        else if((CEntity::EntityList[i]->X - Player.X < 500) &&
-                (CEntity::EntityList[i]->X > Player.X) &&
-                (abs(CEntity::EntityList[i]->Y) - Player.Y) < 250)
-        {
-            if(CEntity::EntityList[i]->MoveLeft)
-            {
-                if(CEntity::EntityList[i]->oldX == CEntity::EntityList[i]->X && CEntity::EntityList[i]->oldY >= CEntity::EntityList[i]->Y)
-                {
-                    CEntity::EntityList[i]->CanJump = true;
-                    CEntity::EntityList[i]->Jump();
-                }
-            }
-            CEntity::EntityList[i]->MoveLeft = true;
-            CEntity::EntityList[i]->MoveRight = false;
-
-            CEntity::EntityList[i]->oldX = CEntity::EntityList[i]->X;
-            CEntity::EntityList[i]->oldY = CEntity::EntityList[i]->Y;
-
-            CEntity::EntityList[i]->Anim_Control.Oscillate = true;
-
-
-        }
-        if((Player.X - CEntity::EntityList[i]->X) > 250 || (CEntity::EntityList[i]->X - Player.X) > 250)
-        {
-            CEntity::EntityList[i]->MoveLeft = false;
-            CEntity::EntityList[i]->MoveRight = false;
-            CEntity::EntityList[i]->Anim_Control.Oscillate = false;
-
-        }
     }
 
     //Collision Events
