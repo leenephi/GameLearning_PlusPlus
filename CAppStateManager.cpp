@@ -3,6 +3,7 @@
 // Refer to your Other App States Here
 #include "CAppStateIntro.h"
 #include "CAppStateGame.h"
+#include "CAppStateMenu.h"
 
 CAppState* CAppStateManager::ActiveAppState = 0;
 
@@ -41,6 +42,11 @@ void CAppStateManager::SetActiveAppState(int AppStateID)
     case APPSTATE_GAME:
     {
         ActiveAppState = CAppStateGame::GetInstance();
+        break;
+    }
+    case APPSTATE_MENU:
+    {
+        ActiveAppState = CAppStateMenu::GetInstance();
         break;
     }
     default:
