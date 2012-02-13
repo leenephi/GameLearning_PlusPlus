@@ -5,7 +5,8 @@
 std::vector<CEntityCol> CEntityCol::EntityColList;
 
 //==============================================================================
-CEntityCol::CEntityCol() {
+CEntityCol::CEntityCol()
+{
     this->EntityA = NULL;
     this->EntityB = NULL;
 }

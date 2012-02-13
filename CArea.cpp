@@ -1,3 +1,6 @@
+// *** ADDED BY HEADER FIXUP ***
+#include <id.h>
+// *** END ***
 //=============================================================================
 #include "CArea.h"
 
@@ -5,18 +8,21 @@
 CArea CArea::AreaControl;
 
 //=============================================================================
-CArea::CArea() {
+CArea::CArea()
+{
     AreaSize = 0;
     Surf_Tileset = NULL;
 }
 
 //=============================================================================
-bool CArea::OnLoad(char* File) {
+bool CArea::OnLoad(char* File)
+{
     OnCleanup();
 
     FILE* FileHandle = fopen(File, "r");
 
-    if(FileHandle == NULL) {
+    if(FileHandle == NULL)
+    {
         return false;
     }
 
@@ -24,7 +30,8 @@ bool CArea::OnLoad(char* File) {
 
     fscanf(FileHandle, "%s255\n", TilesetFile);
 
-    if((Surf_Tileset = CSurface::OnLoad(TilesetFile)) == false) {
+    if((Surf_Tileset = CSurface::OnLoad(TilesetFile)) == false)
+    {
         fclose(FileHandle);
 
         return false;
@@ -37,10 +44,12 @@ bool CArea::OnLoad(char* File) {
 
     int ID = 0;
     int MapWidth  = MAP_WIDTH * TILE_SIZE;
-	int MapHeight = MAP_HEIGHT * TILE_SIZE;
+    int MapHeight = MAP_HEIGHT * TILE_SIZE;
 
-    for(int X = 0;X < AreaSize;X++) {
-        for(int Y = 0;Y < AreaSize;Y++) {
+    for(int X = 0; X < AreaSize; X++)
+    {
+        for(int Y = 0; Y < AreaSize; Y++)
+        {
             char MapFile[255];
 
             fscanf(FileHandle, "%s255 ", MapFile);
@@ -49,7 +58,8 @@ bool CArea::OnLoad(char* File) {
             int Y = ((ID / AreaSize) * MapHeight);
 
             CMap tempMap;
-            if(tempMap.OnLoad(MapFile, X, Y) == false) {
+            if(tempMap.OnLoad(MapFile, X, Y) == false)
+            {
                 fclose(FileHandle);
 
                 return false;
@@ -69,43 +79,49 @@ bool CArea::OnLoad(char* File) {
 }
 
 //-----------------------------------------------------------------------------
-void CArea::OnRender(SDL_Surface* Surf_Display, int CameraX, int CameraY) {
-	int MapWidth  = MAP_WIDTH * TILE_SIZE;
-	int MapHeight = MAP_HEIGHT * TILE_SIZE;
+void CArea::OnRender(SDL_Surface* Surf_Display, int CameraX, int CameraY)
+{
+    int MapWidth  = MAP_WIDTH * TILE_SIZE;
+    int MapHeight = MAP_HEIGHT * TILE_SIZE;
 
-	int FirstID = -CameraX / MapWidth;
-		FirstID = FirstID + ((-CameraY / MapHeight) * AreaSize);
+    int FirstID = -CameraX / MapWidth;
+    FirstID = FirstID + ((-CameraY / MapHeight) * AreaSize);
 
-	for(int i = 0;i < 4;i++) {
-		int ID = FirstID + ((i / 2) * AreaSize) + (i % 2);
+    for(int i = 0; i < 4; i++)
+    {
+        int ID = FirstID + ((i / 2) * AreaSize) + (i % 2);
 
-		if(ID < 0 || ID >= MapList.size()) continue;
+        if(ID < 0 || ID >= MapList.size()) continue;
 
-		int X = ((ID % AreaSize) * MapWidth) + CameraX;
-		int Y = ((ID / AreaSize) * MapHeight) + CameraY;
+        int X = ((ID % AreaSize) * MapWidth) + CameraX;
+        int Y = ((ID / AreaSize) * MapHeight) + CameraY;
 
-		MapList[ID].OnRender(Surf_Display, X, Y);
-	}
+        MapList[ID].OnRender(Surf_Display, X, Y);
+    }
 }
 
 //-----------------------------------------------------------------------------
-void CArea::OnCleanup() {
-	if(Surf_Tileset) {
-		SDL_FreeSurface(Surf_Tileset);
-	}
+void CArea::OnCleanup()
+{
+    if(Surf_Tileset)
+    {
+        SDL_FreeSurface(Surf_Tileset);
+    }
 
-	MapList.clear();
+    MapList.clear();
 }
 
 //=============================================================================
-CMap* CArea::GetMap(int X, int Y) {
-	int MapWidth  = MAP_WIDTH * TILE_SIZE;
-	int MapHeight = MAP_HEIGHT * TILE_SIZE;
+CMap* CArea::GetMap(int X, int Y)
+{
+    int MapWidth  = MAP_WIDTH * TILE_SIZE;
+    int MapHeight = MAP_HEIGHT * TILE_SIZE;
 
     int ID = X / MapWidth;
-        ID = ID + ((Y / MapHeight) * AreaSize);
+    ID = ID + ((Y / MapHeight) * AreaSize);
 
-    if(ID < 0 || ID >= MapList.size()) {
+    if(ID < 0 || ID >= MapList.size())
+    {
         return NULL;
     }
 
@@ -113,16 +129,17 @@ CMap* CArea::GetMap(int X, int Y) {
 }
 
 //-----------------------------------------------------------------------------
-CTile* CArea::GetTile(int X, int Y) {
-	int MapWidth  = MAP_WIDTH * TILE_SIZE;
-	int MapHeight = MAP_HEIGHT * TILE_SIZE;
+CTile* CArea::GetTile(int X, int Y)
+{
+    int MapWidth  = MAP_WIDTH * TILE_SIZE;
+    int MapHeight = MAP_HEIGHT * TILE_SIZE;
 
-	CMap* Map = GetMap(X, Y);
+    CMap* Map = GetMap(X, Y);
 
-	if(Map == NULL) return NULL;
+    if(Map == NULL) return NULL;
 
-	X = X % MapWidth;
-	Y = Y % MapHeight;
+    X = X % MapWidth;
+    Y = Y % MapHeight;
 
     return Map->GetTile(X, Y);
 }

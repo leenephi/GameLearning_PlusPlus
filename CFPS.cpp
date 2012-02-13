@@ -5,40 +5,45 @@
 CFPS CFPS::FPSControl;
 
 //=============================================================================
-CFPS::CFPS() {
-	OldTime     = 0;
-	LastTime    = 0;
+CFPS::CFPS()
+{
+    OldTime     = 0;
+    LastTime    = 0;
 
-	SpeedFactor	= 0;
+    SpeedFactor	= 0;
 
-	Frames      = 0;
-	NumFrames   = 0;
+    Frames      = 0;
+    NumFrames   = 0;
 }
 
 //=============================================================================
-void CFPS::OnLoop() {
-	if(OldTime + 1000 < SDL_GetTicks()) {
-		OldTime = SDL_GetTicks();
+void CFPS::OnLoop()
+{
+    if(OldTime + 1000 < SDL_GetTicks())
+    {
+        OldTime = SDL_GetTicks();
 
-		NumFrames = Frames;
+        NumFrames = Frames;
 
-		Frames = 0;
-	}
+        Frames = 0;
+    }
 
-	SpeedFactor = ((SDL_GetTicks() - LastTime) / 1000.0f) * 32.0f;
+    SpeedFactor = ((SDL_GetTicks() - LastTime) / 1000.0f) * 32.0f;
 
-	LastTime = SDL_GetTicks();
+    LastTime = SDL_GetTicks();
 
-	Frames++;
+    Frames++;
 }
 
 //=============================================================================
-const int CFPS::GetFPS() {
+const int CFPS::GetFPS()
+{
     return NumFrames;
 }
 
 //------------------------------------------------------------------------------
-const float CFPS::GetSpeedFactor() {
+const float CFPS::GetSpeedFactor()
+{
     return SpeedFactor;
 }
 
