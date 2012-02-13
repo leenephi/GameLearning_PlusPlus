@@ -28,9 +28,9 @@ void CAppStateIntro::OnDeactivate()
 
 void CAppStateIntro::OnLoop()
 {
-    if(StartTime + 3000 < SDL_GetTicks())
+    if(StartTime + 1000 < SDL_GetTicks())
     {
-        CAppStateManager::SetActiveAppState(APPSTATE_GAME);
+        CAppStateManager::SetActiveAppState(APPSTATE_MENU);
     }
 }
 

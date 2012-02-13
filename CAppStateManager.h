@@ -8,7 +8,8 @@ enum
     // Add your Other App States Here
     APPSTATE_NONE,
     APPSTATE_INTRO,
-    APPSTATE_GAME
+    APPSTATE_GAME,
+    APPSTATE_MENU
 };
 
 class CAppStateManager
