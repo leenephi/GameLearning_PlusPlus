@@ -22,7 +22,7 @@ CEntity::CEntity() {
 	MoveLeft  = false;
 	MoveRight = false;
 
-	Type = 	ENTITY_TYPE_GENERIC;
+	Type = ENTITY_TYPE_GENERIC;
 
 	Dead = false;
 	Flags = ENTITY_FLAG_GRAVITY;

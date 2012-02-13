@@ -8,9 +8,9 @@
 enum {
     TILE_TYPE_NONE = 0,
 
-    TILE_TYPE_NORMAL,
-    TILE_TYPE_BLOCK,
-    TILE_TYPE_ENEMY1
+    TILE_TYPE_NORMAL, //1
+    TILE_TYPE_BLOCK,  //2
+    TILE_TYPE_ENEMY1  //3
 };
 
 //==============================================================================

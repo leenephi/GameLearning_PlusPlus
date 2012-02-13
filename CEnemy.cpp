@@ -1,14 +1,15 @@
 //=============================================================================
 #include "CEnemy.h"
 
+// CEnemy::EnemyList[i]->OnLoad("enemy.png", 34, 47, 3);
+
 //=============================================================================
 
-std::vector<CEnemy*> 	CEnemy::EnemyList;
+CEnemy::CEnemy(float startX, float startY, char* File, int Width, int Height, int MaxFrames) {
 
-CEnemy::CEnemy(float x, float y) {
-
-    X = x;
-    Y = y;
+    X = startX;
+    Y = startY;
+    OnLoad(File, Width, Height, MaxFrames);
 
 }
 
@@ -21,7 +22,6 @@ bool CEnemy::OnLoad(char* File, int Width, int Height, int MaxFrames) {
     Anim_Control.SetFrameRate(100);
     Anim_Control.Oscillate = true;
     MaxSpeedX = 3;
-    X = 500;
 
     return true;
 }
@@ -60,12 +60,12 @@ bool CEnemy::OnCollision(CEntity* Entity) {
     return true;
 }
 
-void CEnemy::AddEnemy(float x, float y) {
+/* void CEnemy::AddEnemy(float x, float y, char* File, int Width, int Height, int MaxFrames) {
 
     CEnemy* newenemy = new CEnemy(x, y);
 
-    EnemyList.push_back(newenemy);
+    EntityList.push_back(newenemy);
 
-}
+} */
 
 //=============================================================================
