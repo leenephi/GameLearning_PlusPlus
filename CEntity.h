@@ -1,6 +1,6 @@
 //==============================================================================
 #ifndef _CENTITY_H_
-    #define _CENTITY_H_
+#define _CENTITY_H_
 
 #include <vector>
 
@@ -11,126 +11,130 @@
 #include "CSurface.h"
 
 //==============================================================================
-enum {
-	ENTITY_TYPE_GENERIC = 0,
-	ENTITY_TYPE_PLAYER,
-	ENTITY_TYPE_ENEMY
+enum
+{
+    ENTITY_TYPE_GENERIC = 0,
+    ENTITY_TYPE_PLAYER,
+    ENTITY_TYPE_ENEMY
 };
 
 //==============================================================================
-enum {
-	ENTITY_FLAG_NONE 	= 0,
+enum
+{
+    ENTITY_FLAG_NONE 	= 0,
 
-	ENTITY_FLAG_GRAVITY	= 0x00000001,
-	ENTITY_FLAG_GHOST	= 0x00000002,
-	ENTITY_FLAG_MAPONLY	= 0x00000004
+    ENTITY_FLAG_GRAVITY	= 0x00000001,
+    ENTITY_FLAG_GHOST	= 0x00000002,
+    ENTITY_FLAG_MAPONLY	= 0x00000004
 };
 
 //==============================================================================
-class CEntity {
-	public:
-		static std::vector<CEntity*>    EntityList;
+class CEntity
+{
+public:
+    static std::vector<CEntity*>    EntityList;
 
-	protected:
+protected:
 
 
-		SDL_Surface*    Surf_Entity;
+    SDL_Surface*    Surf_Entity;
 
-	public:
+public:
 
-        CAnimation      Anim_Control;
+    CAnimation      Anim_Control;
 
-		float	X;
-		float	Y;
-		float   oldX;
-		float   oldY;
+    float	X;
+    float	Y;
+    float   oldX;
+    float   oldY;
 
-		int		Width;
-		int		Height;
+    int		Width;
+    int		Height;
 
-		bool	MoveLeft;
-		bool	MoveRight;
+    bool	MoveLeft;
+    bool	MoveRight;
 
-	public:
-		int		Type;
+public:
+    int		Type;
 
-		bool	Dead;
+    bool	Dead;
 
-		int		Flags;
+    int		Flags;
 
-	protected:
-		float	SpeedX;
-		float	SpeedY;
+protected:
+    float	SpeedX;
+    float	SpeedY;
 
-		float	AccelX;
-		float	AccelY;
+    float	AccelX;
+    float	AccelY;
 
-    public:
-		bool	CanJump;
-		bool    IsJumping;
+public:
+    bool	CanJump;
+    bool    IsJumping;
 
-	public:
-		float	MaxSpeedX;
-		float	MaxSpeedY;
+public:
+    float	MaxSpeedX;
+    float	MaxSpeedY;
 
-	protected:
-		int		CurrentFrameCol;
-		int		CurrentFrameRow;
+protected:
+    int		CurrentFrameCol;
+    int		CurrentFrameRow;
 
-	protected:
-		int		Col_X;
-		int		Col_Y;
-		int		Col_Width;
-		int		Col_Height;
+protected:
+    int		Col_X;
+    int		Col_Y;
+    int		Col_Width;
+    int		Col_Height;
 
-	public:
-		CEntity();
+public:
+    CEntity();
 
-		virtual ~CEntity();
+    virtual ~CEntity();
 
-	public:
-		virtual bool OnLoad(char* File, int Width, int Height, int MaxFrames);
+public:
+    virtual bool OnLoad(char* File, int Width, int Height, int MaxFrames);
 
-		virtual void OnLoop();
+    virtual void OnLoop();
 
-		virtual void OnRender(SDL_Surface* Surf_Display);
+    virtual void OnRender(SDL_Surface* Surf_Display);
 
-		virtual void OnCleanup();
+    virtual void OnCleanup();
 
-		virtual void OnAnimate();
+    virtual void OnAnimate();
 
-		virtual bool OnCollision(CEntity* Entity);
+    virtual bool OnCollision(CEntity* Entity);
 
-	public:
-		void    OnMove(float MoveX, float MoveY);
+public:
+    void    OnMove(float MoveX, float MoveY);
 
-		bool 	Jump();
+    bool 	Jump();
 
-		void 	StopMove();
+    void 	StopMove();
 
-	public:
-		const bool    Collides(int oX, int oY, int oW, int oH);
+public:
+    const bool    Collides(int oX, int oY, int oW, int oH);
 
-	private:
-		const bool 	PosValid(int NewX, int NewY);
+private:
+    const bool 	PosValid(int NewX, int NewY);
 
-		const bool 	PosValidTile(CTile* Tile);
+    const bool 	PosValidTile(CTile* Tile);
 
-		bool 	PosValidEntity(CEntity* Entity, int NewX, int NewY);
+    bool 	PosValidEntity(CEntity* Entity, int NewX, int NewY);
 
 };
 
 //==============================================================================
-class CEntityCol {
-    public:
-        static std::vector<CEntityCol>	EntityColList;
+class CEntityCol
+{
+public:
+    static std::vector<CEntityCol>	EntityColList;
 
-	public:
-		CEntity* EntityA;
-		CEntity* EntityB;
+public:
+    CEntity* EntityA;
+    CEntity* EntityB;
 
-	public:
-		CEntityCol();
+public:
+    CEntityCol();
 
 };
 

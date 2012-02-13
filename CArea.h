@@ -1,35 +1,36 @@
 //=============================================================================
 #ifndef _CAREA_H_
-    #define _CAREA_H_
+#define _CAREA_H_
 
 #include "CMap.h"
 
 //=============================================================================
-class CArea {
-    public:
-        static CArea            AreaControl;
+class CArea
+{
+public:
+    static CArea            AreaControl;
 
-    public:
-        std::vector<CMap>       MapList;
+public:
+    std::vector<CMap>       MapList;
 
-    private:
-        int                     AreaSize;
+private:
+    int                     AreaSize;
 
-        SDL_Surface*			Surf_Tileset;
+    SDL_Surface*			Surf_Tileset;
 
-    public:
-        CArea();
+public:
+    CArea();
 
-        bool    OnLoad(char* File);
+    bool    OnLoad(char* File);
 
-        void    OnRender(SDL_Surface* Surf_Display, int CameraX, int CameraY);
+    void    OnRender(SDL_Surface* Surf_Display, int CameraX, int CameraY);
 
-        void    OnCleanup();
+    void    OnCleanup();
 
-    public:
-        CMap*	GetMap(int X, int Y);
+public:
+    CMap*	GetMap(int X, int Y);
 
-		CTile*	GetTile(int X, int Y);
+    CTile*	GetTile(int X, int Y);
 };
 
 //=============================================================================

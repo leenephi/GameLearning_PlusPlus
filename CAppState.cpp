@@ -1,4 +1,5 @@
 #include "CAppState.h"
 
-CAppState::CAppState() {
+CAppState::CAppState()
+{
 }
