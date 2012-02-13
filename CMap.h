@@ -20,7 +20,9 @@ class CMap {
 		CMap();
 
 	public:
-		bool OnLoad(char* File);
+		bool OnLoad(char* File, int MapX, int MapY);
+
+		void AddEnemies(int MapX, int MapY);
 
 		void OnRender(SDL_Surface* Surf_Display, int MapX, int MapY);
 

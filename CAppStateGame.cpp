@@ -55,12 +55,6 @@ void CAppStateGame::OnActivate() {
 
     CEntity::EntityList.push_back(&Player);
 
-    AddEnemy(500, 0, "enemy.png", 34, 47, 3);
-
-    AddEnemy(600, 0, "enemy.png", 34, 47, 3);
-
-    AddEnemy(700, 0, "enemy.png", 34, 47, 3);
-
 	CCamera::CameraControl.TargetMode = TARGET_MODE_CENTER;
     CCamera::CameraControl.SetTarget(&Player.X, &Player.Y);
 }

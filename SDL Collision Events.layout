@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="All" />
-	<File name="CAnimation.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="793" topLine="0" />
+	<File name="CAnimation.cpp" open="1" top="0" tabpos="13">
+		<Cursor position="400" topLine="12" />
 	</File>
 	<File name="CAnimation.h" open="1" top="0" tabpos="1">
 		<Cursor position="254" topLine="0" />
@@ -19,14 +19,14 @@
 	<File name="CAppState.h" open="0" top="0" tabpos="0">
 		<Cursor position="363" topLine="0" />
 	</File>
-	<File name="CAppStateGame.cpp" open="1" top="1" tabpos="6">
-		<Cursor position="930" topLine="36" />
+	<File name="CAppStateGame.cpp" open="1" top="0" tabpos="9">
+		<Cursor position="440" topLine="42" />
 	</File>
-	<File name="CAppStateGame.h" open="1" top="0" tabpos="9">
+	<File name="CAppStateGame.h" open="1" top="0" tabpos="12">
 		<Cursor position="580" topLine="0" />
 	</File>
-	<File name="CAppStateIntro.cpp" open="1" top="0" tabpos="0">
-		<Cursor position="834" topLine="15" />
+	<File name="CAppStateIntro.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="834" topLine="0" />
 	</File>
 	<File name="CAppStateIntro.h" open="0" top="0" tabpos="0">
 		<Cursor position="545" topLine="7" />
@@ -37,7 +37,7 @@
 	<File name="CAppStateManager.h" open="0" top="0" tabpos="0">
 		<Cursor position="0" topLine="6" />
 	</File>
-	<File name="CApp_OnCleanup.cpp" open="1" top="0" tabpos="7">
+	<File name="CApp_OnCleanup.cpp" open="1" top="0" tabpos="10">
 		<Cursor position="310" topLine="0" />
 	</File>
 	<File name="CApp_OnEvent.cpp" open="0" top="0" tabpos="1">
@@ -55,19 +55,19 @@
 	<File name="CArea.cpp" open="0" top="0" tabpos="4">
 		<Cursor position="1789" topLine="45" />
 	</File>
-	<File name="CArea.h" open="1" top="0" tabpos="0">
+	<File name="CArea.h" open="1" top="0" tabpos="2">
 		<Cursor position="314" topLine="0" />
 	</File>
-	<File name="CCamera.cpp" open="1" top="0" tabpos="0">
+	<File name="CCamera.cpp" open="1" top="0" tabpos="3">
 		<Cursor position="370" topLine="0" />
 	</File>
 	<File name="CCamera.h" open="0" top="0" tabpos="5">
 		<Cursor position="574" topLine="1" />
 	</File>
-	<File name="CEnemy.cpp" open="1" top="0" tabpos="5">
-		<Cursor position="278" topLine="0" />
+	<File name="CEnemy.cpp" open="1" top="1" tabpos="8">
+		<Cursor position="778" topLine="6" />
 	</File>
-	<File name="CEnemy.h" open="1" top="0" tabpos="8">
+	<File name="CEnemy.h" open="1" top="0" tabpos="11">
 		<Cursor position="188" topLine="0" />
 	</File>
 	<File name="CEntity.cpp" open="0" top="0" tabpos="3">
@@ -76,19 +76,19 @@
 	<File name="CEntity.h" open="0" top="0" tabpos="8">
 		<Cursor position="2166" topLine="110" />
 	</File>
-	<File name="CEntityCol.cpp" open="1" top="0" tabpos="1">
+	<File name="CEntityCol.cpp" open="1" top="0" tabpos="4">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="CEvent.cpp" open="1" top="0" tabpos="2">
+	<File name="CEvent.cpp" open="1" top="0" tabpos="5">
 		<Cursor position="941" topLine="111" />
 	</File>
 	<File name="CEvent.h" open="0" top="0" tabpos="2">
 		<Cursor position="251" topLine="45" />
 	</File>
-	<File name="CFPS.cpp" open="1" top="0" tabpos="3">
+	<File name="CFPS.cpp" open="1" top="0" tabpos="6">
 		<Cursor position="365" topLine="0" />
 	</File>
-	<File name="CFPS.h" open="1" top="0" tabpos="4">
+	<File name="CFPS.h" open="1" top="0" tabpos="7">
 		<Cursor position="0" topLine="0" />
 	</File>
 	<File name="CMap.cpp" open="0" top="0" tabpos="1">

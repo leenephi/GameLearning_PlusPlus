@@ -1,5 +1,6 @@
 //=============================================================================
 #include "CMap.h"
+#include "CEnemy.h"
 
 //=============================================================================
 CMap::CMap() {
@@ -7,7 +8,7 @@ CMap::CMap() {
 }
 
 //=============================================================================
-bool CMap::OnLoad(char* File) {
+bool CMap::OnLoad(char* File, int MapX, int MapY) {
     TileList.clear();
 
     FILE* FileHandle = fopen(File, "r");
@@ -29,7 +30,42 @@ bool CMap::OnLoad(char* File) {
 
     fclose(FileHandle);
 
+    AddEnemies(MapX, MapY);
+
     return true;
+}
+
+void CMap::AddEnemies(int MapX, int MapY) {
+
+    int TilesetWidth  = Surf_Tileset->w / TILE_SIZE;
+	int TilesetHeight = Surf_Tileset->h / TILE_SIZE;
+
+    int ID = 0;
+
+    for(int Y = 0; Y < MAP_HEIGHT; Y++) {
+        for(int X = 0; X < MAP_WIDTH; X++) {
+            if(TileList[ID].TypeID != TILE_TYPE_ENEMY1) {
+                ID++;
+                continue;
+            }
+
+            TileList[ID].TypeID = TILE_TYPE_NORMAL;
+
+            float enemyX = MapX + (X * TILE_SIZE);
+            float enemyY = MapY + (Y * TILE_SIZE) - 20;
+
+            CEnemy* newenemy = new CEnemy(enemyX, enemyY, "enemy.png", 34, 47, 3);
+
+            newenemy->Type = ENTITY_TYPE_ENEMY;
+
+            CEntity::EntityList.push_back(newenemy);
+
+            ID++;
+
+        }
+
+    }
+
 }
 
 //-----------------------------------------------------------------------------

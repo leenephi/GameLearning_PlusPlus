@@ -819,10 +819,10 @@
 1328915727 source:d:\programming\codeblocks\projects\tutoria\cappstate.cpp
 	"CAppState.h"
 
-1329003854 source:d:\programming\codeblocks\projects\tutoria\cappstategame.cpp
+1329104800 source:d:\programming\codeblocks\projects\tutoria\cappstategame.cpp
 	"CAppStateGame.h"
 
-1328999862 d:\programming\codeblocks\projects\tutoria\cappstategame.h
+1329005770 d:\programming\codeblocks\projects\tutoria\cappstategame.h
 	"CAppState.h"
 	"CArea.h"
 	"CCamera.h"
@@ -834,20 +834,20 @@
 1328828528 d:\programming\codeblocks\projects\tutoria\carea.h
 	"CMap.h"
 
-1328828528 d:\programming\codeblocks\projects\tutoria\cmap.h
+1329104422 d:\programming\codeblocks\projects\tutoria\cmap.h
 	<SDL.h>
 	<vector>
 	"CTile.h"
 	"CSurface.h"
 
-1328915727 d:\programming\codeblocks\projects\tutoria\ctile.h
+1329100597 d:\programming\codeblocks\projects\tutoria\ctile.h
 	"Define.h"
 
 1328828528 d:\programming\codeblocks\projects\tutoria\ccamera.h
 	<SDL.h>
 	"Define.h"
 
-1328998573 d:\programming\codeblocks\projects\tutoria\centity.h
+1329005770 d:\programming\codeblocks\projects\tutoria\centity.h
 	<vector>
 	"CArea.h"
 	"CAnimation.h"
@@ -858,7 +858,7 @@
 1328828528 d:\programming\codeblocks\projects\tutoria\cplayer.h
 	"CEntity.h"
 
-1328999827 d:\programming\codeblocks\projects\tutoria\cenemy.h
+1329005770 d:\programming\codeblocks\projects\tutoria\cenemy.h
 	"CEntity.h"
 
 1328915727 source:d:\programming\codeblocks\projects\tutoria\cappstateintro.cpp
@@ -889,16 +889,16 @@
 1328915727 source:d:\programming\codeblocks\projects\tutoria\capp_onrender.cpp
 	"CApp.h"
 
-1328828528 source:d:\programming\codeblocks\projects\tutoria\carea.cpp
+1329104727 source:d:\programming\codeblocks\projects\tutoria\carea.cpp
 	"CArea.h"
 
 1328828528 source:d:\programming\codeblocks\projects\tutoria\ccamera.cpp
 	"CCamera.h"
 
-1329000088 source:d:\programming\codeblocks\projects\tutoria\cenemy.cpp
+1329005770 source:d:\programming\codeblocks\projects\tutoria\cenemy.cpp
 	"CEnemy.h"
 
-1328998676 source:d:\programming\codeblocks\projects\tutoria\centity.cpp
+1329005770 source:d:\programming\codeblocks\projects\tutoria\centity.cpp
 	"CEntity.h"
 
 1328828528 source:d:\programming\codeblocks\projects\tutoria\centitycol.cpp
@@ -910,8 +910,9 @@
 1328828528 source:d:\programming\codeblocks\projects\tutoria\cfps.cpp
 	"CFPS.h"
 
-1328828528 source:d:\programming\codeblocks\projects\tutoria\cmap.cpp
+1329104610 source:d:\programming\codeblocks\projects\tutoria\cmap.cpp
 	"CMap.h"
+	"CEnemy.h"
 
 1328828528 source:d:\programming\codeblocks\projects\tutoria\cplayer.cpp
 	"CPlayer.h"

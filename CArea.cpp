@@ -32,14 +32,24 @@ bool CArea::OnLoad(char* File) {
 
     fscanf(FileHandle, "%d\n", &AreaSize);
 
+
+    // I added the MapWidth and MapHeight here for the sake of adding enemies in CMap::OnLoad()
+
+    int ID = 0;
+    int MapWidth  = MAP_WIDTH * TILE_SIZE;
+	int MapHeight = MAP_HEIGHT * TILE_SIZE;
+
     for(int X = 0;X < AreaSize;X++) {
         for(int Y = 0;Y < AreaSize;Y++) {
             char MapFile[255];
 
             fscanf(FileHandle, "%s255 ", MapFile);
 
+            int X = ((ID % AreaSize) * MapWidth);
+            int Y = ((ID / AreaSize) * MapHeight);
+
             CMap tempMap;
-            if(tempMap.OnLoad(MapFile) == false) {
+            if(tempMap.OnLoad(MapFile, X, Y) == false) {
                 fclose(FileHandle);
 
                 return false;
@@ -48,6 +58,7 @@ bool CArea::OnLoad(char* File) {
             tempMap.Surf_Tileset = Surf_Tileset;
 
             MapList.push_back(tempMap);
+            ID++;
         }
         fscanf(FileHandle, "\n");
     }
