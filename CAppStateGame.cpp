@@ -31,12 +31,12 @@ void CAppStateGame::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode)
         Player.IsJumping = true;
         break;
     }
-   /* case SDLK_ESCAPE:
+    case SDLK_ESCAPE:
     {
-        CAppStateGame::OnDeactivate();
-        CAppStateManager::SetActiveAppState(APPSTATE_MENU);
+        Player.X = 0;
+        Player.Y = 0;
         break;
-    }*/
+    }
     default:
     {
     }
