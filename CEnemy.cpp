@@ -34,59 +34,49 @@ void CEnemy::OnLoop(float playerX, float playerY)
 {
 
     //jumping and chasing mobs
-    for(int i = 0; i < CEntity::EntityList.size(); i++)
+    // continue with next entity if this one is not an enemy.. for example, a player, who then wouldn't be able to jump
+
+    CanJump = false;
+    if((playerX - X < 500) && (X < playerX) && (abs(Y - playerY) < 250))
     {
-        // continue with next entity if this one is not an enemy.. for example, a player, who then wouldn't be able to jump
-        if(CEntity::EntityList[i]->Type != ENTITY_TYPE_ENEMY) continue;
-        CEntity::EntityList[i]->CanJump = false;
-        if((playerX - CEntity::EntityList[i]->X < 500) &&
-           (CEntity::EntityList[i]->X < playerX) &&
-           (abs(CEntity::EntityList[i]->Y) - playerY) < 250)
+        if(MoveRight)
         {
-            if(CEntity::EntityList[i]->MoveRight)
+            if(oldX == X && oldY >= Y)
             {
-                if(CEntity::EntityList[i]->oldX == CEntity::EntityList[i]->X && CEntity::EntityList[i]->oldY >= CEntity::EntityList[i]->Y)
-                {
-                    CEntity::EntityList[i]->CanJump = true;
-                    CEntity::EntityList[i]->Jump();
-                }
+                CanJump = true;
+                Jump();
             }
-            CEntity::EntityList[i]->MoveRight = true;
-            CEntity::EntityList[i]->MoveLeft = false;
-
-            CEntity::EntityList[i]->oldX = CEntity::EntityList[i]->X;
-
-            CEntity::EntityList[i]->Anim_Control.Oscillate = true;
         }
-        else if((CEntity::EntityList[i]->X - playerX < 500) &&
-                (CEntity::EntityList[i]->X > playerX) &&
-                (abs(CEntity::EntityList[i]->Y) - playerY) < 250)
+        MoveRight = true;
+        MoveLeft = false;
+
+        oldX = X;
+
+        Anim_Control.Oscillate = true;
+    }
+    else if((X - playerX < 500) && (X > playerX) && (abs(Y) - playerY) < 250)
+    {
+        if(MoveLeft)
         {
-            if(CEntity::EntityList[i]->MoveLeft)
+            if(oldX == X && oldY >= Y)
             {
-                if(CEntity::EntityList[i]->oldX == CEntity::EntityList[i]->X && CEntity::EntityList[i]->oldY >= CEntity::EntityList[i]->Y)
-                {
-                    CEntity::EntityList[i]->CanJump = true;
-                    CEntity::EntityList[i]->Jump();
-                }
+                CanJump = true;
+                Jump();
             }
-            CEntity::EntityList[i]->MoveLeft = true;
-            CEntity::EntityList[i]->MoveRight = false;
-
-            CEntity::EntityList[i]->oldX = CEntity::EntityList[i]->X;
-            CEntity::EntityList[i]->oldY = CEntity::EntityList[i]->Y;
-
-            CEntity::EntityList[i]->Anim_Control.Oscillate = true;
-
-
         }
-        if((playerX - CEntity::EntityList[i]->X) > 250 || (CEntity::EntityList[i]->X - playerX) > 250)
-        {
-            CEntity::EntityList[i]->MoveLeft = false;
-            CEntity::EntityList[i]->MoveRight = false;
-            CEntity::EntityList[i]->Anim_Control.Oscillate = false;
+        MoveLeft = true;
+        MoveRight = false;
 
-        }
+        oldX = X;
+        oldY = Y;
+
+        Anim_Control.Oscillate = true;
+    }
+    if((playerX - X) > 250 || (X - playerX) > 250)
+    {
+        MoveLeft = false;
+        MoveRight = false;
+        Anim_Control.Oscillate = false;
     }
 
     CEntity::OnLoop(playerX, playerY);
