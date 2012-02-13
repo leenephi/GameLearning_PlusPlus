@@ -2,14 +2,16 @@
 #include "CApp.h"
 
 //==============================================================================
-void CApp::OnEvent(SDL_Event* Event) {
+void CApp::OnEvent(SDL_Event* Event)
+{
     CEvent::OnEvent(Event);
 
     CAppStateManager::OnEvent(Event);
 }
 
-void CApp::OnExit() {
-	Running = false;
+void CApp::OnExit()
+{
+    Running = false;
 }
 
 //==============================================================================

@@ -2,33 +2,34 @@
 // FPS Class
 //==============================================================================
 #ifndef _CFPS_H_
-    #define _CFPS_H_
+#define _CFPS_H_
 
 #include <SDL.h>
 
 //==============================================================================
-class CFPS {
-	public:
-		static CFPS FPSControl;
+class CFPS
+{
+public:
+    static CFPS FPSControl;
 
-	private:
-		int     OldTime;
-		int     LastTime;
+private:
+    int     OldTime;
+    int     LastTime;
 
-		float 	SpeedFactor;
+    float 	SpeedFactor;
 
-		int		NumFrames;
-		int     Frames;
+    int		NumFrames;
+    int     Frames;
 
-	public:
-		CFPS();
+public:
+    CFPS();
 
-		void    OnLoop();
+    void    OnLoop();
 
-	public:
-		const int     GetFPS();
+public:
+    const int     GetFPS();
 
-		const float   GetSpeedFactor();
+    const float   GetSpeedFactor();
 };
 
 //==============================================================================

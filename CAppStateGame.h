@@ -1,5 +1,5 @@
 #ifndef __CAPPSTATEGAME_H__
-    #define __CAPPSTATEGAME_H__
+#define __CAPPSTATEGAME_H__
 
 #include "CAppState.h"
 
@@ -11,35 +11,36 @@
 #include "CPlayer.h"
 #include "CEnemy.h"
 
-class CAppStateGame : public CAppState {
-    private:
-        static CAppStateGame Instance;
+class CAppStateGame : public CAppState
+{
+private:
+    static CAppStateGame Instance;
 
-        CPlayer			Player;
+    CPlayer			Player;
 
-    private:
-        CAppStateGame();
+private:
+    CAppStateGame();
 
-    public:
-        void OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode);
+public:
+    void OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode);
 
-        void OnKeyUp(SDLKey sym, SDLMod mod, Uint16 unicode);
+    void OnKeyUp(SDLKey sym, SDLMod mod, Uint16 unicode);
 
-    public:
-        void OnActivate();
+public:
+    void OnActivate();
 
-        void OnDeactivate();
+    void OnDeactivate();
 
-        void OnLoop();
+    void OnLoop();
 
-        void OnRender(SDL_Surface* Surf_Display);
+    void OnRender(SDL_Surface* Surf_Display);
 
-        void Reset();
+    void Reset();
 
-        void AddEnemy(float x, float y, char* File, int Width, int Height, int MaxFrames);
+    void AddEnemy(float x, float y, char* File, int Width, int Height, int MaxFrames);
 
-    public:
-        static CAppStateGame* GetInstance();
+public:
+    static CAppStateGame* GetInstance();
 };
 
 #endif

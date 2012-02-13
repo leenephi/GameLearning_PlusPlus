@@ -6,42 +6,52 @@
 
 CAppState* CAppStateManager::ActiveAppState = 0;
 
-void CAppStateManager::OnEvent(SDL_Event* EventHolder) {
+void CAppStateManager::OnEvent(SDL_Event* EventHolder)
+{
     if(ActiveAppState) ActiveAppState->OnEvent(EventHolder);
 }
 
-void CAppStateManager::OnLoop() {
+void CAppStateManager::OnLoop()
+{
     if(ActiveAppState) ActiveAppState->OnLoop();
 }
 
-void CAppStateManager::OnRender(SDL_Surface* Surf_Display) {
+void CAppStateManager::OnRender(SDL_Surface* Surf_Display)
+{
     if(ActiveAppState) ActiveAppState->OnRender(Surf_Display);
 }
 
-void CAppStateManager::SetActiveAppState(int AppStateID) {
+void CAppStateManager::SetActiveAppState(int AppStateID)
+{
     if(ActiveAppState) ActiveAppState->OnDeactivate();
 
     // Also, add your App State Here so that the Manager can switch to it
-    switch(AppStateID){
-        case APPSTATE_NONE:{
-            ActiveAppState = 0;
-            break;
-        }
-        case APPSTATE_INTRO:{
-            ActiveAppState = CAppStateIntro::GetInstance();
-            break;
-        }
-        case APPSTATE_GAME:{
-            ActiveAppState = CAppStateGame::GetInstance();
-            break;
-        }
-        default:{
-        }
+    switch(AppStateID)
+    {
+    case APPSTATE_NONE:
+    {
+        ActiveAppState = 0;
+        break;
+    }
+    case APPSTATE_INTRO:
+    {
+        ActiveAppState = CAppStateIntro::GetInstance();
+        break;
+    }
+    case APPSTATE_GAME:
+    {
+        ActiveAppState = CAppStateGame::GetInstance();
+        break;
+    }
+    default:
+    {
+    }
     }
 
     if(ActiveAppState) ActiveAppState->OnActivate();
 }
 
-CAppState* CAppStateManager::GetActiveAppState() {
+CAppState* CAppStateManager::GetActiveAppState()
+{
     return ActiveAppState;
 }

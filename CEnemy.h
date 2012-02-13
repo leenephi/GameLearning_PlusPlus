@@ -3,24 +3,25 @@
 
 #include "CEntity.h"
 
-class CEnemy : public CEntity {
-    public:
+class CEnemy : public CEntity
+{
+public:
 
-        CEnemy(float x, float y, char* File, int Width, int Height, int MaxFrames);
+    CEnemy(float x, float y, char* File, int Width, int Height, int MaxFrames);
 
-		bool OnLoad(char* File, int Width, int Height, int MaxFrames);
+    bool OnLoad(char* File, int Width, int Height, int MaxFrames);
 
-        void OnLoop();
+    void OnLoop();
 
-        void OnRender(SDL_Surface* Surf_Display);
+    void OnRender(SDL_Surface* Surf_Display);
 
-        void OnCleanup();
+    void OnCleanup();
 
-        void OnAnimate();
+    void OnAnimate();
 
-        bool OnCollision(CEntity* Entity);
+    bool OnCollision(CEntity* Entity);
 
-        // void AddEnemy(float x, float y, char* File, int Width, int Height, int MaxFrames);
+    // void AddEnemy(float x, float y, char* File, int Width, int Height, int MaxFrames);
 };
 
 #endif // CENEMY_H_INCLUDED
