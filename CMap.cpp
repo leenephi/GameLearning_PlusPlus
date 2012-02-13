@@ -1,6 +1,3 @@
-// *** ADDED BY HEADER FIXUP ***
-#include <id.h>
-// *** END ***
 //=============================================================================
 #include "CMap.h"
 #include "CEnemy.h"

@@ -37,8 +37,6 @@ public:
 
     void Reset();
 
-    void AddEnemy(float x, float y, char* File, int Width, int Height, int MaxFrames);
-
 public:
     static CAppStateGame* GetInstance();
 };

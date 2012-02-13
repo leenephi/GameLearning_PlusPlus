@@ -107,16 +107,16 @@
 1248952673 source:g:\development\webpages\sdltutorials.com\tutorials\sdl collision events\centitycol.cpp
 	"CEntity.h"
 
-1328897040 source:g:\software\cbprojects\tutoria\canimation.cpp
+1329149616 source:g:\software\cbprojects\tutoria\canimation.cpp
 	"CAnimation.h"
 
-1328897040 g:\software\cbprojects\tutoria\canimation.h
+1329149616 g:\software\cbprojects\tutoria\canimation.h
 	<SDL.h>
 
-1328897040 source:g:\software\cbprojects\tutoria\capp.cpp
+1329149616 source:g:\software\cbprojects\tutoria\capp.cpp
 	"CApp.h"
 
-1328897040 g:\software\cbprojects\tutoria\capp.h
+1329149616 g:\software\cbprojects\tutoria\capp.h
 	<SDL.h>
 	"Define.h"
 	"CAppStateManager.h"
@@ -124,32 +124,32 @@
 	"CEvent.h"
 	"CSurface.h"
 
-1328897040 g:\software\cbprojects\tutoria\define.h
+1329149617 g:\software\cbprojects\tutoria\define.h
 
-1328897040 g:\software\cbprojects\tutoria\cfps.h
+1329149617 g:\software\cbprojects\tutoria\cfps.h
 	<SDL.h>
 
-1328897040 g:\software\cbprojects\tutoria\carea.h
+1329149616 g:\software\cbprojects\tutoria\carea.h
 	"CMap.h"
 
-1328897040 g:\software\cbprojects\tutoria\cmap.h
+1329149617 g:\software\cbprojects\tutoria\cmap.h
 	<SDL.h>
 	<vector>
 	"CTile.h"
 	"CSurface.h"
 
-1328897040 g:\software\cbprojects\tutoria\ctile.h
+1329149617 g:\software\cbprojects\tutoria\ctile.h
 	"Define.h"
 
-1328897040 g:\software\cbprojects\tutoria\csurface.h
+1329149617 g:\software\cbprojects\tutoria\csurface.h
 	<SDL.h>
 	<SDL_image.h>
 
-1328897040 g:\software\cbprojects\tutoria\ccamera.h
+1329149616 g:\software\cbprojects\tutoria\ccamera.h
 	<SDL.h>
 	"Define.h"
 
-1328909305 g:\software\cbprojects\tutoria\centity.h
+1329149617 g:\software\cbprojects\tutoria\centity.h
 	<vector>
 	"CArea.h"
 	"CAnimation.h"
@@ -157,55 +157,57 @@
 	"CFPS.h"
 	"CSurface.h"
 
-1328897040 g:\software\cbprojects\tutoria\cevent.h
+1329149617 g:\software\cbprojects\tutoria\cevent.h
 	<SDL.h>
 
-1328897040 g:\software\cbprojects\tutoria\cplayer.h
+1329149617 g:\software\cbprojects\tutoria\cplayer.h
 	"CEntity.h"
 
-1328897040 source:g:\software\cbprojects\tutoria\capp_oncleanup.cpp
+1329149616 source:g:\software\cbprojects\tutoria\capp_oncleanup.cpp
 	"CApp.h"
 
-1328897040 source:g:\software\cbprojects\tutoria\capp_onevent.cpp
+1329149616 source:g:\software\cbprojects\tutoria\capp_onevent.cpp
 	"CApp.h"
 
-1328897040 source:g:\software\cbprojects\tutoria\capp_oninit.cpp
+1329149616 source:g:\software\cbprojects\tutoria\capp_oninit.cpp
 	"CApp.h"
 
-1328897040 source:g:\software\cbprojects\tutoria\capp_onloop.cpp
+1329149616 source:g:\software\cbprojects\tutoria\capp_onloop.cpp
 	"CApp.h"
 
-1328897040 source:g:\software\cbprojects\tutoria\capp_onrender.cpp
+1329149616 source:g:\software\cbprojects\tutoria\capp_onrender.cpp
 	"CApp.h"
 
-1328897040 source:g:\software\cbprojects\tutoria\carea.cpp
+1329150271 source:g:\software\cbprojects\tutoria\carea.cpp
 	"CArea.h"
 
-1328897040 source:g:\software\cbprojects\tutoria\ccamera.cpp
+1329149616 source:g:\software\cbprojects\tutoria\ccamera.cpp
 	"CCamera.h"
 
-1328909298 source:g:\software\cbprojects\tutoria\centity.cpp
+1329149616 source:g:\software\cbprojects\tutoria\centity.cpp
 	"CEntity.h"
 
-1328897040 source:g:\software\cbprojects\tutoria\centitycol.cpp
+1329149617 source:g:\software\cbprojects\tutoria\centitycol.cpp
 	"CEntity.h"
 
-1328897040 source:g:\software\cbprojects\tutoria\cevent.cpp
+1329149617 source:g:\software\cbprojects\tutoria\cevent.cpp
 	"CEvent.h"
 
-1328897040 source:g:\software\cbprojects\tutoria\cfps.cpp
+1329149617 source:g:\software\cbprojects\tutoria\cfps.cpp
 	"CFPS.h"
 
-1328897040 source:g:\software\cbprojects\tutoria\cmap.cpp
+1329149617 source:g:\software\cbprojects\tutoria\cmap.cpp
+	<id.h>
 	"CMap.h"
+	"CEnemy.h"
 
-1328897040 source:g:\software\cbprojects\tutoria\cplayer.cpp
+1329149617 source:g:\software\cbprojects\tutoria\cplayer.cpp
 	"CPlayer.h"
 
-1328897040 source:g:\software\cbprojects\tutoria\csurface.cpp
+1329149617 source:g:\software\cbprojects\tutoria\csurface.cpp
 	"CSurface.h"
 
-1328897040 source:g:\software\cbprojects\tutoria\ctile.cpp
+1329149617 source:g:\software\cbprojects\tutoria\ctile.cpp
 	"CTile.h"
 
 1325738639 g:\software\sdl\include\sdl.h
@@ -404,10 +406,10 @@
 	"begin_code.h"
 	"close_code.h"
 
-1328909059 g:\software\cbprojects\tutoria\cenemy.h
+1329149616 g:\software\cbprojects\tutoria\cenemy.h
 	"CEntity.h"
 
-1328909441 source:g:\software\cbprojects\tutoria\cenemy.cpp
+1329149677 source:g:\software\cbprojects\tutoria\cenemy.cpp
 	"CEnemy.h"
 
 1328819219 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\canimation.cpp
@@ -551,29 +553,29 @@
 	"CAppStateIntro.h"
 	"CAppStateGame.h"
 
-1328897040 g:\software\cbprojects\tutoria\cappstatemanager.h
+1329149616 g:\software\cbprojects\tutoria\cappstatemanager.h
 	"CAppState.h"
 
-1328897040 g:\software\cbprojects\tutoria\cappstate.h
+1329149616 g:\software\cbprojects\tutoria\cappstate.h
 	"CEvent.h"
 
-1328897040 source:g:\software\cbprojects\tutoria\cappstate.cpp
+1329149616 source:g:\software\cbprojects\tutoria\cappstate.cpp
 	"CAppState.h"
 
-1328897040 source:g:\software\cbprojects\tutoria\cappstateintro.cpp
+1329149616 source:g:\software\cbprojects\tutoria\cappstateintro.cpp
 	"CAppStateIntro.h"
 	"CAppStateManager.h"
 
-1328897040 g:\software\cbprojects\tutoria\cappstateintro.h
+1329149616 g:\software\cbprojects\tutoria\cappstateintro.h
 	"CAppState.h"
 	"CSurface.h"
 
-1328897040 source:g:\software\cbprojects\tutoria\cappstatemanager.cpp
+1329149616 source:g:\software\cbprojects\tutoria\cappstatemanager.cpp
 	"CAppStateManager.h"
 	"CAppStateIntro.h"
 	"CAppStateGame.h"
 
-1328909519 g:\software\cbprojects\tutoria\cappstategame.h
+1329149716 g:\software\cbprojects\tutoria\cappstategame.h
 	"CAppState.h"
 	"CArea.h"
 	"CCamera.h"
@@ -582,8 +584,9 @@
 	"CPlayer.h"
 	"CEnemy.h"
 
-1328909427 source:g:\software\cbprojects\tutoria\cappstategame.cpp
+1329150169 source:g:\software\cbprojects\tutoria\cappstategame.cpp
 	"CAppStateGame.h"
+	<cmath>
 
 1328828528 source:d:\programming\codeblocks\projects\tutoria\canimation.cpp
 	"CAnimation.h"

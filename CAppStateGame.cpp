@@ -1,4 +1,5 @@
 #include "CAppStateGame.h"
+#include <cmath>
 
 CAppStateGame CAppStateGame::Instance;
 
@@ -98,13 +99,15 @@ void CAppStateGame::OnLoop()
         CEntity::EntityList[i]->OnLoop();
     }
 
-    //jumping mob
+    //jumping and chasing mobs
     for(int i = 0; i < CEntity::EntityList.size(); i++)
     {
         // continue with next entity if this one is not an enemy.. for example, a player, who then wouldn't be able to jump
         if(CEntity::EntityList[i]->Type != ENTITY_TYPE_ENEMY) continue;
         CEntity::EntityList[i]->CanJump = false;
-        if((Player.X - CEntity::EntityList[i]->X < 500) && CEntity::EntityList[i]->X < Player.X)
+        if((Player.X - CEntity::EntityList[i]->X < 500) &&
+           (CEntity::EntityList[i]->X < Player.X) &&
+           (abs(CEntity::EntityList[i]->Y) - Player.Y) < 250)
         {
             if(CEntity::EntityList[i]->MoveRight)
             {
@@ -121,7 +124,9 @@ void CAppStateGame::OnLoop()
 
             CEntity::EntityList[i]->Anim_Control.Oscillate = true;
         }
-        else if((CEntity::EntityList[i]->X - Player.X < 500) && CEntity::EntityList[i]->X > Player.X)
+        else if((CEntity::EntityList[i]->X - Player.X < 500) &&
+                (CEntity::EntityList[i]->X > Player.X) &&
+                (abs(CEntity::EntityList[i]->Y) - Player.Y) < 250)
         {
             if(CEntity::EntityList[i]->MoveLeft)
             {
@@ -207,15 +212,4 @@ void CAppStateGame::Reset()
     Player.MoveRight = false;
     Player.X = 0;
     Player.Y = 0;
-}
-
-void CAppStateGame::AddEnemy(float x, float y, char* File, int Width, int Height, int MaxFrames)
-{
-
-    CEnemy* newenemy = new CEnemy(x, y, File, Width, Height, MaxFrames);
-
-    newenemy->Type = ENTITY_TYPE_ENEMY;
-
-    CEntity::EntityList.push_back(newenemy);
-
 }

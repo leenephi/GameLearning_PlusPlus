@@ -24,7 +24,7 @@ bool CEnemy::OnLoad(char* File, int Width, int Height, int MaxFrames)
 
     Anim_Control.SetFrameRate(100);
     Anim_Control.Oscillate = true;
-    MaxSpeedX = 3;
+    MaxSpeedX = 2;
 
     return true;
 }
