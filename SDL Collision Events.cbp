@@ -48,6 +48,8 @@
 		<Unit filename="CAppStateIntro.h" />
 		<Unit filename="CAppStateManager.cpp" />
 		<Unit filename="CAppStateManager.h" />
+		<Unit filename="CAppStateMenu.cpp" />
+		<Unit filename="CAppStateMenu.h" />
 		<Unit filename="CApp_OnCleanup.cpp" />
 		<Unit filename="CApp_OnEvent.cpp" />
 		<Unit filename="CApp_OnInit.cpp" />

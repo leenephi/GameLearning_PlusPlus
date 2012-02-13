@@ -1,4 +1,5 @@
 #include "CAppStateGame.h"
+#include "CAppStateManager.h"
 #include <cmath>
 
 CAppStateGame CAppStateGame::Instance;
@@ -30,7 +31,12 @@ void CAppStateGame::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode)
         Player.IsJumping = true;
         break;
     }
-
+   /* case SDLK_ESCAPE:
+    {
+        CAppStateGame::OnDeactivate();
+        CAppStateManager::SetActiveAppState(APPSTATE_MENU);
+        break;
+    }*/
     default:
     {
     }
