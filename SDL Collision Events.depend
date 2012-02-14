@@ -592,10 +592,10 @@
 	"CAppStateManager.h"
 	<cmath>
 
-1328828528 source:d:\programming\codeblocks\projects\tutoria\canimation.cpp
+1329185280 source:d:\programming\codeblocks\projects\tutoria\canimation.cpp
 	"CAnimation.h"
 
-1328828528 d:\programming\codeblocks\projects\tutoria\canimation.h
+1329185280 d:\programming\codeblocks\projects\tutoria\canimation.h
 	<SDL.h>
 
 1325738639 d:\programming\codeblocks\sdl\include\sdl.h
@@ -788,10 +788,10 @@
 	"begin_code.h"
 	"close_code.h"
 
-1328915727 source:d:\programming\codeblocks\projects\tutoria\capp.cpp
+1329185280 source:d:\programming\codeblocks\projects\tutoria\capp.cpp
 	"CApp.h"
 
-1328915727 d:\programming\codeblocks\projects\tutoria\capp.h
+1329185280 d:\programming\codeblocks\projects\tutoria\capp.h
 	<SDL.h>
 	"Define.h"
 	"CAppStateManager.h"
@@ -799,21 +799,21 @@
 	"CEvent.h"
 	"CSurface.h"
 
-1328828528 d:\programming\codeblocks\projects\tutoria\define.h
+1329188123 d:\programming\codeblocks\projects\tutoria\define.h
 
-1328915727 d:\programming\codeblocks\projects\tutoria\cappstatemanager.h
+1329185280 d:\programming\codeblocks\projects\tutoria\cappstatemanager.h
 	"CAppState.h"
 
-1328915727 d:\programming\codeblocks\projects\tutoria\cappstate.h
+1329185280 d:\programming\codeblocks\projects\tutoria\cappstate.h
 	"CEvent.h"
 
-1328828528 d:\programming\codeblocks\projects\tutoria\cevent.h
+1329185280 d:\programming\codeblocks\projects\tutoria\cevent.h
 	<SDL.h>
 
-1328828528 d:\programming\codeblocks\projects\tutoria\cfps.h
+1329185280 d:\programming\codeblocks\projects\tutoria\cfps.h
 	<SDL.h>
 
-1328828528 d:\programming\codeblocks\projects\tutoria\csurface.h
+1329185280 d:\programming\codeblocks\projects\tutoria\csurface.h
 	<SDL.h>
 	<SDL_image.h>
 
@@ -823,13 +823,15 @@
 	"begin_code.h"
 	"close_code.h"
 
-1328915727 source:d:\programming\codeblocks\projects\tutoria\cappstate.cpp
+1329185280 source:d:\programming\codeblocks\projects\tutoria\cappstate.cpp
 	"CAppState.h"
 
-1329104800 source:d:\programming\codeblocks\projects\tutoria\cappstategame.cpp
+1329185280 source:d:\programming\codeblocks\projects\tutoria\cappstategame.cpp
 	"CAppStateGame.h"
+	"CAppStateManager.h"
+	<cmath>
 
-1329005770 d:\programming\codeblocks\projects\tutoria\cappstategame.h
+1329185280 d:\programming\codeblocks\projects\tutoria\cappstategame.h
 	"CAppState.h"
 	"CArea.h"
 	"CCamera.h"
@@ -838,23 +840,23 @@
 	"CPlayer.h"
 	"CEnemy.h"
 
-1328828528 d:\programming\codeblocks\projects\tutoria\carea.h
+1329185280 d:\programming\codeblocks\projects\tutoria\carea.h
 	"CMap.h"
 
-1329104422 d:\programming\codeblocks\projects\tutoria\cmap.h
+1329185280 d:\programming\codeblocks\projects\tutoria\cmap.h
 	<SDL.h>
 	<vector>
 	"CTile.h"
 	"CSurface.h"
 
-1329100597 d:\programming\codeblocks\projects\tutoria\ctile.h
+1329185280 d:\programming\codeblocks\projects\tutoria\ctile.h
 	"Define.h"
 
-1328828528 d:\programming\codeblocks\projects\tutoria\ccamera.h
+1329185280 d:\programming\codeblocks\projects\tutoria\ccamera.h
 	<SDL.h>
 	"Define.h"
 
-1329005770 d:\programming\codeblocks\projects\tutoria\centity.h
+1329185280 d:\programming\codeblocks\projects\tutoria\centity.h
 	<vector>
 	"CArea.h"
 	"CAnimation.h"
@@ -862,72 +864,74 @@
 	"CFPS.h"
 	"CSurface.h"
 
-1328828528 d:\programming\codeblocks\projects\tutoria\cplayer.h
+1329185280 d:\programming\codeblocks\projects\tutoria\cplayer.h
 	"CEntity.h"
 
-1329005770 d:\programming\codeblocks\projects\tutoria\cenemy.h
+1329185280 d:\programming\codeblocks\projects\tutoria\cenemy.h
 	"CEntity.h"
 
-1328915727 source:d:\programming\codeblocks\projects\tutoria\cappstateintro.cpp
+1329185280 source:d:\programming\codeblocks\projects\tutoria\cappstateintro.cpp
 	"CAppStateIntro.h"
 	"CAppStateManager.h"
 
-1328915727 d:\programming\codeblocks\projects\tutoria\cappstateintro.h
+1329185280 d:\programming\codeblocks\projects\tutoria\cappstateintro.h
 	"CAppState.h"
 	"CSurface.h"
 
-1328915727 source:d:\programming\codeblocks\projects\tutoria\cappstatemanager.cpp
+1329185280 source:d:\programming\codeblocks\projects\tutoria\cappstatemanager.cpp
 	"CAppStateManager.h"
 	"CAppStateIntro.h"
 	"CAppStateGame.h"
+	"CAppStateMenu.h"
 
-1328915727 source:d:\programming\codeblocks\projects\tutoria\capp_oncleanup.cpp
+1329185280 source:d:\programming\codeblocks\projects\tutoria\capp_oncleanup.cpp
 	"CApp.h"
 
-1328915727 source:d:\programming\codeblocks\projects\tutoria\capp_onevent.cpp
+1329185280 source:d:\programming\codeblocks\projects\tutoria\capp_onevent.cpp
 	"CApp.h"
 
-1328915727 source:d:\programming\codeblocks\projects\tutoria\capp_oninit.cpp
+1329185280 source:d:\programming\codeblocks\projects\tutoria\capp_oninit.cpp
 	"CApp.h"
 
-1328915727 source:d:\programming\codeblocks\projects\tutoria\capp_onloop.cpp
+1329185280 source:d:\programming\codeblocks\projects\tutoria\capp_onloop.cpp
 	"CApp.h"
 
-1328915727 source:d:\programming\codeblocks\projects\tutoria\capp_onrender.cpp
+1329185280 source:d:\programming\codeblocks\projects\tutoria\capp_onrender.cpp
 	"CApp.h"
 
-1329104727 source:d:\programming\codeblocks\projects\tutoria\carea.cpp
+1329185280 source:d:\programming\codeblocks\projects\tutoria\carea.cpp
 	"CArea.h"
 
-1328828528 source:d:\programming\codeblocks\projects\tutoria\ccamera.cpp
+1329185280 source:d:\programming\codeblocks\projects\tutoria\ccamera.cpp
 	"CCamera.h"
 
-1329005770 source:d:\programming\codeblocks\projects\tutoria\cenemy.cpp
+1329185280 source:d:\programming\codeblocks\projects\tutoria\cenemy.cpp
 	"CEnemy.h"
 
-1329005770 source:d:\programming\codeblocks\projects\tutoria\centity.cpp
+1329185280 source:d:\programming\codeblocks\projects\tutoria\centity.cpp
 	"CEntity.h"
 
-1328828528 source:d:\programming\codeblocks\projects\tutoria\centitycol.cpp
+1329185280 source:d:\programming\codeblocks\projects\tutoria\centitycol.cpp
 	"CEntity.h"
 
-1328828528 source:d:\programming\codeblocks\projects\tutoria\cevent.cpp
+1329185280 source:d:\programming\codeblocks\projects\tutoria\cevent.cpp
 	"CEvent.h"
 
-1328828528 source:d:\programming\codeblocks\projects\tutoria\cfps.cpp
+1329185280 source:d:\programming\codeblocks\projects\tutoria\cfps.cpp
 	"CFPS.h"
 
-1329104610 source:d:\programming\codeblocks\projects\tutoria\cmap.cpp
+1329197010 source:d:\programming\codeblocks\projects\tutoria\cmap.cpp
 	"CMap.h"
 	"CEnemy.h"
+	<time.h>
 
-1328828528 source:d:\programming\codeblocks\projects\tutoria\cplayer.cpp
+1329185280 source:d:\programming\codeblocks\projects\tutoria\cplayer.cpp
 	"CPlayer.h"
 
-1328828528 source:d:\programming\codeblocks\projects\tutoria\csurface.cpp
+1329185280 source:d:\programming\codeblocks\projects\tutoria\csurface.cpp
 	"CSurface.h"
 
-1328828528 source:d:\programming\codeblocks\projects\tutoria\ctile.cpp
+1329185280 source:d:\programming\codeblocks\projects\tutoria\ctile.cpp
 	"CTile.h"
 
 1329155370 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cappstatemenu.h
@@ -943,6 +947,14 @@
 	"CSurface.h"
 
 1329161821 source:g:\software\cbprojects\tutoria\cappstatemenu.cpp
+	"CAppStateMenu.h"
+	"CAppStateManager.h"
+
+1329185280 d:\programming\codeblocks\projects\tutoria\cappstatemenu.h
+	"CAppState.h"
+	"CSurface.h"
+
+1329185280 source:d:\programming\codeblocks\projects\tutoria\cappstatemenu.cpp
 	"CAppStateMenu.h"
 	"CAppStateManager.h"
 
