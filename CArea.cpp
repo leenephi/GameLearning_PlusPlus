@@ -84,7 +84,7 @@ void CArea::OnRender(SDL_Surface* Surf_Display, int CameraX, int CameraY)
     int FirstID = -CameraX / MapWidth;
     FirstID = FirstID + ((-CameraY / MapHeight) * AreaSize);
 
-    for(int i = 0; i < 4; i++)
+    for(int i = 0; i < 16; i++)
     {
         int ID = FirstID + ((i / 2) * AreaSize) + (i % 2);
 

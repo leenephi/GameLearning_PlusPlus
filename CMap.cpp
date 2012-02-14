@@ -1,6 +1,7 @@
 //=============================================================================
 #include "CMap.h"
 #include "CEnemy.h"
+#include <time.h>
 
 //=============================================================================
 CMap::CMap()
@@ -27,6 +28,14 @@ bool CMap::OnLoad(char* File, int MapX, int MapY)
             CTile tempTile;
 
             fscanf(FileHandle, "%d:%d ", &tempTile.TileID, &tempTile.TypeID);
+
+            if(tempTile.TileID == 0)
+            {
+                // set a random tile for the grass/flowers
+                srand(X * Y);
+                int newID = rand() % 4;
+                tempTile.TileID = newID;
+            }
 
             TileList.push_back(tempTile);
         }
@@ -100,8 +109,10 @@ void CMap::OnRender(SDL_Surface* Surf_Display, int MapX, int MapY)
             int tX = MapX + (X * TILE_SIZE);
             int tY = MapY + (Y * TILE_SIZE);
 
-            int TilesetX = (TileList[ID].TileID % TilesetWidth) * TILE_SIZE;
-            int TilesetY = (TileList[ID].TileID / TilesetWidth) * TILE_SIZE;
+            // the greyed out portion below was the offset for the last tileset used
+
+            int TilesetX = (TileList[ID].TileID % TilesetWidth) * TILE_SIZE; // + (TileList[ID].TileID * 1);
+            int TilesetY = (TileList[ID].TileID / TilesetWidth) * TILE_SIZE; // + (TileList[ID].TileID * 1);
 
             CSurface::OnDraw(Surf_Display, Surf_Tileset, tX, tY, TilesetX, TilesetY, TILE_SIZE, TILE_SIZE);
 

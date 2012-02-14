@@ -4,7 +4,7 @@
 #define MAP_WIDTH	20
 #define MAP_HEIGHT	10
 
-#define TILE_SIZE	32
+#define TILE_SIZE	16
 
 #define WWIDTH		800
 #define	WHEIGHT		600
