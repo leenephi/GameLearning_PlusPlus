@@ -1,118 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="All" />
-	<File name="CAnimation.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="793" topLine="0" />
+	<File name="CAnimation.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="400" topLine="4" />
 	</File>
-	<File name="CAnimation.h" open="1" top="0" tabpos="1">
+	<File name="CAnimation.h" open="0" top="0" tabpos="1">
 		<Cursor position="254" topLine="0" />
 	</File>
-	<File name="CApp.cpp" open="0" top="0" tabpos="5">
-		<Cursor position="359" topLine="0" />
+	<File name="CApp.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="469" topLine="0" />
 	</File>
 	<File name="CApp.h" open="0" top="0" tabpos="4">
-		<Cursor position="462" topLine="0" />
+		<Cursor position="462" topLine="10" />
 	</File>
-	<File name="CAppState.cpp" open="0" top="0" tabpos="0">
+	<File name="CAppState.cpp" open="1" top="0" tabpos="0">
 		<Cursor position="51" topLine="0" />
 	</File>
-	<File name="CAppState.h" open="0" top="0" tabpos="0">
-		<Cursor position="363" topLine="0" />
+	<File name="CAppState.h" open="1" top="0" tabpos="1">
+		<Cursor position="334" topLine="0" />
 	</File>
-	<File name="CAppStateGame.cpp" open="0" top="0" tabpos="6">
-		<Cursor position="317" topLine="0" />
-	</File>
-	<File name="CAppStateGame.h" open="0" top="0" tabpos="7">
-		<Cursor position="536" topLine="14" />
-	</File>
-	<File name="CAppStateIntro.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="426" topLine="0" />
-	</File>
-	<File name="CAppStateIntro.h" open="0" top="0" tabpos="0">
-		<Cursor position="545" topLine="7" />
-	</File>
-	<File name="CAppStateManager.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="868" topLine="15" />
-	</File>
-	<File name="CAppStateManager.h" open="0" top="0" tabpos="0">
-		<Cursor position="0" topLine="6" />
-	</File>
-	<File name="CAppStateMenu.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="300" topLine="0" />
-	</File>
-	<File name="CApp_OnCleanup.cpp" open="0" top="0" tabpos="5">
-		<Cursor position="310" topLine="0" />
-	</File>
-	<File name="CApp_OnEvent.cpp" open="0" top="0" tabpos="1">
-		<Cursor position="414" topLine="0" />
-	</File>
-	<File name="CApp_OnInit.cpp" open="0" top="0" tabpos="6">
-		<Cursor position="422" topLine="0" />
-	</File>
-	<File name="CApp_OnLoop.cpp" open="0" top="0" tabpos="6">
-		<Cursor position="267" topLine="0" />
-	</File>
-	<File name="CApp_OnRender.cpp" open="0" top="0" tabpos="7">
-		<Cursor position="287" topLine="0" />
-	</File>
-	<File name="CArea.cpp" open="0" top="0" tabpos="4">
-		<Cursor position="539" topLine="3" />
-	</File>
-	<File name="CArea.h" open="0" top="0" tabpos="0">
-		<Cursor position="314" topLine="0" />
-	</File>
-	<File name="CCamera.cpp" open="0" top="0" tabpos="1">
-		<Cursor position="1039" topLine="0" />
-	</File>
-	<File name="CCamera.h" open="0" top="0" tabpos="5">
-		<Cursor position="574" topLine="1" />
-	</File>
-	<File name="CEnemy.cpp" open="0" top="0" tabpos="2">
-		<Cursor position="3083" topLine="80" />
-	</File>
-	<File name="CEnemy.h" open="0" top="0" tabpos="3">
-		<Cursor position="308" topLine="0" />
-	</File>
-	<File name="CEntity.cpp" open="0" top="0" tabpos="4">
-		<Cursor position="1598" topLine="69" />
-	</File>
-	<File name="CEntity.h" open="0" top="0" tabpos="5">
-		<Cursor position="1701" topLine="89" />
-	</File>
-	<File name="CEvent.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="941" topLine="13" />
-	</File>
-	<File name="CEvent.h" open="0" top="0" tabpos="2">
-		<Cursor position="251" topLine="45" />
-	</File>
-	<File name="CFPS.cpp" open="0" top="0" tabpos="1">
-		<Cursor position="365" topLine="0" />
-	</File>
-	<File name="CFPS.h" open="0" top="0" tabpos="2">
-		<Cursor position="0" topLine="0" />
-	</File>
-	<File name="CMap.cpp" open="1" top="1" tabpos="0">
-		<Cursor position="793" topLine="15" />
-	</File>
-	<File name="CMap.h" open="0" top="0" tabpos="0">
-		<Cursor position="406" topLine="9" />
-	</File>
-	<File name="CPlayer.cpp" open="0" top="0" tabpos="7">
-		<Cursor position="632" topLine="16" />
-	</File>
-	<File name="CPlayer.h" open="0" top="0" tabpos="7">
-		<Cursor position="299" topLine="0" />
-	</File>
-	<File name="CSurface.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="1307" topLine="21" />
-	</File>
-	<File name="CTile.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="250" topLine="0" />
-	</File>
-	<File name="CTile.h" open="0" top="0" tabpos="0">
-		<Cursor position="408" topLine="0" />
-	</File>
-	<File name="Define.h" open="0" top="0" tabpos="9">
-		<Cursor position="164" topLine="0" />
+	<File name="CEnemy.cpp" open="1" top="1" tabpos="4">
+		<Cursor position="378" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>

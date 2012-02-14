@@ -21,6 +21,12 @@ bool CPlayer::OnLoad(char* File, int Width, int Height, int MaxFrames)
 void CPlayer::OnLoop()
 {
     CEntity::OnLoop(X, Y);
+    if(Dead)
+    {
+        Dead = false;
+        X = 0;
+        Y = 0;
+    }
 }
 
 //-----------------------------------------------------------------------------
@@ -66,6 +72,10 @@ void CPlayer::OnAnimate()
 //------------------------------------------------------------------------------
 bool CPlayer::OnCollision(CEntity* Entity)
 {
+    if(Y+1 > Entity->Y+Entity->Height)
+    {
+            Dead = true;
+    }
     return true;
 }
 

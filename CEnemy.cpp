@@ -35,6 +35,11 @@ void CEnemy::OnLoop(float playerX, float playerY)
 
     //jumping and chasing mobs
     // continue with next entity if this one is not an enemy.. for example, a player, who then wouldn't be able to jump
+    if(Dead)
+    {
+        OnCleanup();
+    }
+
 
     CanJump = false;
     if((playerX - X < 500) && (X < playerX) && (abs(Y - playerY) < 250))
@@ -114,6 +119,10 @@ void CEnemy::OnAnimate()
 //------------------------------------------------------------------------------
 bool CEnemy::OnCollision(CEntity* Entity)
 {
+    if(Y+1 > Entity->Y+Entity->Height)
+    {
+            Dead = true;
+    }
     return true;
 }
 
