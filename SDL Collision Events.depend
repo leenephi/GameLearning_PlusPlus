@@ -959,3 +959,154 @@
 	"CAppStateMenu.h"
 	"CAppStateManager.h"
 
+1329149616 source:g:\software\projects\tutoria\canimation.cpp
+	"CAnimation.h"
+
+1329149616 g:\software\projects\tutoria\canimation.h
+	<SDL.h>
+
+1329149616 source:g:\software\projects\tutoria\capp.cpp
+	"CApp.h"
+
+1329149616 g:\software\projects\tutoria\capp.h
+	<SDL.h>
+	"Define.h"
+	"CAppStateManager.h"
+	"CFPS.h"
+	"CEvent.h"
+	"CSurface.h"
+
+1329232704 g:\software\projects\tutoria\define.h
+
+1329161821 g:\software\projects\tutoria\cappstatemanager.h
+	"CAppState.h"
+
+1329149616 g:\software\projects\tutoria\cappstate.h
+	"CEvent.h"
+
+1329149617 g:\software\projects\tutoria\cevent.h
+	<SDL.h>
+
+1329149617 g:\software\projects\tutoria\cfps.h
+	<SDL.h>
+
+1329149617 g:\software\projects\tutoria\csurface.h
+	<SDL.h>
+	<SDL_image.h>
+
+1329149616 source:g:\software\projects\tutoria\cappstate.cpp
+	"CAppState.h"
+
+1329234309 source:g:\software\projects\tutoria\cappstategame.cpp
+	"CAppStateGame.h"
+	"CAppStateManager.h"
+	<cmath>
+
+1329149716 g:\software\projects\tutoria\cappstategame.h
+	"CAppState.h"
+	"CArea.h"
+	"CCamera.h"
+	"CEntity.h"
+	"CSurface.h"
+	"CPlayer.h"
+	"CEnemy.h"
+
+1329149616 g:\software\projects\tutoria\carea.h
+	"CMap.h"
+
+1329149617 g:\software\projects\tutoria\cmap.h
+	<SDL.h>
+	<vector>
+	"CTile.h"
+	"CSurface.h"
+
+1329149617 g:\software\projects\tutoria\ctile.h
+	"Define.h"
+
+1329149616 g:\software\projects\tutoria\ccamera.h
+	<SDL.h>
+	"Define.h"
+
+1329162515 g:\software\projects\tutoria\centity.h
+	<vector>
+	"CArea.h"
+	"CAnimation.h"
+	"CCamera.h"
+	"CFPS.h"
+	"CSurface.h"
+
+1329149617 g:\software\projects\tutoria\cplayer.h
+	"CEntity.h"
+
+1329162358 g:\software\projects\tutoria\cenemy.h
+	"CEntity.h"
+
+1329161821 source:g:\software\projects\tutoria\cappstateintro.cpp
+	"CAppStateIntro.h"
+	"CAppStateManager.h"
+
+1329149616 g:\software\projects\tutoria\cappstateintro.h
+	"CAppState.h"
+	"CSurface.h"
+
+1329161821 source:g:\software\projects\tutoria\cappstatemanager.cpp
+	"CAppStateManager.h"
+	"CAppStateIntro.h"
+	"CAppStateGame.h"
+	"CAppStateMenu.h"
+
+1329161821 g:\software\projects\tutoria\cappstatemenu.h
+	"CAppState.h"
+	"CSurface.h"
+
+1329161821 source:g:\software\projects\tutoria\cappstatemenu.cpp
+	"CAppStateMenu.h"
+	"CAppStateManager.h"
+
+1329149616 source:g:\software\projects\tutoria\capp_oncleanup.cpp
+	"CApp.h"
+
+1329149616 source:g:\software\projects\tutoria\capp_onevent.cpp
+	"CApp.h"
+
+1329149616 source:g:\software\projects\tutoria\capp_oninit.cpp
+	"CApp.h"
+
+1329149616 source:g:\software\projects\tutoria\capp_onloop.cpp
+	"CApp.h"
+
+1329149616 source:g:\software\projects\tutoria\capp_onrender.cpp
+	"CApp.h"
+
+1329150271 source:g:\software\projects\tutoria\carea.cpp
+	"CArea.h"
+
+1329149616 source:g:\software\projects\tutoria\ccamera.cpp
+	"CCamera.h"
+
+1329234309 source:g:\software\projects\tutoria\cenemy.cpp
+	"CEnemy.h"
+
+1329149617 source:g:\software\projects\tutoria\centitycol.cpp
+	"CEntity.h"
+
+1329149617 source:g:\software\projects\tutoria\cevent.cpp
+	"CEvent.h"
+
+1329149617 source:g:\software\projects\tutoria\cfps.cpp
+	"CFPS.h"
+
+1329232704 source:g:\software\projects\tutoria\cmap.cpp
+	"CMap.h"
+	"CEnemy.h"
+	<time.h>
+
+1329234309 source:g:\software\projects\tutoria\cplayer.cpp
+	"CPlayer.h"
+
+1329149617 source:g:\software\projects\tutoria\csurface.cpp
+	"CSurface.h"
+
+1329149617 source:g:\software\projects\tutoria\ctile.cpp
+	"CTile.h"
+

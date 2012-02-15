@@ -1,5 +1,0 @@
-./tilesets/tiles.png
-3
-./maps/ground.map ./maps/ground.map ./maps/hillhole.map 
-./maps/ground.map ./maps/hillhole.map ./maps/ground.map 
-./maps/hillhole.map ./maps/ground.map ./maps/ground.map 
