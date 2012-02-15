@@ -5,6 +5,7 @@
 		<Option title="Tutoria" />
 		<Option pch_mode="0" />
 		<Option compiler="gcc" />
+		<Option virtualFolders="Sources\;Sources\Enemies\;Enemies\;Headers\Enemies\;Sources\Weapons\;Headers\Weapons\;Weapons\;" />
 		<Build>
 			<Target title="Release">
 				<Option output="bin\SDL Collision Events.exe" prefix_auto="0" extension_auto="0" />
@@ -59,8 +60,12 @@
 		<Unit filename="CArea.h" />
 		<Unit filename="CCamera.cpp" />
 		<Unit filename="CCamera.h" />
-		<Unit filename="CEnemy.cpp" />
-		<Unit filename="CEnemy.h" />
+		<Unit filename="CEnemy.cpp">
+			<Option virtualFolder="Enemies\" />
+		</Unit>
+		<Unit filename="CEnemy.h">
+			<Option virtualFolder="Enemies\" />
+		</Unit>
 		<Unit filename="CEntity.cpp" />
 		<Unit filename="CEntity.h" />
 		<Unit filename="CEntityCol.cpp" />
@@ -77,6 +82,12 @@
 		<Unit filename="CTile.cpp" />
 		<Unit filename="CTile.h" />
 		<Unit filename="Define.h" />
+		<Unit filename="ShortRange.cpp">
+			<Option virtualFolder="Weapons\" />
+		</Unit>
+		<Unit filename="ShortRange.h">
+			<Option virtualFolder="Weapons\" />
+		</Unit>
 		<Extensions>
 			<code_completion />
 			<debugger />
