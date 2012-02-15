@@ -1,8 +1,8 @@
 #ifndef _DEFINE_H_
 #define _DEFINE_H_
 
-#define MAP_WIDTH	20
-#define MAP_HEIGHT	10
+#define MAP_WIDTH	40
+#define MAP_HEIGHT	20
 
 #define TILE_SIZE	16
 

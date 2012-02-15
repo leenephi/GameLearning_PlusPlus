@@ -976,7 +976,7 @@
 	"CEvent.h"
 	"CSurface.h"
 
-1329232704 g:\software\projects\tutoria\define.h
+1329318988 g:\software\projects\tutoria\define.h
 
 1329161821 g:\software\projects\tutoria\cappstatemanager.h
 	"CAppState.h"
@@ -1109,4 +1109,7 @@
 
 1329149617 source:g:\software\projects\tutoria\ctile.cpp
 	"CTile.h"
+
+1329316890 source:g:\software\projects\tutoria\centity.cpp
+	"CEntity.h"
 
