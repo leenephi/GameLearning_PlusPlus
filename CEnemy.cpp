@@ -10,6 +10,7 @@ CEnemy::CEnemy(float startX, float startY, char* File, int Width, int Height, in
 
     X = startX;
     Y = startY;
+    damage = 10;
     OnLoad(File, Width, Height, MaxFrames);
 
 }
@@ -32,9 +33,6 @@ bool CEnemy::OnLoad(char* File, int Width, int Height, int MaxFrames)
 //-----------------------------------------------------------------------------
 void CEnemy::OnLoop(float playerX, float playerY)
 {
-
-    //jumping and chasing mobs
-    // continue with next entity if this one is not an enemy.. for example, a player, who then wouldn't be able to jump
     if(Dead)
     {
         OnCleanup();
@@ -42,6 +40,7 @@ void CEnemy::OnLoop(float playerX, float playerY)
 
 
     CanJump = false;
+    MaxSpeedY = 10;
     if((playerX - X < 500) && (X < playerX) && (abs(Y - playerY) < 250))
     {
         if(MoveRight)
@@ -49,6 +48,7 @@ void CEnemy::OnLoop(float playerX, float playerY)
             if(oldX == X && oldY >= Y)
             {
                 CanJump = true;
+                MaxSpeedY = 5;
                 Jump();
             }
         }
@@ -66,6 +66,7 @@ void CEnemy::OnLoop(float playerX, float playerY)
             if(oldX == X && oldY >= Y)
             {
                 CanJump = true;
+                MaxSpeedY = 5;
                 Jump();
             }
         }
@@ -119,19 +120,11 @@ void CEnemy::OnAnimate()
 //------------------------------------------------------------------------------
 bool CEnemy::OnCollision(CEntity* Entity)
 {
-    if(Y+1 > Entity->Y+Entity->Height)
+    if(Y+3 > Entity->Y+Entity->Height)
     {
             Dead = true;
     }
     return true;
 }
-
-/* void CEnemy::AddEnemy(float x, float y, char* File, int Width, int Height, int MaxFrames) {
-
-    CEnemy* newenemy = new CEnemy(x, y);
-
-    EntityList.push_back(newenemy);
-
-} */
 
 //=============================================================================

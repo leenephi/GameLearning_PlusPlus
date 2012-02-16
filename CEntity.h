@@ -57,6 +57,7 @@ public:
 public:
     int		Type;
 
+    int     damage;
     bool	Dead;
 
     int		Flags;

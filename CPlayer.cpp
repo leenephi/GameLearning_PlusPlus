@@ -4,6 +4,7 @@
 //=============================================================================
 CPlayer::CPlayer()
 {
+    health = 100;
 }
 
 //=============================================================================
@@ -21,9 +22,9 @@ bool CPlayer::OnLoad(char* File, int Width, int Height, int MaxFrames)
 void CPlayer::OnLoop()
 {
     CEntity::OnLoop(X, Y);
-    if(Dead)
+    if(health < 1)
     {
-        Dead = false;
+        health = 100;
         X = 0;
         Y = 0;
     }
@@ -72,10 +73,14 @@ void CPlayer::OnAnimate()
 //------------------------------------------------------------------------------
 bool CPlayer::OnCollision(CEntity* Entity)
 {
-    if(Y+1 > Entity->Y+Entity->Height)
+    if (Entity->Type == ENTITY_TYPE_ENEMY)
     {
-            Dead = true;
+        if(!(Entity->Y+3 > Y + Height))
+        {
+            health -= Entity->damage;
+        }
     }
+
     return true;
 }
 

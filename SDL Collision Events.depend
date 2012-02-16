@@ -998,7 +998,7 @@
 1329149616 source:g:\software\projects\tutoria\cappstate.cpp
 	"CAppState.h"
 
-1329409799 source:g:\software\projects\tutoria\cappstategame.cpp
+1329417926 source:g:\software\projects\tutoria\cappstategame.cpp
 	"CAppStateGame.h"
 	"CAppStateManager.h"
 	<cmath>
@@ -1028,7 +1028,7 @@
 	<SDL.h>
 	"Define.h"
 
-1329162515 g:\software\projects\tutoria\centity.h
+1329421018 g:\software\projects\tutoria\centity.h
 	<vector>
 	"CArea.h"
 	"CAnimation.h"
@@ -1036,10 +1036,10 @@
 	"CFPS.h"
 	"CSurface.h"
 
-1329149617 g:\software\projects\tutoria\cplayer.h
+1329419349 g:\software\projects\tutoria\cplayer.h
 	"CEntity.h"
 
-1329162358 g:\software\projects\tutoria\cenemy.h
+1329421006 g:\software\projects\tutoria\cenemy.h
 	"CEntity.h"
 
 1329161821 source:g:\software\projects\tutoria\cappstateintro.cpp
@@ -1085,7 +1085,7 @@
 1329149616 source:g:\software\projects\tutoria\ccamera.cpp
 	"CCamera.h"
 
-1329234309 source:g:\software\projects\tutoria\cenemy.cpp
+1329421362 source:g:\software\projects\tutoria\cenemy.cpp
 	"CEnemy.h"
 
 1329149617 source:g:\software\projects\tutoria\centitycol.cpp
@@ -1102,7 +1102,7 @@
 	"CEnemy.h"
 	<time.h>
 
-1329234309 source:g:\software\projects\tutoria\cplayer.cpp
+1329420874 source:g:\software\projects\tutoria\cplayer.cpp
 	"CPlayer.h"
 
 1329149617 source:g:\software\projects\tutoria\csurface.cpp

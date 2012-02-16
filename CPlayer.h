@@ -10,6 +10,8 @@ class CPlayer : public CEntity
 public:
     CPlayer();
 
+    int health;
+
     bool OnLoad(char* File, int Width, int Height, int MaxFrames);
 
     void OnLoop();
