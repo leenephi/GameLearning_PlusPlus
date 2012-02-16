@@ -19,11 +19,14 @@
 	<File name="CAppState.h" open="0" top="0" tabpos="2">
 		<Cursor position="334" topLine="0" />
 	</File>
-	<File name="CAppStateGame.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="1240" topLine="60" />
+	<File name="CAppStateGame.cpp" open="1" top="0" tabpos="8">
+		<Cursor position="2844" topLine="112" />
 	</File>
 	<File name="CAppStateGame.h" open="0" top="0" tabpos="0">
 		<Cursor position="218" topLine="3" />
+	</File>
+	<File name="CAppStateManager.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="269" topLine="9" />
 	</File>
 	<File name="CApp_OnInit.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="250" topLine="0" />
@@ -37,31 +40,31 @@
 	<File name="CEnemy.cpp" open="0" top="0" tabpos="5">
 		<Cursor position="378" topLine="0" />
 	</File>
-	<File name="CEntity.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="447" topLine="54" />
+	<File name="CEntity.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="2558" topLine="103" />
 	</File>
 	<File name="CEntity.h" open="0" top="0" tabpos="0">
 		<Cursor position="126" topLine="0" />
 	</File>
-	<File name="CMap.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="3124" topLine="116" />
+	<File name="CMap.cpp" open="1" top="1" tabpos="11">
+		<Cursor position="940" topLine="27" />
 	</File>
 	<File name="CMap.h" open="0" top="0" tabpos="0">
 		<Cursor position="595" topLine="12" />
 	</File>
 	<File name="CPlayer.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="81" topLine="0" />
+		<Cursor position="1151" topLine="24" />
 	</File>
 	<File name="CPlayer.h" open="0" top="0" tabpos="0">
 		<Cursor position="230" topLine="0" />
 	</File>
-	<File name="CSurface.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="1017" topLine="24" />
+	<File name="CSurface.cpp" open="1" top="0" tabpos="9">
+		<Cursor position="940" topLine="1" />
 	</File>
-	<File name="Define.h" open="0" top="0" tabpos="0">
+	<File name="Define.h" open="1" top="0" tabpos="10">
 		<Cursor position="164" topLine="0" />
 	</File>
-	<File name="ShortRange.h" open="1" top="1" tabpos="1">
+	<File name="ShortRange.h" open="0" top="0" tabpos="1">
 		<Cursor position="168" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>

@@ -68,7 +68,7 @@ void CAppStateGame::OnKeyUp(SDLKey sym, SDLMod mod, Uint16 unicode)
 
 void CAppStateGame::OnActivate()
 {
-    CArea::AreaControl.OnLoad("./maps/level1.area");
+    CArea::AreaControl.OnLoad("./maps/savearea.area");
 
     Player.OnLoad("player.png", 33, 56, 13);
     Player.Type = ENTITY_TYPE_PLAYER;
