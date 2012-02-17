@@ -7,7 +7,7 @@
 #include "CCamera.h"
 #include "CEntity.h"
 #include "CSurface.h"
-
+#include "CScreenText.h"
 #include "CPlayer.h"
 #include "CEnemy.h"
 

@@ -76,6 +76,12 @@ bool CEntity::OnLoad(char* File, int Width, int Height, int MaxFrames)
 //------------------------------------------------------------------------------
 void CEntity::OnLoop(float playerX, float playerY)
 {
+
+    if(Dead)
+    {
+        OnCleanup();
+    }
+
     //We're not Moving
     if(MoveLeft == false && MoveRight == false)
     {

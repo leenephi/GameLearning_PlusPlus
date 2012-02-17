@@ -14,7 +14,7 @@ public:
 
     bool OnLoad(char* File, int Width, int Height, int MaxFrames);
 
-    void OnLoop();
+    void OnLoop(int playerX, int playerY);
 
     void OnRender(SDL_Surface* Surf_Display);
 

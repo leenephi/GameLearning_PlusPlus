@@ -34,6 +34,7 @@
 			<Add library="mingw32" />
 			<Add library="SDLmain" />
 			<Add library="SDL_image" />
+			<Add library="SDL_ttf" />
 			<Add library="SDL" />
 			<Add directory="..\..\SDL\lib" />
 		</Linker>
@@ -77,6 +78,8 @@
 		<Unit filename="CMap.h" />
 		<Unit filename="CPlayer.cpp" />
 		<Unit filename="CPlayer.h" />
+		<Unit filename="CScreenText.cpp" />
+		<Unit filename="CScreenText.h" />
 		<Unit filename="CSurface.cpp" />
 		<Unit filename="CSurface.h" />
 		<Unit filename="CTile.cpp" />

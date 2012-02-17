@@ -69,6 +69,7 @@ void CAppStateGame::OnKeyUp(SDLKey sym, SDLMod mod, Uint16 unicode)
 void CAppStateGame::OnActivate()
 {
     CArea::AreaControl.OnLoad("./maps/savearea.area");
+    CScreenText::ScreenTextControl.OnLoad();
 
     Player.OnLoad("player.png", 33, 56, 13);
     Player.Type = ENTITY_TYPE_PLAYER;
@@ -82,6 +83,7 @@ void CAppStateGame::OnActivate()
 void CAppStateGame::OnDeactivate()
 {
     CArea::AreaControl.OnCleanup();
+    CScreenText::ScreenTextControl.OnCleanup();
 
     for(int i = 0; i < CEntity::EntityList.size(); i++)
     {
@@ -95,6 +97,7 @@ void CAppStateGame::OnDeactivate()
 
 void CAppStateGame::OnLoop()
 {
+
     //--------------------------------------------------------------------------
     // Entities
     //--------------------------------------------------------------------------
@@ -103,6 +106,11 @@ void CAppStateGame::OnLoop()
         if(!CEntity::EntityList[i]) continue;
 
         CEntity::EntityList[i]->OnLoop(Player.X, Player.Y);
+
+        /*if (CEntity::EntityList[i]->Dead)
+        {
+            CEntity::EntityList.erase(CEntity::EntityList[i]);
+        }*/
 
     }
 
@@ -138,6 +146,7 @@ void CAppStateGame::OnRender(SDL_Surface* Surf_Display)
     SDL_FillRect(Surf_Display, &Rect, 0);
 
     CArea::AreaControl.OnRender(Surf_Display, -CCamera::CameraControl.GetX(), -CCamera::CameraControl.GetY());
+    CScreenText::ScreenTextControl.OnRender(Surf_Display, Player.health);
 
     //--------------------------------------------------------------------------
     // Entities

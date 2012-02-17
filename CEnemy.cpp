@@ -10,7 +10,7 @@ CEnemy::CEnemy(float startX, float startY, char* File, int Width, int Height, in
 
     X = startX;
     Y = startY;
-    damage = 10;
+    damage = 1;
     OnLoad(File, Width, Height, MaxFrames);
 
 }
@@ -33,11 +33,11 @@ bool CEnemy::OnLoad(char* File, int Width, int Height, int MaxFrames)
 //-----------------------------------------------------------------------------
 void CEnemy::OnLoop(float playerX, float playerY)
 {
-    if(Dead)
+    if (Dead)
     {
-        OnCleanup();
+        X = 0;
+        Y = 0;
     }
-
 
     CanJump = false;
     MaxSpeedY = 10;

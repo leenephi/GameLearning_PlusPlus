@@ -969,8 +969,9 @@
 1329149616 source:g:\software\projects\tutoria\capp.cpp
 	"CApp.h"
 
-1329149616 g:\software\projects\tutoria\capp.h
+1329500517 g:\software\projects\tutoria\capp.h
 	<SDL.h>
+	<SDL_ttf.h>
 	"Define.h"
 	"CAppStateManager.h"
 	"CFPS.h"
@@ -998,21 +999,22 @@
 1329149616 source:g:\software\projects\tutoria\cappstate.cpp
 	"CAppState.h"
 
-1329417926 source:g:\software\projects\tutoria\cappstategame.cpp
+1329513938 source:g:\software\projects\tutoria\cappstategame.cpp
 	"CAppStateGame.h"
 	"CAppStateManager.h"
 	<cmath>
 
-1329149716 g:\software\projects\tutoria\cappstategame.h
+1329500480 g:\software\projects\tutoria\cappstategame.h
 	"CAppState.h"
 	"CArea.h"
 	"CCamera.h"
 	"CEntity.h"
 	"CSurface.h"
+	"CScreenText.h"
 	"CPlayer.h"
 	"CEnemy.h"
 
-1329149616 g:\software\projects\tutoria\carea.h
+1329494693 g:\software\projects\tutoria\carea.h
 	"CMap.h"
 
 1329149617 g:\software\projects\tutoria\cmap.h
@@ -1036,7 +1038,7 @@
 	"CFPS.h"
 	"CSurface.h"
 
-1329419349 g:\software\projects\tutoria\cplayer.h
+1329514035 g:\software\projects\tutoria\cplayer.h
 	"CEntity.h"
 
 1329421006 g:\software\projects\tutoria\cenemy.h
@@ -1070,7 +1072,7 @@
 1329149616 source:g:\software\projects\tutoria\capp_onevent.cpp
 	"CApp.h"
 
-1329149616 source:g:\software\projects\tutoria\capp_oninit.cpp
+1329506277 source:g:\software\projects\tutoria\capp_oninit.cpp
 	"CApp.h"
 
 1329149616 source:g:\software\projects\tutoria\capp_onloop.cpp
@@ -1085,7 +1087,7 @@
 1329149616 source:g:\software\projects\tutoria\ccamera.cpp
 	"CCamera.h"
 
-1329421362 source:g:\software\projects\tutoria\cenemy.cpp
+1329513227 source:g:\software\projects\tutoria\cenemy.cpp
 	"CEnemy.h"
 
 1329149617 source:g:\software\projects\tutoria\centitycol.cpp
@@ -1102,7 +1104,7 @@
 	"CEnemy.h"
 	<time.h>
 
-1329420874 source:g:\software\projects\tutoria\cplayer.cpp
+1329514026 source:g:\software\projects\tutoria\cplayer.cpp
 	"CPlayer.h"
 
 1329149617 source:g:\software\projects\tutoria\csurface.cpp
@@ -1111,7 +1113,7 @@
 1329149617 source:g:\software\projects\tutoria\ctile.cpp
 	"CTile.h"
 
-1329316890 source:g:\software\projects\tutoria\centity.cpp
+1329513723 source:g:\software\projects\tutoria\centity.cpp
 	"CEntity.h"
 
 1329409789 source:g:\software\projects\tutoria\shortrange.cpp
@@ -1119,4 +1121,16 @@
 
 1329409789 g:\software\projects\tutoria\shortrange.h
 	"CEntity.h"
+
+1329508658 g:\software\projects\tutoria\cscreentext.h
+	<SDL_ttf.h>
+	"CSurface.h"
+
+1326595440 g:\software\sdl\include\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1329509452 source:g:\software\projects\tutoria\cscreentext.cpp
+	"CScreenText.h"
 

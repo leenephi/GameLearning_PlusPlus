@@ -19,15 +19,18 @@ bool CPlayer::OnLoad(char* File, int Width, int Height, int MaxFrames)
 }
 
 //-----------------------------------------------------------------------------
-void CPlayer::OnLoop()
+void CPlayer::OnLoop(int playerX, int playerY)
 {
-    CEntity::OnLoop(X, Y);
-    if(health < 1)
+
+    if(health < 0)
     {
         health = 100;
         X = 0;
         Y = 0;
     }
+
+    CEntity::OnLoop(X, Y);
+
 }
 
 //-----------------------------------------------------------------------------

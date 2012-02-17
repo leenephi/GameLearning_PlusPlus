@@ -9,11 +9,17 @@ bool CApp::OnInit()
         return false;
     }
 
+    if( TTF_Init() == -1 )
+    {
+        return false;
+    }
+
     if((Surf_Display = SDL_SetVideoMode(WWIDTH, WHEIGHT, 32, SDL_HWSURFACE | SDL_DOUBLEBUF)) == NULL)
     {
         return false;
     }
 
+    SDL_WM_SetCaption("GameLearning", "PlusPlus");
 
     SDL_EnableKeyRepeat(1, SDL_DEFAULT_REPEAT_INTERVAL / 3);
 
