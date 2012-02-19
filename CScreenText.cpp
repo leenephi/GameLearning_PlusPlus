@@ -1,5 +1,6 @@
 
 #include "CScreenText.h"
+#include "CAppStateGame.h"
 
 
 
@@ -28,13 +29,27 @@ void CScreenText::OnLoop()
 
 }
 
-void CScreenText::OnRender(SDL_Surface* Surf_Display, int playerHealth)
+void CScreenText::OnRender(SDL_Surface* Surf_Display, int playerHealth, bool canAttack)
 {
     char health[50];
     sprintf(health, "Health: %d", playerHealth);
 
     Surf_Text = TTF_RenderText_Solid(font, health, textColor);
     CSurface::OnDraw(Surf_Display, Surf_Text, 0, 0);
+
+    // The following is to see test stuff on the screen.. for testing!
+    char testing[100];
+    if (canAttack == true)
+    {
+        sprintf(testing, "Can attack: true");
+    }
+    else
+    {
+        sprintf(testing, "Can attack: false");
+    }
+    Surf_Text = TTF_RenderText_Solid(font, testing, textColor);
+    CSurface::OnDraw(Surf_Display, Surf_Text, 0, 20);
+
 }
 
 void CScreenText::OnCleanup()

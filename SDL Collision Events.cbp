@@ -85,12 +85,16 @@
 		<Unit filename="CTile.cpp" />
 		<Unit filename="CTile.h" />
 		<Unit filename="Define.h" />
+		<Unit filename="Item.cpp" />
+		<Unit filename="Item.h" />
 		<Unit filename="ShortRange.cpp">
 			<Option virtualFolder="Weapons\" />
 		</Unit>
 		<Unit filename="ShortRange.h">
 			<Option virtualFolder="Weapons\" />
 		</Unit>
+		<Unit filename="Weapon.cpp" />
+		<Unit filename="Weapon.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />

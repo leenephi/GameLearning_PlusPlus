@@ -5,6 +5,12 @@
 CPlayer::CPlayer()
 {
     health = 100;
+    damage = 10;
+    range = 10;
+    canAttack = true;
+    hitTimer = 1;
+    currentItem = NULL;
+    Flags = ENTITY_FLAG_MAPONLY | ENTITY_FLAG_GRAVITY;
 }
 
 //=============================================================================
@@ -19,14 +25,19 @@ bool CPlayer::OnLoad(char* File, int Width, int Height, int MaxFrames)
 }
 
 //-----------------------------------------------------------------------------
-void CPlayer::OnLoop(int playerX, int playerY)
+void CPlayer::OnLoop(float playerX, float playerY)
 {
 
     if(health < 0)
     {
         health = 100;
         X = 0;
-        Y = 0;
+        Y = 50;
+    }
+
+    if(SDL_GetTicks() - onHitTime > hitTimer * 1000)
+    {
+        canAttack = true;
     }
 
     CEntity::OnLoop(X, Y);
@@ -80,7 +91,7 @@ bool CPlayer::OnCollision(CEntity* Entity)
     {
         if(!(Entity->Y+3 > Y + Height))
         {
-            health -= Entity->damage;
+            TakeDamage(Entity->damage);
         }
     }
 
@@ -88,3 +99,40 @@ bool CPlayer::OnCollision(CEntity* Entity)
 }
 
 //=============================================================================
+
+void CPlayer::Attack()
+{
+    if(canAttack == false)
+    {
+        return;
+    }
+
+    canAttack = false;
+    onHitTime = SDL_GetTicks();
+    currentItem->DoDamage(X, Y, Width, Height);
+}
+
+//=============================================================================
+
+void CPlayer::TakeDamage(int damage)
+{
+    health -= damage;
+}
+
+//=============================================================================
+
+void CPlayer::Wield(Weapon* itemToWield)
+{
+    currentItem = itemToWield;
+}
+
+
+
+
+
+
+
+
+
+
+

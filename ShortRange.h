@@ -1,5 +1,5 @@
-#ifndef SHORTRANGE_H_INCLUDED
-#define SHORTRANGE_H_INCLUDED
+#ifndef ShortRange_H_INCLUDED
+#define ShortRange_H_INCLUDED
 
 #include "CEntity.h"
 
@@ -26,4 +26,4 @@ public:
     bool OnCollision(CEntity* Entity);
 };
 
-#endif // SHORTRANGE_H_INCLUDED
+#endif // ShortRange_H_INCLUDED

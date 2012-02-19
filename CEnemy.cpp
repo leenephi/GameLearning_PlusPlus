@@ -11,6 +11,7 @@ CEnemy::CEnemy(float startX, float startY, char* File, int Width, int Height, in
     X = startX;
     Y = startY;
     damage = 1;
+    health = 100;
     OnLoad(File, Width, Height, MaxFrames);
 
 }
@@ -33,10 +34,12 @@ bool CEnemy::OnLoad(char* File, int Width, int Height, int MaxFrames)
 //-----------------------------------------------------------------------------
 void CEnemy::OnLoop(float playerX, float playerY)
 {
-    if (Dead)
+
+    if (health < 1)
     {
         X = 0;
         Y = 0;
+        Dead = true;
     }
 
     CanJump = false;
@@ -120,10 +123,6 @@ void CEnemy::OnAnimate()
 //------------------------------------------------------------------------------
 bool CEnemy::OnCollision(CEntity* Entity)
 {
-    if(Y+3 > Entity->Y+Entity->Height)
-    {
-            Dead = true;
-    }
     return true;
 }
 

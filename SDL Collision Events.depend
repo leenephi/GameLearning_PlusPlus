@@ -793,15 +793,16 @@
 1329185280 source:d:\programming\codeblocks\projects\tutoria\capp.cpp
 	"CApp.h"
 
-1329185280 d:\programming\codeblocks\projects\tutoria\capp.h
+1329588754 d:\programming\codeblocks\projects\tutoria\capp.h
 	<SDL.h>
+	<SDL_ttf.h>
 	"Define.h"
 	"CAppStateManager.h"
 	"CFPS.h"
 	"CEvent.h"
 	"CSurface.h"
 
-1329188123 d:\programming\codeblocks\projects\tutoria\define.h
+1329434859 d:\programming\codeblocks\projects\tutoria\define.h
 
 1329185280 d:\programming\codeblocks\projects\tutoria\cappstatemanager.h
 	"CAppState.h"
@@ -828,19 +829,22 @@
 1329185280 source:d:\programming\codeblocks\projects\tutoria\cappstate.cpp
 	"CAppState.h"
 
-1329185280 source:d:\programming\codeblocks\projects\tutoria\cappstategame.cpp
+1329634043 source:d:\programming\codeblocks\projects\tutoria\cappstategame.cpp
 	"CAppStateGame.h"
 	"CAppStateManager.h"
 	<cmath>
 
-1329185280 d:\programming\codeblocks\projects\tutoria\cappstategame.h
+1329630660 d:\programming\codeblocks\projects\tutoria\cappstategame.h
 	"CAppState.h"
 	"CArea.h"
 	"CCamera.h"
 	"CEntity.h"
 	"CSurface.h"
+	"CScreenText.h"
 	"CPlayer.h"
 	"CEnemy.h"
+	"Item.h"
+	"Weapon.h"
 
 1329185280 d:\programming\codeblocks\projects\tutoria\carea.h
 	"CMap.h"
@@ -858,7 +862,7 @@
 	<SDL.h>
 	"Define.h"
 
-1329185280 d:\programming\codeblocks\projects\tutoria\centity.h
+1329631204 d:\programming\codeblocks\projects\tutoria\centity.h
 	<vector>
 	"CArea.h"
 	"CAnimation.h"
@@ -866,10 +870,11 @@
 	"CFPS.h"
 	"CSurface.h"
 
-1329185280 d:\programming\codeblocks\projects\tutoria\cplayer.h
+1329633206 d:\programming\codeblocks\projects\tutoria\cplayer.h
 	"CEntity.h"
+	"Weapon.h"
 
-1329185280 d:\programming\codeblocks\projects\tutoria\cenemy.h
+1329629502 d:\programming\codeblocks\projects\tutoria\cenemy.h
 	"CEntity.h"
 
 1329185280 source:d:\programming\codeblocks\projects\tutoria\cappstateintro.cpp
@@ -892,7 +897,7 @@
 1329185280 source:d:\programming\codeblocks\projects\tutoria\capp_onevent.cpp
 	"CApp.h"
 
-1329185280 source:d:\programming\codeblocks\projects\tutoria\capp_oninit.cpp
+1329588754 source:d:\programming\codeblocks\projects\tutoria\capp_oninit.cpp
 	"CApp.h"
 
 1329185280 source:d:\programming\codeblocks\projects\tutoria\capp_onloop.cpp
@@ -901,16 +906,16 @@
 1329185280 source:d:\programming\codeblocks\projects\tutoria\capp_onrender.cpp
 	"CApp.h"
 
-1329185280 source:d:\programming\codeblocks\projects\tutoria\carea.cpp
+1329434859 source:d:\programming\codeblocks\projects\tutoria\carea.cpp
 	"CArea.h"
 
 1329185280 source:d:\programming\codeblocks\projects\tutoria\ccamera.cpp
 	"CCamera.h"
 
-1329185280 source:d:\programming\codeblocks\projects\tutoria\cenemy.cpp
+1329633581 source:d:\programming\codeblocks\projects\tutoria\cenemy.cpp
 	"CEnemy.h"
 
-1329185280 source:d:\programming\codeblocks\projects\tutoria\centity.cpp
+1329588754 source:d:\programming\codeblocks\projects\tutoria\centity.cpp
 	"CEntity.h"
 
 1329185280 source:d:\programming\codeblocks\projects\tutoria\centitycol.cpp
@@ -922,12 +927,12 @@
 1329185280 source:d:\programming\codeblocks\projects\tutoria\cfps.cpp
 	"CFPS.h"
 
-1329197010 source:d:\programming\codeblocks\projects\tutoria\cmap.cpp
+1329197062 source:d:\programming\codeblocks\projects\tutoria\cmap.cpp
 	"CMap.h"
 	"CEnemy.h"
 	<time.h>
 
-1329185280 source:d:\programming\codeblocks\projects\tutoria\cplayer.cpp
+1329635723 source:d:\programming\codeblocks\projects\tutoria\cplayer.cpp
 	"CPlayer.h"
 
 1329185280 source:d:\programming\codeblocks\projects\tutoria\csurface.cpp
@@ -1133,4 +1138,37 @@
 
 1329509452 source:g:\software\projects\tutoria\cscreentext.cpp
 	"CScreenText.h"
+
+1329629130 d:\programming\codeblocks\projects\tutoria\cscreentext.h
+	<SDL_ttf.h>
+	"CSurface.h"
+
+1329629752 source:d:\programming\codeblocks\projects\tutoria\cscreentext.cpp
+	"CScreenText.h"
+	"CAppStateGame.h"
+
+1329629320 source:d:\programming\codeblocks\projects\tutoria\shortrange.cpp
+	"ShortRange.h"
+
+1329629321 d:\programming\codeblocks\projects\tutoria\shortrange.h
+	"CEntity.h"
+
+1325818394 d:\programming\codeblocks\sdl\include\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1329635480 source:d:\programming\codeblocks\projects\tutoria\weapon.cpp
+	"Weapon.h"
+
+1329632758 d:\programming\codeblocks\projects\tutoria\weapon.h
+	"Item.h"
+
+1329633007 d:\programming\codeblocks\projects\tutoria\item.h
+	"CEntity.h"
+	<string>
+
+1329633347 source:d:\programming\codeblocks\projects\tutoria\item.cpp
+	"Item.h"
+	<string>
 

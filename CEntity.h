@@ -15,7 +15,8 @@ enum
 {
     ENTITY_TYPE_GENERIC = 0,
     ENTITY_TYPE_PLAYER,
-    ENTITY_TYPE_ENEMY
+    ENTITY_TYPE_ENEMY,
+    ENTITY_TYPE_WEAPON
 };
 
 //==============================================================================
@@ -57,7 +58,9 @@ public:
 public:
     int		Type;
 
+    int     health;
     int     damage;
+    int     range;
     bool	Dead;
 
     int		Flags;

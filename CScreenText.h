@@ -26,7 +26,7 @@ public:
 
     void OnLoop();
 
-    void OnRender(SDL_Surface* Surf_Display, int playerHealth);
+    void OnRender(SDL_Surface* Surf_Display, int playerHealth, bool canAttack);
 
     void OnCleanup();
 };

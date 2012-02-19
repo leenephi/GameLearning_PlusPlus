@@ -10,21 +10,26 @@
 #include "CScreenText.h"
 #include "CPlayer.h"
 #include "CEnemy.h"
+#include "Item.h"
+#include "Weapon.h"
 
 class CAppStateGame : public CAppState
 {
 private:
     static CAppStateGame Instance;
 
-    CPlayer			Player;
-
 private:
     CAppStateGame();
 
 public:
+
+    CPlayer			Player;
+
     void OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode);
 
     void OnKeyUp(SDLKey sym, SDLMod mod, Uint16 unicode);
+
+    void OnLButtonDown(int mX, int mY);
 
 public:
     void OnActivate();

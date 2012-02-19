@@ -66,6 +66,22 @@ void CAppStateGame::OnKeyUp(SDLKey sym, SDLMod mod, Uint16 unicode)
     }
 }
 
+void CAppStateGame::OnLButtonDown(int mX, int mY)
+{
+    Player.Attack();
+}
+
+/*
+/
+/   -------------------------------------------
+/
+/   ON ACTIVATE FOOL DONT GET LOST IN THIS CODE
+/
+/   -------------------------------------------
+/
+*/
+
+
 void CAppStateGame::OnActivate()
 {
     CArea::AreaControl.OnLoad("./maps/savearea.area");
@@ -73,6 +89,15 @@ void CAppStateGame::OnActivate()
 
     Player.OnLoad("player.png", 33, 56, 13);
     Player.Type = ENTITY_TYPE_PLAYER;
+
+    Weapon* TestWeapon = new Weapon;
+    TestWeapon->OnLoad(20, 20);
+    TestWeapon->Type = ENTITY_TYPE_WEAPON;
+    CEntity::EntityList.push_back(TestWeapon);
+
+    Player.Wield(TestWeapon);
+
+
 
     CEntity::EntityList.push_back(&Player);
 
@@ -146,7 +171,7 @@ void CAppStateGame::OnRender(SDL_Surface* Surf_Display)
     SDL_FillRect(Surf_Display, &Rect, 0);
 
     CArea::AreaControl.OnRender(Surf_Display, -CCamera::CameraControl.GetX(), -CCamera::CameraControl.GetY());
-    CScreenText::ScreenTextControl.OnRender(Surf_Display, Player.health);
+    CScreenText::ScreenTextControl.OnRender(Surf_Display, Player.health, Player.canAttack);
 
     //--------------------------------------------------------------------------
     // Entities

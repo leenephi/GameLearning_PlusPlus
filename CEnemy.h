@@ -20,8 +20,6 @@ public:
     void OnAnimate();
 
     bool OnCollision(CEntity* Entity);
-
-    // void AddEnemy(float x, float y, char* File, int Width, int Height, int MaxFrames);
 };
 
 #endif // CENEMY_H_INCLUDED
