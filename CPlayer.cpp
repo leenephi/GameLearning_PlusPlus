@@ -8,7 +8,7 @@ CPlayer::CPlayer()
     damage = 10;
     range = 10;
     canAttack = true;
-    hitTimer = 1;
+    hitTimer = 500;
     currentItem = NULL;
     Flags = ENTITY_FLAG_MAPONLY | ENTITY_FLAG_GRAVITY;
 }
@@ -35,7 +35,7 @@ void CPlayer::OnLoop(float playerX, float playerY)
         Y = 50;
     }
 
-    if(SDL_GetTicks() - onHitTime > hitTimer * 1000)
+    if(SDL_GetTicks() - onHitTime > hitTimer)
     {
         canAttack = true;
     }

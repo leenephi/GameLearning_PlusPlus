@@ -10,6 +10,7 @@ Weapon::Weapon()
     X = 100;
     Y = 0;
     Flags = ENTITY_FLAG_MAPONLY;
+    hitTimer = 100;
 }
 
 //=============================================================================
@@ -29,12 +30,21 @@ bool Weapon::OnLoad(int Width, int Height)
 }
 
 //-----------------------------------------------------------------------------
-void Weapon::OnLoop()
+void Weapon::OnLoop(float playerX, float playerY)
 {
     if(canHit == true)
     {
         CEntity::OnLoop(X, Y);
     }
+
+    if(SDL_GetTicks() - onHitTime > hitTimer)
+    {
+        canHit = false;
+        Flags = ENTITY_FLAG_MAPONLY;
+    }
+
+
+
 }
 
 //-----------------------------------------------------------------------------
@@ -94,6 +104,7 @@ void Weapon::DoDamage(float playerX, float playerY, int playerW, int playerH)
 {
     canHit = true;
     Flags = ENTITY_FLAG_GHOST;
+    onHitTime = SDL_GetTicks();
     X = playerX + playerW;
     Y = (playerY + playerH) - (playerH / 2);
 }
