@@ -18,15 +18,6 @@ bool CArea::OnLoad(char* File)
 
     OnCleanup();
 
-    if((Surf_Tileset_Passables = CSurface::OnLoad("./tilesets/passable_tiles.png")) == false)
-    {
-        return false;
-    }
-    if((Surf_Tileset_Impassables = CSurface::OnLoad("./tilesets/impassable_tiles.png")) == false)
-    {
-        return false;
-    }
-
     FILE* FileHandle = fopen(File, "r");
 
     if(FileHandle == NULL)
@@ -34,20 +25,20 @@ bool CArea::OnLoad(char* File)
         return false;
     }
 
+    char PassablesFile[255];
+    char ImpassablesFile[255];
 
+    fscanf(FileHandle, "%s\n", PassablesFile);
+    fscanf(FileHandle, "%s\n", ImpassablesFile);
 
-    char TilesetFile[255];
-
-    fscanf(FileHandle, "%s\n", TilesetFile);
-
-    /*
-    if((Surf_Tileset = CSurface::OnLoad(TilesetFile)) == false)
+    if((Surf_Tileset_Passables = CSurface::OnLoad(PassablesFile)) == false)
     {
-        fclose(FileHandle);
-
         return false;
     }
-    */
+    if((Surf_Tileset_Impassables = CSurface::OnLoad(ImpassablesFile)) == false)
+    {
+        return false;
+    }
 
     fscanf(FileHandle, "%d:%d\n", &areaWidth, &areaHeight);
 
