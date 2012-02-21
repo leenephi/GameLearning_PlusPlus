@@ -1004,12 +1004,12 @@
 1329149616 source:g:\software\projects\tutoria\cappstate.cpp
 	"CAppState.h"
 
-1329513938 source:g:\software\projects\tutoria\cappstategame.cpp
+1329751265 source:g:\software\projects\tutoria\cappstategame.cpp
 	"CAppStateGame.h"
 	"CAppStateManager.h"
 	<cmath>
 
-1329500480 g:\software\projects\tutoria\cappstategame.h
+1329751265 g:\software\projects\tutoria\cappstategame.h
 	"CAppState.h"
 	"CArea.h"
 	"CCamera.h"
@@ -1018,24 +1018,26 @@
 	"CScreenText.h"
 	"CPlayer.h"
 	"CEnemy.h"
+	"Item.h"
+	"Weapon.h"
 
-1329494693 g:\software\projects\tutoria\carea.h
+1329843238 g:\software\projects\tutoria\carea.h
 	"CMap.h"
 
-1329149617 g:\software\projects\tutoria\cmap.h
+1329840863 g:\software\projects\tutoria\cmap.h
 	<SDL.h>
 	<vector>
 	"CTile.h"
 	"CSurface.h"
 
-1329149617 g:\software\projects\tutoria\ctile.h
+1329839620 g:\software\projects\tutoria\ctile.h
 	"Define.h"
 
 1329149616 g:\software\projects\tutoria\ccamera.h
 	<SDL.h>
 	"Define.h"
 
-1329421018 g:\software\projects\tutoria\centity.h
+1329751265 g:\software\projects\tutoria\centity.h
 	<vector>
 	"CArea.h"
 	"CAnimation.h"
@@ -1043,10 +1045,11 @@
 	"CFPS.h"
 	"CSurface.h"
 
-1329514035 g:\software\projects\tutoria\cplayer.h
+1329751265 g:\software\projects\tutoria\cplayer.h
 	"CEntity.h"
+	"Weapon.h"
 
-1329421006 g:\software\projects\tutoria\cenemy.h
+1329751265 g:\software\projects\tutoria\cenemy.h
 	"CEntity.h"
 
 1329161821 source:g:\software\projects\tutoria\cappstateintro.cpp
@@ -1086,13 +1089,13 @@
 1329149616 source:g:\software\projects\tutoria\capp_onrender.cpp
 	"CApp.h"
 
-1329409799 source:g:\software\projects\tutoria\carea.cpp
+1329844262 source:g:\software\projects\tutoria\carea.cpp
 	"CArea.h"
 
 1329149616 source:g:\software\projects\tutoria\ccamera.cpp
 	"CCamera.h"
 
-1329513227 source:g:\software\projects\tutoria\cenemy.cpp
+1329751265 source:g:\software\projects\tutoria\cenemy.cpp
 	"CEnemy.h"
 
 1329149617 source:g:\software\projects\tutoria\centitycol.cpp
@@ -1104,12 +1107,12 @@
 1329149617 source:g:\software\projects\tutoria\cfps.cpp
 	"CFPS.h"
 
-1329232704 source:g:\software\projects\tutoria\cmap.cpp
+1329844929 source:g:\software\projects\tutoria\cmap.cpp
 	"CMap.h"
 	"CEnemy.h"
 	<time.h>
 
-1329514026 source:g:\software\projects\tutoria\cplayer.cpp
+1329751265 source:g:\software\projects\tutoria\cplayer.cpp
 	"CPlayer.h"
 
 1329149617 source:g:\software\projects\tutoria\csurface.cpp
@@ -1118,16 +1121,16 @@
 1329149617 source:g:\software\projects\tutoria\ctile.cpp
 	"CTile.h"
 
-1329513723 source:g:\software\projects\tutoria\centity.cpp
+1329840287 source:g:\software\projects\tutoria\centity.cpp
 	"CEntity.h"
 
 1329409789 source:g:\software\projects\tutoria\shortrange.cpp
 	"ShortRange.h"
 
-1329409789 g:\software\projects\tutoria\shortrange.h
+1329751266 g:\software\projects\tutoria\shortrange.h
 	"CEntity.h"
 
-1329508658 g:\software\projects\tutoria\cscreentext.h
+1329751266 g:\software\projects\tutoria\cscreentext.h
 	<SDL_ttf.h>
 	"CSurface.h"
 
@@ -1136,8 +1139,9 @@
 	"begin_code.h"
 	"close_code.h"
 
-1329509452 source:g:\software\projects\tutoria\cscreentext.cpp
+1329751265 source:g:\software\projects\tutoria\cscreentext.cpp
 	"CScreenText.h"
+	"CAppStateGame.h"
 
 1329629130 d:\programming\codeblocks\projects\tutoria\cscreentext.h
 	<SDL_ttf.h>
@@ -1171,4 +1175,18 @@
 1329633347 source:d:\programming\codeblocks\projects\tutoria\item.cpp
 	"Item.h"
 	<string>
+
+1329751266 g:\software\projects\tutoria\weapon.h
+	"Item.h"
+
+1329751266 g:\software\projects\tutoria\item.h
+	"CEntity.h"
+	<string>
+
+1329751266 source:g:\software\projects\tutoria\item.cpp
+	"Item.h"
+	<string>
+
+1329752778 source:g:\software\projects\tutoria\weapon.cpp
+	"Weapon.h"
 

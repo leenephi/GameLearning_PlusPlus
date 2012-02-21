@@ -14,9 +14,13 @@ public:
     std::vector<CMap>       MapList;
 
 private:
-    int                     AreaSize;
+    int                     areaWidth;
 
-    SDL_Surface*			Surf_Tileset;
+    int                     areaHeight;
+
+    SDL_Surface*			Surf_Tileset_Passables;
+
+    SDL_Surface*            Surf_Tileset_Impassables;
 
 public:
     CArea();

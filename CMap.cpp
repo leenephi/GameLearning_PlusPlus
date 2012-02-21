@@ -6,12 +6,14 @@
 //=============================================================================
 CMap::CMap()
 {
-    Surf_Tileset = NULL;
+    Surf_Tileset_Passables = NULL;
+    Surf_Tileset_Impassables = NULL;
 }
 
 //=============================================================================
 bool CMap::OnLoad(char* File, int MapX, int MapY)
 {
+
     TileList.clear();
 
     FILE* FileHandle = fopen(File, "r");
@@ -52,9 +54,6 @@ bool CMap::OnLoad(char* File, int MapX, int MapY)
 void CMap::AddEnemies(int MapX, int MapY)
 {
 
-    int TilesetWidth  = Surf_Tileset->w / TILE_SIZE;
-    int TilesetHeight = Surf_Tileset->h / TILE_SIZE;
-
     int ID = 0;
 
     for(int Y = 0; Y < MAP_HEIGHT; Y++)
@@ -67,7 +66,7 @@ void CMap::AddEnemies(int MapX, int MapY)
                 continue;
             }
 
-            TileList[ID].TypeID = TILE_TYPE_NORMAL;
+            TileList[ID].TypeID = TILE_TYPE_PASSABLE;
 
             float enemyX = MapX + (X * TILE_SIZE);
             float enemyY = MapY + (Y * TILE_SIZE) - 20;
@@ -89,10 +88,10 @@ void CMap::AddEnemies(int MapX, int MapY)
 //-----------------------------------------------------------------------------
 void CMap::OnRender(SDL_Surface* Surf_Display, int MapX, int MapY)
 {
-    if(Surf_Tileset == NULL) return;
+    if(Surf_Tileset_Passables == NULL || Surf_Tileset_Impassables == NULL) return;
 
-    int TilesetWidth  = Surf_Tileset->w / TILE_SIZE;
-    int TilesetHeight = Surf_Tileset->h / TILE_SIZE;
+    int TilesetWidth;
+    int TilesetHeight;
 
     int ID = 0;
 
@@ -109,13 +108,27 @@ void CMap::OnRender(SDL_Surface* Surf_Display, int MapX, int MapY)
             int tX = MapX + (X * TILE_SIZE);
             int tY = MapY + (Y * TILE_SIZE);
 
-            // the greyed out portion below was the offset for the last tileset used
+            if(TileList[ID].TypeID == TILE_TYPE_PASSABLE)
+            {
+                TilesetWidth  = Surf_Tileset_Passables->w / TILE_SIZE;
+                TilesetHeight = Surf_Tileset_Passables->h / TILE_SIZE;
 
-            int TilesetX = (TileList[ID].TileID % TilesetWidth) * TILE_SIZE; // + (TileList[ID].TileID * 1);
-            int TilesetY = (TileList[ID].TileID / TilesetWidth) * TILE_SIZE; // + (TileList[ID].TileID * 1);
+                int TilesetX = (TileList[ID].TileID % TilesetWidth) * TILE_SIZE;
+                int TilesetY = (TileList[ID].TileID / TilesetWidth) * TILE_SIZE;
 
-            CSurface::OnDraw(Surf_Display, Surf_Tileset, tX, tY, TilesetX, TilesetY, TILE_SIZE, TILE_SIZE);
+                CSurface::OnDraw(Surf_Display, Surf_Tileset_Passables, tX, tY, TilesetX, TilesetY, TILE_SIZE, TILE_SIZE);
+            }
 
+            else if(TileList[ID].TypeID == TILE_TYPE_IMPASSABLE)
+            {
+                TilesetWidth  = Surf_Tileset_Impassables->w / TILE_SIZE;
+                TilesetHeight = Surf_Tileset_Impassables->h / TILE_SIZE;
+
+                int TilesetX = (TileList[ID].TileID % TilesetWidth) * TILE_SIZE;
+                int TilesetY = (TileList[ID].TileID / TilesetWidth) * TILE_SIZE;
+
+                CSurface::OnDraw(Surf_Display, Surf_Tileset_Impassables, tX, tY, TilesetX, TilesetY, TILE_SIZE, TILE_SIZE);
+            }
             ID++;
         }
     }

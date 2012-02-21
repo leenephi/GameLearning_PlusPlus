@@ -347,7 +347,7 @@ const bool CEntity::PosValidTile(CTile* Tile)
         return true;
     }
 
-    if(Tile->TypeID == TILE_TYPE_BLOCK)
+    if(Tile->TypeID == TILE_TYPE_IMPASSABLE)
     {
         return false;
     }
