@@ -1,0 +1,5 @@
+./tilesets/game_tiles_1.png
+3
+./maps/level1_1.map ./maps/level1_2.map ./maps/level1_3.map 
+./maps/level1_4.map ./maps/level1_5.map ./maps/level1_6.map 
+./maps/level1_7.map ./maps/level1_8.map ./maps/level1_9.map 
