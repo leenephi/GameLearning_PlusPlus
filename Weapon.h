@@ -11,6 +11,7 @@ public:
     int range;
     int speed;
     bool canHit;
+    float pX, pY;
 
     int onHitTime;
     int hitTimer;
@@ -19,7 +20,7 @@ public:
 
     // bool OnLoad(char* File, int Width, int Height, int MaxFrames);
 
-    bool OnLoad(int Width, int Height);
+    bool OnLoad(char* File, int Width, int Height);
 
     void OnLoop(float playerX, float playerY);
 

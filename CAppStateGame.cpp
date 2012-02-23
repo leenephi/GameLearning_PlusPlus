@@ -91,7 +91,7 @@ void CAppStateGame::OnActivate()
     Player.Type = ENTITY_TYPE_PLAYER;
 
     Weapon* TestWeapon = new Weapon;
-    TestWeapon->OnLoad(20, 20);
+    TestWeapon->OnLoad("dagger.png", 16, 16);
     TestWeapon->Type = ENTITY_TYPE_WEAPON;
     CEntity::EntityList.push_back(TestWeapon);
 

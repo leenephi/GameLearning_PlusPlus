@@ -834,7 +834,7 @@
 1329185280 source:d:\programming\codeblocks\projects\tutoria\cappstate.cpp
 	"CAppState.h"
 
-1329634043 source:d:\programming\codeblocks\projects\tutoria\cappstategame.cpp
+1329955048 source:d:\programming\codeblocks\projects\tutoria\cappstategame.cpp
 	"CAppStateGame.h"
 	"CAppStateManager.h"
 	<cmath>
@@ -851,16 +851,16 @@
 	"Item.h"
 	"Weapon.h"
 
-1329185280 d:\programming\codeblocks\projects\tutoria\carea.h
+1329865333 d:\programming\codeblocks\projects\tutoria\carea.h
 	"CMap.h"
 
-1329185280 d:\programming\codeblocks\projects\tutoria\cmap.h
+1329865333 d:\programming\codeblocks\projects\tutoria\cmap.h
 	<SDL.h>
 	<vector>
 	"CTile.h"
 	"CSurface.h"
 
-1329185280 d:\programming\codeblocks\projects\tutoria\ctile.h
+1329865333 d:\programming\codeblocks\projects\tutoria\ctile.h
 	"Define.h"
 
 1329185280 d:\programming\codeblocks\projects\tutoria\ccamera.h
@@ -911,7 +911,7 @@
 1329185280 source:d:\programming\codeblocks\projects\tutoria\capp_onrender.cpp
 	"CApp.h"
 
-1329434859 source:d:\programming\codeblocks\projects\tutoria\carea.cpp
+1329865333 source:d:\programming\codeblocks\projects\tutoria\carea.cpp
 	"CArea.h"
 
 1329185280 source:d:\programming\codeblocks\projects\tutoria\ccamera.cpp
@@ -920,7 +920,7 @@
 1329633581 source:d:\programming\codeblocks\projects\tutoria\cenemy.cpp
 	"CEnemy.h"
 
-1329588754 source:d:\programming\codeblocks\projects\tutoria\centity.cpp
+1329865333 source:d:\programming\codeblocks\projects\tutoria\centity.cpp
 	"CEntity.h"
 
 1329185280 source:d:\programming\codeblocks\projects\tutoria\centitycol.cpp
@@ -932,12 +932,12 @@
 1329185280 source:d:\programming\codeblocks\projects\tutoria\cfps.cpp
 	"CFPS.h"
 
-1329197062 source:d:\programming\codeblocks\projects\tutoria\cmap.cpp
+1329865333 source:d:\programming\codeblocks\projects\tutoria\cmap.cpp
 	"CMap.h"
 	"CEnemy.h"
 	<time.h>
 
-1329635723 source:d:\programming\codeblocks\projects\tutoria\cplayer.cpp
+1329717333 source:d:\programming\codeblocks\projects\tutoria\cplayer.cpp
 	"CPlayer.h"
 
 1329185280 source:d:\programming\codeblocks\projects\tutoria\csurface.cpp
@@ -1167,10 +1167,10 @@
 	"begin_code.h"
 	"close_code.h"
 
-1329717279 source:d:\programming\codeblocks\projects\tutoria\weapon.cpp
+1329955711 source:d:\programming\codeblocks\projects\tutoria\weapon.cpp
 	"Weapon.h"
 
-1329717147 d:\programming\codeblocks\projects\tutoria\weapon.h
+1329955257 d:\programming\codeblocks\projects\tutoria\weapon.h
 	"Item.h"
 
 1329633007 d:\programming\codeblocks\projects\tutoria\item.h

@@ -11,16 +11,17 @@ Weapon::Weapon()
     Y = 0;
     Flags = ENTITY_FLAG_MAPONLY;
     hitTimer = 100;
+    pX = pY = 0;
 }
 
 //=============================================================================
 //bool Weapon::OnLoad(char* File, int Width, int Height, int MaxFrames)
-bool Weapon::OnLoad(int Width, int Height)
+bool Weapon::OnLoad(char* File, int Width, int Height)
 {
-    /*if(CEntity::OnLoad(File, Width, Height, MaxFrames) == false)
+    if(CEntity::OnLoad(File, Width, Height, 1) == false)
     {
         return false;
-    }*/
+    }
     this->Width = Width;
     this->Height = Height;
     range = Width;
@@ -32,6 +33,10 @@ bool Weapon::OnLoad(int Width, int Height)
 //-----------------------------------------------------------------------------
 void Weapon::OnLoop(float playerX, float playerY)
 {
+    pX = playerX;
+    pY = playerY;
+    X = pX + 20;
+    Y = (pY + 40) - (40 / 2);
     if(canHit == true)
     {
         CEntity::OnLoop(X, Y);
@@ -50,17 +55,9 @@ void Weapon::OnLoop(float playerX, float playerY)
 //-----------------------------------------------------------------------------
 void Weapon::OnRender(SDL_Surface* Surf_Display)
 {
-    /*
     if(Surf_Entity == NULL || Surf_Display == NULL) return;
-    if (IsJumping == true)
-    {
-        CSurface::OnDraw(Surf_Display, Surf_Entity, X - CCamera::CameraControl.GetX(), Y - CCamera::CameraControl.GetY() + 2, CurrentFrameCol * Width, (CurrentFrameRow + 5) * Height, Width, Height);
-    }
-    else
-    {
-        CSurface::OnDraw(Surf_Display, Surf_Entity, X - CCamera::CameraControl.GetX(), Y - CCamera::CameraControl.GetY() + 2, CurrentFrameCol * Width, (CurrentFrameRow + Anim_Control.GetCurrentFrame() + 6) * Height, Width, Height);
-    }
-    */
+
+        CSurface::OnDraw(Surf_Display, Surf_Entity, X - CCamera::CameraControl.GetX(), Y - CCamera::CameraControl.GetY(), CurrentFrameCol * Width, CurrentFrameRow * Height, Width, Height);
 }
 
 //------------------------------------------------------------------------------
