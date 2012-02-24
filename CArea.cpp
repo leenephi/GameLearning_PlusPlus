@@ -9,6 +9,8 @@ CArea::CArea()
 {
     Surf_Tileset_Passables = NULL;
     Surf_Tileset_Impassables = NULL;
+    MapWidth  = MAP_WIDTH * TILE_SIZE;
+    MapHeight = MAP_HEIGHT * TILE_SIZE;
 
 }
 
@@ -33,10 +35,12 @@ bool CArea::OnLoad(char* File)
 
     if((Surf_Tileset_Passables = CSurface::OnLoad(PassablesFile)) == false)
     {
+        fclose(FileHandle);
         return false;
     }
     if((Surf_Tileset_Impassables = CSurface::OnLoad(ImpassablesFile)) == false)
     {
+        fclose(FileHandle);
         return false;
     }
 
@@ -45,8 +49,6 @@ bool CArea::OnLoad(char* File)
     // I added the MapWidth and MapHeight here for the sake of adding enemies in CMap::OnLoad()
 
     int ID = 0;
-    int MapWidth  = MAP_WIDTH * TILE_SIZE;
-    int MapHeight = MAP_HEIGHT * TILE_SIZE;
 
     for(int Y = 0; Y < areaHeight; Y++)
     {
@@ -63,7 +65,6 @@ bool CArea::OnLoad(char* File)
             if(tempMap.OnLoad(MapFile, X, Y) == false)
             {
                 fclose(FileHandle);
-
                 return false;
             }
 
@@ -84,13 +85,11 @@ bool CArea::OnLoad(char* File)
 //-----------------------------------------------------------------------------
 void CArea::OnRender(SDL_Surface* Surf_Display, int CameraX, int CameraY)
 {
-    int MapWidth  = MAP_WIDTH * TILE_SIZE;
-    int MapHeight = MAP_HEIGHT * TILE_SIZE;
 
     int FirstID = -CameraX / MapWidth;
     FirstID = FirstID + ((-CameraY / MapHeight) * areaWidth);
 
-    for(int i = 0; i < 16; i++)
+    for(int i = 0; i < 6; i++)
     {
         int ID = FirstID + ((i / 3) * areaWidth) + (i % 3);
 

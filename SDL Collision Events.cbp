@@ -27,6 +27,8 @@
 			<Add alias="All" targets="Release;" />
 		</VirtualTargets>
 		<Compiler>
+			<Add option="-Wredundant-decls" />
+			<Add option="-Wcast-align" />
 			<Add option="-Wall" />
 			<Add directory="..\..\SDL\include" />
 		</Compiler>

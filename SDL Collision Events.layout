@@ -7,20 +7,20 @@
 	<File name="CAnimation.h" open="0" top="0" tabpos="1">
 		<Cursor position="254" topLine="0" />
 	</File>
-	<File name="CApp.cpp" open="1" top="0" tabpos="11">
+	<File name="CApp.cpp" open="0" top="0" tabpos="11">
 		<Cursor position="359" topLine="0" />
 	</File>
 	<File name="CApp.h" open="0" top="0" tabpos="4">
 		<Cursor position="334" topLine="15" />
 	</File>
-	<File name="CAppState.cpp" open="1" top="0" tabpos="10">
+	<File name="CAppState.cpp" open="0" top="0" tabpos="10">
 		<Cursor position="51" topLine="0" />
 	</File>
 	<File name="CAppState.h" open="0" top="0" tabpos="2">
 		<Cursor position="334" topLine="0" />
 	</File>
-	<File name="CAppStateGame.cpp" open="1" top="1" tabpos="6">
-		<Cursor position="4151" topLine="152" />
+	<File name="CAppStateGame.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="1752" topLine="107" />
 	</File>
 	<File name="CAppStateGame.h" open="0" top="0" tabpos="0">
 		<Cursor position="219" topLine="0" />
@@ -37,17 +37,17 @@
 	<File name="CApp_OnInit.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="347" topLine="0" />
 	</File>
-	<File name="CApp_OnLoop.cpp" open="1" top="0" tabpos="12">
+	<File name="CApp_OnLoop.cpp" open="0" top="0" tabpos="12">
 		<Cursor position="401" topLine="0" />
 	</File>
 	<File name="CApp_OnRender.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="290" topLine="0" />
 	</File>
-	<File name="CArea.cpp" open="1" top="0" tabpos="13">
-		<Cursor position="2078" topLine="73" />
+	<File name="CArea.cpp" open="0" top="0" tabpos="13">
+		<Cursor position="2001" topLine="52" />
 	</File>
 	<File name="CArea.h" open="0" top="0" tabpos="0">
-		<Cursor position="506" topLine="6" />
+		<Cursor position="432" topLine="6" />
 	</File>
 	<File name="CEnemy.cpp" open="0" top="0" tabpos="3">
 		<Cursor position="2653" topLine="77" />
@@ -56,21 +56,21 @@
 		<Cursor position="190" topLine="0" />
 	</File>
 	<File name="CEntity.cpp" open="0" top="0" tabpos="4">
-		<Cursor position="1857" topLine="79" />
+		<Cursor position="2636" topLine="111" />
 	</File>
 	<File name="CEntity.h" open="0" top="0" tabpos="0">
 		<Cursor position="2244" topLine="0" />
 	</File>
-	<File name="CMap.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="843" topLine="0" />
+	<File name="CMap.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="843" topLine="11" />
 	</File>
-	<File name="CMap.h" open="1" top="0" tabpos="3">
+	<File name="CMap.h" open="0" top="0" tabpos="3">
 		<Cursor position="647" topLine="0" />
 	</File>
 	<File name="CPlayer.cpp" open="0" top="0" tabpos="1">
 		<Cursor position="699" topLine="2" />
 	</File>
-	<File name="CPlayer.h" open="1" top="0" tabpos="9">
+	<File name="CPlayer.h" open="0" top="0" tabpos="9">
 		<Cursor position="423" topLine="0" />
 	</File>
 	<File name="CScreenText.cpp" open="0" top="0" tabpos="6">
@@ -82,22 +82,22 @@
 	<File name="CSurface.cpp" open="0" top="0" tabpos="9">
 		<Cursor position="421" topLine="21" />
 	</File>
-	<File name="CSurface.h" open="1" top="0" tabpos="4">
+	<File name="CSurface.h" open="0" top="0" tabpos="4">
 		<Cursor position="401" topLine="0" />
 	</File>
-	<File name="CTile.h" open="1" top="0" tabpos="5">
+	<File name="CTile.h" open="0" top="0" tabpos="5">
 		<Cursor position="355" topLine="0" />
 	</File>
-	<File name="Define.h" open="1" top="0" tabpos="2">
+	<File name="Define.h" open="0" top="0" tabpos="2">
 		<Cursor position="154" topLine="0" />
 	</File>
 	<File name="ShortRange.h" open="0" top="0" tabpos="1">
 		<Cursor position="168" topLine="0" />
 	</File>
-	<File name="Weapon.cpp" open="1" top="0" tabpos="7">
+	<File name="Weapon.cpp" open="0" top="0" tabpos="7">
 		<Cursor position="1006" topLine="0" />
 	</File>
-	<File name="Weapon.h" open="1" top="0" tabpos="8">
+	<File name="Weapon.h" open="0" top="0" tabpos="8">
 		<Cursor position="203" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>

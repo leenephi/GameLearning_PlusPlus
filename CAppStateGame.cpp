@@ -184,6 +184,7 @@ void CAppStateGame::OnRender(SDL_Surface* Surf_Display)
     }
 }
 
+
 CAppStateGame* CAppStateGame::GetInstance()
 {
     return &Instance;

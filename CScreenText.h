@@ -10,7 +10,9 @@ class CScreenText
 public:
     static CScreenText  ScreenTextControl;
 
-//The color of the font SDL_Color textColor = { 255, 255, 255 };
+    char health[50];
+
+    char testing[100];
 
 private:
     SDL_Surface*	Surf_Text;

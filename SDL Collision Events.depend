@@ -1009,7 +1009,7 @@
 1329149616 source:g:\software\projects\tutoria\cappstate.cpp
 	"CAppState.h"
 
-1329751265 source:g:\software\projects\tutoria\cappstategame.cpp
+1330097782 source:g:\software\projects\tutoria\cappstategame.cpp
 	"CAppStateGame.h"
 	"CAppStateManager.h"
 	<cmath>
@@ -1026,7 +1026,7 @@
 	"Item.h"
 	"Weapon.h"
 
-1329843238 g:\software\projects\tutoria\carea.h
+1330097197 g:\software\projects\tutoria\carea.h
 	"CMap.h"
 
 1329840863 g:\software\projects\tutoria\cmap.h
@@ -1065,7 +1065,7 @@
 	"CAppState.h"
 	"CSurface.h"
 
-1329161821 source:g:\software\projects\tutoria\cappstatemanager.cpp
+1330097002 source:g:\software\projects\tutoria\cappstatemanager.cpp
 	"CAppStateManager.h"
 	"CAppStateIntro.h"
 	"CAppStateGame.h"
@@ -1091,10 +1091,10 @@
 1329149616 source:g:\software\projects\tutoria\capp_onloop.cpp
 	"CApp.h"
 
-1329149616 source:g:\software\projects\tutoria\capp_onrender.cpp
+1330097080 source:g:\software\projects\tutoria\capp_onrender.cpp
 	"CApp.h"
 
-1329850107 source:g:\software\projects\tutoria\carea.cpp
+1330097241 source:g:\software\projects\tutoria\carea.cpp
 	"CArea.h"
 
 1329149616 source:g:\software\projects\tutoria\ccamera.cpp
@@ -1112,7 +1112,7 @@
 1329149617 source:g:\software\projects\tutoria\cfps.cpp
 	"CFPS.h"
 
-1329844929 source:g:\software\projects\tutoria\cmap.cpp
+1330097544 source:g:\software\projects\tutoria\cmap.cpp
 	"CMap.h"
 	"CEnemy.h"
 	<time.h>
@@ -1135,7 +1135,7 @@
 1329751266 g:\software\projects\tutoria\shortrange.h
 	"CEntity.h"
 
-1329751266 g:\software\projects\tutoria\cscreentext.h
+1330097912 g:\software\projects\tutoria\cscreentext.h
 	<SDL_ttf.h>
 	"CSurface.h"
 
@@ -1144,7 +1144,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1329751265 source:g:\software\projects\tutoria\cscreentext.cpp
+1330098500 source:g:\software\projects\tutoria\cscreentext.cpp
 	"CScreenText.h"
 	"CAppStateGame.h"
 
@@ -1181,7 +1181,7 @@
 	"Item.h"
 	<string>
 
-1329751266 g:\software\projects\tutoria\weapon.h
+1330017512 g:\software\projects\tutoria\weapon.h
 	"Item.h"
 
 1329751266 g:\software\projects\tutoria\item.h
@@ -1192,7 +1192,7 @@
 	"Item.h"
 	<string>
 
-1329752778 source:g:\software\projects\tutoria\weapon.cpp
+1330017512 source:g:\software\projects\tutoria\weapon.cpp
 	"Weapon.h"
 
 1329747251 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cscreentext.h

@@ -18,6 +18,9 @@ private:
 
     int                     areaHeight;
 
+    int                     MapWidth;
+    int                     MapHeight;
+
     SDL_Surface*			Surf_Tileset_Passables;
 
     SDL_Surface*            Surf_Tileset_Impassables;
