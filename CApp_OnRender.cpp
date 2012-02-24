@@ -6,6 +6,7 @@ void CApp::OnRender()
 {
     CAppStateManager::OnRender(Surf_Display);
 
+    SDL_Delay(1);
     SDL_Flip(Surf_Display);
 }
 

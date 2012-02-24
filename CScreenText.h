@@ -19,6 +19,10 @@ private:
 
     SDL_Color       textColor;
 
+    char health[50];
+
+    char testing[100];
+
 public:
     CScreenText();
 
