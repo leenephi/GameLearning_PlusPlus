@@ -61,11 +61,11 @@ bool CArea::OnLoad(char* File)
 
             fscanf(FileHandle, "%s255 ", MapFile);
 
-            int X = ((ID % areaWidth) * MapWidth);
-            int Y = ((ID / areaWidth) * MapHeight);
+            int nX = ((ID % areaWidth) * MapWidth);
+            int nY = ((ID / areaWidth) * MapHeight);
 
             CMap tempMap;
-            if(tempMap.OnLoad(MapFile, X, Y) == false)
+            if(tempMap.OnLoad(MapFile, nX, nY) == false)
             {
                 fclose(FileHandle);
 
@@ -115,10 +115,12 @@ void CArea::OnCleanup()
     if(Surf_Tileset_Passables)
     {
         SDL_FreeSurface(Surf_Tileset_Passables);
+		Surf_Tileset_Passables = NULL;
     }
     if(Surf_Tileset_Impassables)
     {
         SDL_FreeSurface(Surf_Tileset_Impassables);
+		Surf_Tileset_Impassables = NULL;
     }
 
     MapList.clear();

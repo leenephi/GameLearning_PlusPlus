@@ -19,6 +19,7 @@ SDL_Surface* CSurface::OnLoad(char* File)
 
     Surf_Return = SDL_DisplayFormatAlpha(Surf_Temp);
     SDL_FreeSurface(Surf_Temp);
+    Surf_Temp = NULL;
 
     return Surf_Return;
 }

@@ -16,12 +16,12 @@
 class CAppStateGame : public CAppState
 {
 private:
-    static CAppStateGame Instance;
 
 private:
     CAppStateGame();
 
 public:
+    static CAppStateGame Instance;
 
     CPlayer			Player;
 

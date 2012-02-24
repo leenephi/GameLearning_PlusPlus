@@ -472,7 +472,7 @@
 1330090902 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cenemy.h
 	"CEntity.h"
 
-1329149076 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_oncleanup.cpp
+1330101905 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_oncleanup.cpp
 	"CApp.h"
 
 1329149076 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_onevent.cpp
@@ -487,7 +487,7 @@
 1330098302 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_onrender.cpp
 	"CApp.h"
 
-1330090902 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\carea.cpp
+1330112062 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\carea.cpp
 	"CArea.h"
 
 1329228527 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\ccamera.cpp
@@ -531,12 +531,12 @@
 1329149076 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cappstate.cpp
 	"CAppState.h"
 
-1330098303 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cappstategame.cpp
+1330111728 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cappstategame.cpp
 	"CAppStateGame.h"
 	"CAppStateManager.h"
 	<cmath>
 
-1329747251 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cappstategame.h
+1330104987 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cappstategame.h
 	"CAppState.h"
 	"CArea.h"
 	"CCamera.h"
@@ -556,7 +556,7 @@
 	"CAppState.h"
 	"CSurface.h"
 
-1329155390 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cappstatemanager.cpp
+1330109900 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cappstatemanager.cpp
 	"CAppStateManager.h"
 	"CAppStateIntro.h"
 	"CAppStateGame.h"
@@ -950,9 +950,10 @@
 	"CAppState.h"
 	"CSurface.h"
 
-1329162419 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cappstatemenu.cpp
+1330105063 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cappstatemenu.cpp
 	"CAppStateMenu.h"
 	"CAppStateManager.h"
+	"CAppStateGame.h"
 
 1329161821 g:\software\cbprojects\tutoria\cappstatemenu.h
 	"CAppState.h"
@@ -1195,8 +1196,8 @@
 1329752778 source:g:\software\projects\tutoria\weapon.cpp
 	"Weapon.h"
 
-1330097632 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cscreentext.h
-	<SDL_ttf.h>
+1330110775 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cscreentext.h
+	"SDL_ttf.h"
 	"CSurface.h"
 
 1330090902 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\weapon.h
@@ -1206,7 +1207,7 @@
 	"CEntity.h"
 	<string>
 
-1330098264 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cscreentext.cpp
+1330101905 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cscreentext.cpp
 	"CScreenText.h"
 	"CAppStateGame.h"
 

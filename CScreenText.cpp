@@ -10,13 +10,16 @@ CScreenText::CScreenText()
 {
     Surf_Text = NULL;
     font = NULL;
-    textColor = {255, 255, 255 };
+	textColor.r = 255;
+	textColor.g = 255;
+	textColor.b = 255;
 }
 
 
 
 bool CScreenText::OnLoad()
 {
+OnCleanup();
     font = TTF_OpenFont( "FOO.ttf", 28 );
     if(font == NULL)
     {
@@ -37,6 +40,7 @@ void CScreenText::OnRender(SDL_Surface* Surf_Display, int playerHealth, bool can
     Surf_Text = TTF_RenderText_Solid(font, health, textColor);
     CSurface::OnDraw(Surf_Display, Surf_Text, 0, 0);
     SDL_FreeSurface(Surf_Text);
+    Surf_Text = NULL;
 
     // The following is to see test stuff on the screen.. for testing!
 
@@ -51,11 +55,14 @@ void CScreenText::OnRender(SDL_Surface* Surf_Display, int playerHealth, bool can
     Surf_Text = TTF_RenderText_Solid(font, testing, textColor);
     CSurface::OnDraw(Surf_Display, Surf_Text, 0, 20);
     SDL_FreeSurface(Surf_Text);
+    Surf_Text = NULL;
 }
 
 void CScreenText::OnCleanup()
 {
     SDL_FreeSurface(Surf_Text);
+    Surf_Text = NULL;
     TTF_CloseFont(font);
-    TTF_Quit();
+    font = NULL;
+
 }

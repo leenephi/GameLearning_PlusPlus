@@ -1,7 +1,7 @@
 #ifndef CSCREENTEXT_H_INCLUDED
 #define CSCREENTEXT_H_INCLUDED
 
-#include <SDL_ttf.h>
+#include "SDL_ttf.h"
 #include "CSurface.h"
 
 class CScreenText
