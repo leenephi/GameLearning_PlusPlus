@@ -24,7 +24,7 @@ bool CScreenText::OnLoad()
     }
 }
 
-void CScreenText::OnLoop()
+const void CScreenText::OnLoop()
 {
 
 }
@@ -38,6 +38,7 @@ void CScreenText::OnRender(SDL_Surface* Surf_Display, int playerHealth, bool can
     SDL_FreeSurface(Surf_Text);
 
     // The following is to see test stuff on the screen.. for testing!
+
     if (canAttack == true)
     {
         sprintf(testing, "Can attack: true");

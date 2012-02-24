@@ -16,6 +16,11 @@ CEnemy::CEnemy(float startX, float startY, char* File, int Width, int Height, in
 
 }
 
+CEnemy::~CEnemy()
+{
+    OnCleanup();
+}
+
 //=============================================================================
 bool CEnemy::OnLoad(char* File, int Width, int Height, int MaxFrames)
 {

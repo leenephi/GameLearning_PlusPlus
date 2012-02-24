@@ -20,16 +20,19 @@
 		<Cursor position="334" topLine="0" />
 	</File>
 	<File name="CAppStateGame.cpp" open="0" top="0" tabpos="6">
-		<Cursor position="1752" topLine="107" />
+		<Cursor position="3711" topLine="160" />
 	</File>
 	<File name="CAppStateGame.h" open="0" top="0" tabpos="0">
 		<Cursor position="219" topLine="0" />
 	</File>
 	<File name="CAppStateIntro.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="382" topLine="12" />
+		<Cursor position="453" topLine="21" />
 	</File>
 	<File name="CAppStateManager.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="1217" topLine="12" />
+		<Cursor position="554" topLine="6" />
+	</File>
+	<File name="CAppStateMenu.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="950" topLine="40" />
 	</File>
 	<File name="CApp_OnEvent.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="323" topLine="0" />
@@ -41,13 +44,13 @@
 		<Cursor position="401" topLine="0" />
 	</File>
 	<File name="CApp_OnRender.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="290" topLine="0" />
+		<Cursor position="287" topLine="0" />
 	</File>
 	<File name="CArea.cpp" open="0" top="0" tabpos="13">
-		<Cursor position="2001" topLine="52" />
+		<Cursor position="2449" topLine="81" />
 	</File>
 	<File name="CArea.h" open="0" top="0" tabpos="0">
-		<Cursor position="432" topLine="6" />
+		<Cursor position="473" topLine="9" />
 	</File>
 	<File name="CEnemy.cpp" open="0" top="0" tabpos="3">
 		<Cursor position="2653" topLine="77" />
@@ -56,13 +59,16 @@
 		<Cursor position="190" topLine="0" />
 	</File>
 	<File name="CEntity.cpp" open="0" top="0" tabpos="4">
-		<Cursor position="2636" topLine="111" />
+		<Cursor position="2612" topLine="0" />
 	</File>
 	<File name="CEntity.h" open="0" top="0" tabpos="0">
-		<Cursor position="2244" topLine="0" />
+		<Cursor position="844" topLine="25" />
+	</File>
+	<File name="CFPS.h" open="0" top="0" tabpos="0">
+		<Cursor position="713" topLine="9" />
 	</File>
 	<File name="CMap.cpp" open="0" top="0" tabpos="1">
-		<Cursor position="843" topLine="11" />
+		<Cursor position="3137" topLine="95" />
 	</File>
 	<File name="CMap.h" open="0" top="0" tabpos="3">
 		<Cursor position="647" topLine="0" />
@@ -73,11 +79,11 @@
 	<File name="CPlayer.h" open="0" top="0" tabpos="9">
 		<Cursor position="423" topLine="0" />
 	</File>
-	<File name="CScreenText.cpp" open="0" top="0" tabpos="6">
-		<Cursor position="863" topLine="30" />
+	<File name="CScreenText.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="850" topLine="20" />
 	</File>
-	<File name="CScreenText.h" open="0" top="0" tabpos="0">
-		<Cursor position="502" topLine="10" />
+	<File name="CScreenText.h" open="1" top="0" tabpos="2">
+		<Cursor position="342" topLine="0" />
 	</File>
 	<File name="CSurface.cpp" open="0" top="0" tabpos="9">
 		<Cursor position="421" topLine="21" />

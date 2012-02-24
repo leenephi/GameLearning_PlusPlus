@@ -7,6 +7,9 @@ CArea CArea::AreaControl;
 //=============================================================================
 CArea::CArea()
 {
+    areaWidth = 3;
+    areaHeight = 3;
+
     Surf_Tileset_Passables = NULL;
     Surf_Tileset_Impassables = NULL;
     MapWidth  = MAP_WIDTH * TILE_SIZE;
@@ -30,8 +33,8 @@ bool CArea::OnLoad(char* File)
     char PassablesFile[255];
     char ImpassablesFile[255];
 
-    fscanf(FileHandle, "%s\n", PassablesFile);
-    fscanf(FileHandle, "%s\n", ImpassablesFile);
+    fscanf(FileHandle, "%255s\n", PassablesFile);
+    fscanf(FileHandle, "%255s\n", ImpassablesFile);
 
     if((Surf_Tileset_Passables = CSurface::OnLoad(PassablesFile)) == false)
     {
@@ -75,6 +78,7 @@ bool CArea::OnLoad(char* File)
             ID++;
         }
         fscanf(FileHandle, "\n");
+
     }
 
     fclose(FileHandle);

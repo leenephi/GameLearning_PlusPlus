@@ -17,6 +17,7 @@ public:
     int hitTimer;
 
     Weapon();
+    ~Weapon();
 
     // bool OnLoad(char* File, int Width, int Height, int MaxFrames);
 

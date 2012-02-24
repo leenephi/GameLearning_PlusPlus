@@ -3,6 +3,7 @@
 //=============================================================================
 Weapon::Weapon()
 {
+    onHitTime = 0;
     damage = 50;
     range = 0;
     speed = 0;
@@ -13,7 +14,10 @@ Weapon::Weapon()
     hitTimer = 100;
     pX = pY = 0;
 }
-
+Weapon::~Weapon()
+{
+        OnCleanup();
+}
 //=============================================================================
 //bool Weapon::OnLoad(char* File, int Width, int Height, int MaxFrames)
 bool Weapon::OnLoad(char* File, int Width, int Height)

@@ -446,7 +446,7 @@
 1329857738 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\ctile.h
 	"Define.h"
 
-1329149158 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\csurface.h
+1330097887 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\csurface.h
 	<SDL.h>
 	<SDL_image.h>
 
@@ -465,11 +465,11 @@
 1329149158 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cevent.h
 	<SDL.h>
 
-1329756509 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cplayer.h
+1330090902 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cplayer.h
 	"CEntity.h"
 	"Weapon.h"
 
-1329747251 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cenemy.h
+1330090902 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cenemy.h
 	"CEntity.h"
 
 1329149076 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_oncleanup.cpp
@@ -484,19 +484,19 @@
 1329149076 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_onloop.cpp
 	"CApp.h"
 
-1329149076 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_onrender.cpp
+1330098302 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_onrender.cpp
 	"CApp.h"
 
-1329859676 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\carea.cpp
+1330090902 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\carea.cpp
 	"CArea.h"
 
 1329228527 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\ccamera.cpp
 	"CCamera.h"
 
-1329747251 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cenemy.cpp
+1330090902 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cenemy.cpp
 	"CEnemy.h"
 
-1329857738 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\centity.cpp
+1330090902 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\centity.cpp
 	"CEntity.h"
 
 1329149076 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\centitycol.cpp
@@ -508,15 +508,15 @@
 1329149076 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cfps.cpp
 	"CFPS.h"
 
-1329857738 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cmap.cpp
+1330090902 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cmap.cpp
 	"CMap.h"
 	"CEnemy.h"
 	<time.h>
 
-1329756509 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cplayer.cpp
+1330090902 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cplayer.cpp
 	"CPlayer.h"
 
-1329149076 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\csurface.cpp
+1330097887 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\csurface.cpp
 	"CSurface.h"
 
 1329149076 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\ctile.cpp
@@ -531,7 +531,7 @@
 1329149076 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cappstate.cpp
 	"CAppState.h"
 
-1329756509 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cappstategame.cpp
+1330098303 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cappstategame.cpp
 	"CAppStateGame.h"
 	"CAppStateManager.h"
 	<cmath>
@@ -979,7 +979,7 @@
 1329149616 source:g:\software\projects\tutoria\capp.cpp
 	"CApp.h"
 
-1329500517 g:\software\projects\tutoria\capp.h
+1330099124 g:\software\projects\tutoria\capp.h
 	<SDL.h>
 	<SDL_ttf.h>
 	"Define.h"
@@ -1002,19 +1002,19 @@
 1329149617 g:\software\projects\tutoria\cfps.h
 	<SDL.h>
 
-1329149617 g:\software\projects\tutoria\csurface.h
+1330099154 g:\software\projects\tutoria\csurface.h
 	<SDL.h>
 	<SDL_image.h>
 
 1329149616 source:g:\software\projects\tutoria\cappstate.cpp
 	"CAppState.h"
 
-1330097782 source:g:\software\projects\tutoria\cappstategame.cpp
+1330099135 source:g:\software\projects\tutoria\cappstategame.cpp
 	"CAppStateGame.h"
 	"CAppStateManager.h"
 	<cmath>
 
-1329751265 g:\software\projects\tutoria\cappstategame.h
+1330099124 g:\software\projects\tutoria\cappstategame.h
 	"CAppState.h"
 	"CArea.h"
 	"CCamera.h"
@@ -1026,23 +1026,23 @@
 	"Item.h"
 	"Weapon.h"
 
-1330097197 g:\software\projects\tutoria\carea.h
+1330099135 g:\software\projects\tutoria\carea.h
 	"CMap.h"
 
-1329840863 g:\software\projects\tutoria\cmap.h
+1330099124 g:\software\projects\tutoria\cmap.h
 	<SDL.h>
 	<vector>
 	"CTile.h"
 	"CSurface.h"
 
-1329839620 g:\software\projects\tutoria\ctile.h
+1330099124 g:\software\projects\tutoria\ctile.h
 	"Define.h"
 
 1329149616 g:\software\projects\tutoria\ccamera.h
 	<SDL.h>
 	"Define.h"
 
-1329751265 g:\software\projects\tutoria\centity.h
+1330099124 g:\software\projects\tutoria\centity.h
 	<vector>
 	"CArea.h"
 	"CAnimation.h"
@@ -1050,11 +1050,11 @@
 	"CFPS.h"
 	"CSurface.h"
 
-1329751265 g:\software\projects\tutoria\cplayer.h
+1330099154 g:\software\projects\tutoria\cplayer.h
 	"CEntity.h"
 	"Weapon.h"
 
-1329751265 g:\software\projects\tutoria\cenemy.h
+1330099154 g:\software\projects\tutoria\cenemy.h
 	"CEntity.h"
 
 1329161821 source:g:\software\projects\tutoria\cappstateintro.cpp
@@ -1085,22 +1085,22 @@
 1329149616 source:g:\software\projects\tutoria\capp_onevent.cpp
 	"CApp.h"
 
-1329506277 source:g:\software\projects\tutoria\capp_oninit.cpp
+1330099124 source:g:\software\projects\tutoria\capp_oninit.cpp
 	"CApp.h"
 
 1329149616 source:g:\software\projects\tutoria\capp_onloop.cpp
 	"CApp.h"
 
-1330097080 source:g:\software\projects\tutoria\capp_onrender.cpp
+1330099154 source:g:\software\projects\tutoria\capp_onrender.cpp
 	"CApp.h"
 
-1330097241 source:g:\software\projects\tutoria\carea.cpp
+1330099156 source:g:\software\projects\tutoria\carea.cpp
 	"CArea.h"
 
 1329149616 source:g:\software\projects\tutoria\ccamera.cpp
 	"CCamera.h"
 
-1329751265 source:g:\software\projects\tutoria\cenemy.cpp
+1330099154 source:g:\software\projects\tutoria\cenemy.cpp
 	"CEnemy.h"
 
 1329149617 source:g:\software\projects\tutoria\centitycol.cpp
@@ -1112,12 +1112,12 @@
 1329149617 source:g:\software\projects\tutoria\cfps.cpp
 	"CFPS.h"
 
-1330097544 source:g:\software\projects\tutoria\cmap.cpp
+1330099353 source:g:\software\projects\tutoria\cmap.cpp
 	"CMap.h"
 	"CEnemy.h"
 	<time.h>
 
-1329751265 source:g:\software\projects\tutoria\cplayer.cpp
+1330099154 source:g:\software\projects\tutoria\cplayer.cpp
 	"CPlayer.h"
 
 1329149617 source:g:\software\projects\tutoria\csurface.cpp
@@ -1126,16 +1126,16 @@
 1329149617 source:g:\software\projects\tutoria\ctile.cpp
 	"CTile.h"
 
-1329840287 source:g:\software\projects\tutoria\centity.cpp
+1330099154 source:g:\software\projects\tutoria\centity.cpp
 	"CEntity.h"
 
-1329409789 source:g:\software\projects\tutoria\shortrange.cpp
+1330099124 source:g:\software\projects\tutoria\shortrange.cpp
 	"ShortRange.h"
 
-1329751266 g:\software\projects\tutoria\shortrange.h
+1330099124 g:\software\projects\tutoria\shortrange.h
 	"CEntity.h"
 
-1330097912 g:\software\projects\tutoria\cscreentext.h
+1330099234 g:\software\projects\tutoria\cscreentext.h
 	<SDL_ttf.h>
 	"CSurface.h"
 
@@ -1144,7 +1144,7 @@
 	"begin_code.h"
 	"close_code.h"
 
-1330098500 source:g:\software\projects\tutoria\cscreentext.cpp
+1330099214 source:g:\software\projects\tutoria\cscreentext.cpp
 	"CScreenText.h"
 	"CAppStateGame.h"
 
@@ -1181,36 +1181,36 @@
 	"Item.h"
 	<string>
 
-1330017512 g:\software\projects\tutoria\weapon.h
+1330099155 g:\software\projects\tutoria\weapon.h
 	"Item.h"
 
-1329751266 g:\software\projects\tutoria\item.h
+1330099155 g:\software\projects\tutoria\item.h
 	"CEntity.h"
 	<string>
 
-1329751266 source:g:\software\projects\tutoria\item.cpp
+1330099154 source:g:\software\projects\tutoria\item.cpp
 	"Item.h"
 	<string>
 
-1330017512 source:g:\software\projects\tutoria\weapon.cpp
+1330099155 source:g:\software\projects\tutoria\weapon.cpp
 	"Weapon.h"
 
-1329747251 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cscreentext.h
+1330097632 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cscreentext.h
 	<SDL_ttf.h>
 	"CSurface.h"
 
-1329747251 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\weapon.h
+1330090902 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\weapon.h
 	"Item.h"
 
-1329747251 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\item.h
+1330090902 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\item.h
 	"CEntity.h"
 	<string>
 
-1329747251 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cscreentext.cpp
+1330098264 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cscreentext.cpp
 	"CScreenText.h"
 	"CAppStateGame.h"
 
-1329747251 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\item.cpp
+1330090902 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\item.cpp
 	"Item.h"
 	<string>
 
@@ -1220,6 +1220,6 @@
 1329747251 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\shortrange.h
 	"CEntity.h"
 
-1329747251 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\weapon.cpp
+1330090902 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\weapon.cpp
 	"Weapon.h"
 
