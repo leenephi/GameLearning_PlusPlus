@@ -11,7 +11,6 @@ public:
     int range;
     int speed;
     bool canHit;
-    float pX, pY;
 
     int onHitTime;
     int hitTimer;
@@ -33,7 +32,7 @@ public:
 
     bool OnCollision(CEntity* Entity);
 
-    void DoDamage(float playerX, float playerY, int playerW, int playerH);
+    void DoDamage();
 };
 
 #endif // Weapon_H_INCLUDED

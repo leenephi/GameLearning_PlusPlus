@@ -8,11 +8,11 @@ Weapon::Weapon()
     range = 0;
     speed = 0;
     canHit = false;
-    X = 100;
+    used = false;
+    X = 0;
     Y = 0;
-    Flags = ENTITY_FLAG_MAPONLY;
+    Flags = ENTITY_FLAG_MAPONLY | ENTITY_FLAG_GRAVITY;
     hitTimer = 100;
-    pX = pY = 0;
 }
 Weapon::~Weapon()
 {
@@ -37,23 +37,25 @@ bool Weapon::OnLoad(char* File, int Width, int Height)
 //-----------------------------------------------------------------------------
 void Weapon::OnLoop(float playerX, float playerY)
 {
-    pX = playerX;
-    pY = playerY;
-    X = pX + 20;
-    Y = (pY + 40) - (40 / 2);
-    if(canHit == true)
+    if(used)
     {
-        CEntity::OnLoop(X, Y);
+        Flags = ENTITY_FLAG_GHOST;
+        X = playerX + 20;
+        Y = (playerY + 40) - (40 / 2);
+        /*
+        if(canHit == true)
+        {
+            CEntity::OnLoop(X, Y);
+        }
+        */
+
+        if(SDL_GetTicks() - onHitTime > hitTimer)
+        {
+            canHit = false;
+            Flags = ENTITY_FLAG_MAPONLY;
+        }
     }
-
-    if(SDL_GetTicks() - onHitTime > hitTimer)
-    {
-        canHit = false;
-        Flags = ENTITY_FLAG_MAPONLY;
-    }
-
-
-
+    CEntity::OnLoop(X, Y);
 }
 
 //-----------------------------------------------------------------------------
@@ -101,13 +103,11 @@ bool Weapon::OnCollision(CEntity* Entity)
 
 //------------------------------------------------------------------------------
 
-void Weapon::DoDamage(float playerX, float playerY, int playerW, int playerH)
+void Weapon::DoDamage()
 {
     canHit = true;
     Flags = ENTITY_FLAG_GHOST;
     onHitTime = SDL_GetTicks();
-    X = playerX + playerW;
-    Y = (playerY + playerH) - (playerH / 2);
 }
 
 

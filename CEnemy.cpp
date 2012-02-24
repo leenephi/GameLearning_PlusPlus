@@ -13,6 +13,7 @@ CEnemy::CEnemy(float startX, float startY, char* File, int Width, int Height, in
     damage = 1;
     health = 100;
     OnLoad(File, Width, Height, MaxFrames);
+    Flags = ENTITY_FLAG_GRAVITY | ENTITY_FLAG_MAPONLY;
 
 }
 

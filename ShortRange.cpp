@@ -65,3 +65,10 @@ bool ShortRange::OnCollision(CEntity* Entity)
 {
     return true;
 }
+
+//=============================================================================
+
+void ShortRange::DoDamage()
+{
+
+}

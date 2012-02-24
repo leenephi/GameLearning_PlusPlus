@@ -327,8 +327,9 @@ const bool CEntity::PosValid(int NewX, int NewY)
         }
     }
 
-    if(Flags & ENTITY_FLAG_MAPONLY)
+    if(Flags & ENTITY_FLAG_MAPONLY && Type != ENTITY_TYPE_WEAPON)
     {
+
     }
     else
     {
@@ -377,8 +378,29 @@ bool CEntity::PosValidEntity(CEntity* Entity, int NewX, int NewY)
 
         return false;
     }
+    /*
+    //    allow player to pick up weapons while still leaving them as map_only
+    */
+    else if(this != Entity && Entity != NULL && Type == ENTITY_TYPE_PLAYER &&
+            Entity->Type == ENTITY_TYPE_WEAPON && Entity->used == false &&
+            Entity->Collides(NewX + Col_X, NewY + Col_Y, Width - Col_Width - 1, Height - Col_Height - 1) == true)
+    {
+        CEntityCol EntityCol;
+
+        EntityCol.EntityA = this;
+        EntityCol.EntityB = Entity;
+
+        CEntityCol::EntityColList.push_back(EntityCol);
+
+        return true;
+    }
 
     return true;
 }
 
 //==============================================================================
+
+void CEntity::DoDamage()
+{
+
+}

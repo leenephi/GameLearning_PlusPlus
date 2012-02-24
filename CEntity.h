@@ -24,9 +24,9 @@ enum
 {
     ENTITY_FLAG_NONE 	= 0,
 
-    ENTITY_FLAG_GRAVITY	= 0x00000001,
-    ENTITY_FLAG_GHOST	= 0x00000002,
-    ENTITY_FLAG_MAPONLY	= 0x00000004
+    ENTITY_FLAG_GRAVITY	= 0x00000001,   //
+    ENTITY_FLAG_GHOST	= 0x00000002,   //
+    ENTITY_FLAG_MAPONLY	= 0x00000004    //
 };
 
 //==============================================================================
@@ -57,6 +57,7 @@ public:
 
 public:
     int		Type;
+    bool    used;
 
     int     health;
     int     damage;
@@ -107,6 +108,8 @@ public:
     virtual void OnAnimate();
 
     virtual bool OnCollision(CEntity* Entity);
+
+    virtual void DoDamage();
 
 public:
     void    OnMove(float MoveX, float MoveY);

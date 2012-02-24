@@ -1009,7 +1009,7 @@
 1329149616 source:g:\software\projects\tutoria\cappstate.cpp
 	"CAppState.h"
 
-1330099135 source:g:\software\projects\tutoria\cappstategame.cpp
+1330102259 source:g:\software\projects\tutoria\cappstategame.cpp
 	"CAppStateGame.h"
 	"CAppStateManager.h"
 	<cmath>
@@ -1042,7 +1042,7 @@
 	<SDL.h>
 	"Define.h"
 
-1330099124 g:\software\projects\tutoria\centity.h
+1330113721 g:\software\projects\tutoria\centity.h
 	<vector>
 	"CArea.h"
 	"CAnimation.h"
@@ -1050,7 +1050,7 @@
 	"CFPS.h"
 	"CSurface.h"
 
-1330099154 g:\software\projects\tutoria\cplayer.h
+1330111367 g:\software\projects\tutoria\cplayer.h
 	"CEntity.h"
 	"Weapon.h"
 
@@ -1100,7 +1100,7 @@
 1329149616 source:g:\software\projects\tutoria\ccamera.cpp
 	"CCamera.h"
 
-1330099154 source:g:\software\projects\tutoria\cenemy.cpp
+1330117644 source:g:\software\projects\tutoria\cenemy.cpp
 	"CEnemy.h"
 
 1329149617 source:g:\software\projects\tutoria\centitycol.cpp
@@ -1117,7 +1117,7 @@
 	"CEnemy.h"
 	<time.h>
 
-1330099154 source:g:\software\projects\tutoria\cplayer.cpp
+1330117674 source:g:\software\projects\tutoria\cplayer.cpp
 	"CPlayer.h"
 
 1329149617 source:g:\software\projects\tutoria\csurface.cpp
@@ -1126,13 +1126,13 @@
 1329149617 source:g:\software\projects\tutoria\ctile.cpp
 	"CTile.h"
 
-1330099154 source:g:\software\projects\tutoria\centity.cpp
+1330117336 source:g:\software\projects\tutoria\centity.cpp
 	"CEntity.h"
 
-1330099124 source:g:\software\projects\tutoria\shortrange.cpp
+1330111194 source:g:\software\projects\tutoria\shortrange.cpp
 	"ShortRange.h"
 
-1330099124 g:\software\projects\tutoria\shortrange.h
+1330110884 g:\software\projects\tutoria\shortrange.h
 	"CEntity.h"
 
 1330099234 g:\software\projects\tutoria\cscreentext.h
@@ -1181,7 +1181,7 @@
 	"Item.h"
 	<string>
 
-1330099155 g:\software\projects\tutoria\weapon.h
+1330109043 g:\software\projects\tutoria\weapon.h
 	"Item.h"
 
 1330099155 g:\software\projects\tutoria\item.h
@@ -1192,7 +1192,7 @@
 	"Item.h"
 	<string>
 
-1330099155 source:g:\software\projects\tutoria\weapon.cpp
+1330111821 source:g:\software\projects\tutoria\weapon.cpp
 	"Weapon.h"
 
 1330097632 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cscreentext.h

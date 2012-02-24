@@ -24,6 +24,8 @@ public:
     void OnAnimate();
 
     bool OnCollision(CEntity* Entity);
+
+    void DoDamage();
 };
 
 #endif // ShortRange_H_INCLUDED

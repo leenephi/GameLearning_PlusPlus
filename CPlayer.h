@@ -14,12 +14,13 @@ public:
     ~CPlayer();
 
     bool canAttack;
+    bool armed;
 
     int onHitTime;
 
     int hitTimer;
 
-    Weapon* currentItem;
+    CEntity* currentItem;
 
     bool OnLoad(char* File, int Width, int Height, int MaxFrames);
 
@@ -37,7 +38,7 @@ public:
 
     void TakeDamage(int damage);
 
-    void Wield(Weapon* itemToWield);
+    void Wield(CEntity* itemToWield);
 };
 
 //=============================================================================

@@ -4,6 +4,7 @@
 //=============================================================================
 CPlayer::CPlayer()
 {
+    armed = false;
     onHitTime = 0;
     health = 100;
     damage = 10;
@@ -35,7 +36,7 @@ bool CPlayer::OnLoad(char* File, int Width, int Height, int MaxFrames)
 void CPlayer::OnLoop(float playerX, float playerY)
 {
 
-    if(health < 0)
+    if(health < 1)
     {
         health = 100;
         X = 0;
@@ -94,14 +95,10 @@ void CPlayer::OnAnimate()
 //------------------------------------------------------------------------------
 bool CPlayer::OnCollision(CEntity* Entity)
 {
-    if (Entity->Type == ENTITY_TYPE_ENEMY)
+    if(Entity->Type == ENTITY_TYPE_WEAPON)
     {
-        if(!(Entity->Y+3 > Y + Height))
-        {
-            TakeDamage(Entity->damage);
-        }
+        Wield(Entity);
     }
-
     return true;
 }
 
@@ -109,14 +106,18 @@ bool CPlayer::OnCollision(CEntity* Entity)
 
 void CPlayer::Attack()
 {
-    if(canAttack == false)
+    if(armed)
     {
-        return;
+        if(canAttack == false)
+        {
+            return;
+        }
+
+        canAttack = false;
+        onHitTime = SDL_GetTicks();
+        currentItem->DoDamage();
     }
 
-    canAttack = false;
-    onHitTime = SDL_GetTicks();
-    currentItem->DoDamage(X, Y, Width, Height);
 }
 
 //=============================================================================
@@ -128,10 +129,14 @@ void CPlayer::TakeDamage(int damage)
 
 //=============================================================================
 
-void CPlayer::Wield(Weapon* itemToWield)
+void CPlayer::Wield(CEntity* itemToWield)
 {
+    armed = true;
+    itemToWield->used = true;
     currentItem = itemToWield;
 }
+
+//=============================================================================
 
 
 
