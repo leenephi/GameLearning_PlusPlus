@@ -2,6 +2,8 @@
 
 #include "CAppStateManager.h"
 
+#include "CAppStateGame.h"
+
 CAppStateMenu CAppStateMenu::Instance;
 
 CAppStateMenu::CAppStateMenu()
@@ -11,11 +13,10 @@ CAppStateMenu::CAppStateMenu()
 
 void CAppStateMenu::OnActivate()
 {
+
     // Load Simple Menu
     Surf_Menu = CSurface::OnLoad("menu.png");
     start_game = false;
-
-
 }
 
 void CAppStateMenu::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode)
