@@ -24,7 +24,7 @@ bool CScreenText::OnLoad()
     }
 }
 
-void CScreenText::OnLoop()
+const void CScreenText::OnLoop()
 {
 
 }

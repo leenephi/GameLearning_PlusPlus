@@ -24,7 +24,7 @@ public:
 
     bool OnLoad();
 
-    void OnLoop();
+    const void OnLoop();
 
     void OnRender(SDL_Surface* Surf_Display, int playerHealth, bool canAttack);
 
