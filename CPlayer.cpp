@@ -4,6 +4,7 @@
 //=============================================================================
 CPlayer::CPlayer()
 {
+    onHitTime = 0;
     health = 100;
     damage = 10;
     range = 10;
@@ -12,6 +13,12 @@ CPlayer::CPlayer()
     currentItem = NULL;
     Flags = ENTITY_FLAG_MAPONLY | ENTITY_FLAG_GRAVITY;
 }
+
+CPlayer::~CPlayer()
+{
+    OnCleanup();
+}
+
 
 //=============================================================================
 bool CPlayer::OnLoad(char* File, int Width, int Height, int MaxFrames)

@@ -14,7 +14,7 @@ public:
     Item();
     ~Item();
 
-    std::string GetName();
+    const std::string GetName();
 
 };
 

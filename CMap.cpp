@@ -44,10 +44,10 @@ bool CMap::OnLoad(char* File, int MapX, int MapY)
         fscanf(FileHandle, "\n");
     }
 
-    fclose(FileHandle);
+
 
     AddEnemies(MapX, MapY);
-
+    fclose(FileHandle);
     return true;
 }
 
@@ -111,7 +111,7 @@ void CMap::OnRender(SDL_Surface* Surf_Display, int MapX, int MapY)
             if(TileList[ID].TypeID == TILE_TYPE_PASSABLE)
             {
                 TilesetWidth  = Surf_Tileset_Passables->w / TILE_SIZE;
-                TilesetHeight = Surf_Tileset_Passables->h / TILE_SIZE;
+                //TilesetHeight = Surf_Tileset_Passables->h / TILE_SIZE;
 
                 int TilesetX = (TileList[ID].TileID % TilesetWidth) * TILE_SIZE;
                 int TilesetY = (TileList[ID].TileID / TilesetWidth) * TILE_SIZE;
@@ -122,7 +122,7 @@ void CMap::OnRender(SDL_Surface* Surf_Display, int MapX, int MapY)
             else if(TileList[ID].TypeID == TILE_TYPE_IMPASSABLE)
             {
                 TilesetWidth  = Surf_Tileset_Impassables->w / TILE_SIZE;
-                TilesetHeight = Surf_Tileset_Impassables->h / TILE_SIZE;
+                //TilesetHeight = Surf_Tileset_Impassables->h / TILE_SIZE;
 
                 int TilesetX = (TileList[ID].TileID % TilesetWidth) * TILE_SIZE;
                 int TilesetY = (TileList[ID].TileID / TilesetWidth) * TILE_SIZE;

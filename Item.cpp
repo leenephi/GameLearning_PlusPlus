@@ -12,7 +12,7 @@ Item::~Item()
 
 }
 
-std::string Item::GetName()
+const std::string Item::GetName()
 {
     return name;
 }

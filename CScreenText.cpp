@@ -24,21 +24,22 @@ bool CScreenText::OnLoad()
     }
 }
 
-void CScreenText::OnLoop()
+const void CScreenText::OnLoop()
 {
 
 }
 
 void CScreenText::OnRender(SDL_Surface* Surf_Display, int playerHealth, bool canAttack)
 {
-    char health[50];
+
     sprintf(health, "Health: %d", playerHealth);
 
     Surf_Text = TTF_RenderText_Solid(font, health, textColor);
     CSurface::OnDraw(Surf_Display, Surf_Text, 0, 0);
+    SDL_FreeSurface(Surf_Text);
 
     // The following is to see test stuff on the screen.. for testing!
-    char testing[100];
+
     if (canAttack == true)
     {
         sprintf(testing, "Can attack: true");
@@ -49,7 +50,7 @@ void CScreenText::OnRender(SDL_Surface* Surf_Display, int playerHealth, bool can
     }
     Surf_Text = TTF_RenderText_Solid(font, testing, textColor);
     CSurface::OnDraw(Surf_Display, Surf_Text, 0, 20);
-
+    SDL_FreeSurface(Surf_Text);
 }
 
 void CScreenText::OnCleanup()

@@ -11,6 +11,8 @@ class CPlayer : public CEntity
 public:
     CPlayer();
 
+    ~CPlayer();
+
     bool canAttack;
 
     int onHitTime;
