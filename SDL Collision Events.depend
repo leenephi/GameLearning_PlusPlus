@@ -472,7 +472,7 @@
 1330090902 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cenemy.h
 	"CEntity.h"
 
-1330101905 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_oncleanup.cpp
+1330112356 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_oncleanup.cpp
 	"CApp.h"
 
 1329149076 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\capp_onevent.cpp
@@ -516,7 +516,7 @@
 1330090902 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cplayer.cpp
 	"CPlayer.h"
 
-1330097887 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\csurface.cpp
+1330112297 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\csurface.cpp
 	"CSurface.h"
 
 1329149076 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\ctile.cpp
@@ -536,7 +536,7 @@
 	"CAppStateManager.h"
 	<cmath>
 
-1330104987 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cappstategame.h
+1330114596 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cappstategame.h
 	"CAppState.h"
 	"CArea.h"
 	"CCamera.h"
@@ -1207,7 +1207,7 @@
 	"CEntity.h"
 	<string>
 
-1330101905 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cscreentext.cpp
+1330112356 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cscreentext.cpp
 	"CScreenText.h"
 	"CAppStateGame.h"
 

@@ -38,6 +38,11 @@ void CAppStateGame::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode)
 
         break;
     }
+    case SDLK_p:
+    {
+        pause = true;
+        break;
+    }
     default:
     {
     }
@@ -86,7 +91,7 @@ void CAppStateGame::OnLButtonDown(int mX, int mY)
 void CAppStateGame::OnActivate()
 {
     CArea::AreaControl.OnLoad("./maps/savearea.area");
-   // CScreenText::ScreenTextControl.OnLoad();
+    CScreenText::ScreenTextControl.OnLoad();
 
     Player.OnLoad("player.png", 33, 56, 13);
     Player.Type = ENTITY_TYPE_PLAYER;
@@ -111,7 +116,7 @@ void CAppStateGame::OnDeactivate()
 
 
     CArea::AreaControl.OnCleanup();
-    //CScreenText::ScreenTextControl.OnCleanup();
+    CScreenText::ScreenTextControl.OnCleanup();
 
     for(int i = 0; i < CEntity::EntityList.size(); i++)
     {
@@ -176,7 +181,7 @@ void CAppStateGame::OnRender(SDL_Surface* Surf_Display)
     SDL_FillRect(Surf_Display, &Rect, 0);
 
     CArea::AreaControl.OnRender(Surf_Display, -CCamera::CameraControl.GetX(), -CCamera::CameraControl.GetY());
-    //CScreenText::ScreenTextControl.OnRender(Surf_Display, Player.health, Player.canAttack);
+    CScreenText::ScreenTextControl.OnRender(Surf_Display, Player.health, Player.canAttack);
 
     //--------------------------------------------------------------------------
     // Entities

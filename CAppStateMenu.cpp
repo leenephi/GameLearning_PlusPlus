@@ -29,11 +29,6 @@ void CAppStateMenu::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode)
         start_game = true;
         break;
     }
-        case SDLK_ESCAPE:
-    {
-        CAppStateManager::SetActiveAppState(APPSTATE_NONE);
-        break;
-    }
     default:
     {
 

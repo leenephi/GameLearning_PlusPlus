@@ -18,32 +18,34 @@ class CAppStateGame : public CAppState
 private:
 
 private:
-    CAppStateGame();
+            CAppStateGame();
+
+    bool    pause;
 
 public:
-    static CAppStateGame Instance;
+    static  CAppStateGame Instance;
 
-    CPlayer			Player;
+    CPlayer	Player;
 
-    void OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode);
+    void    OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode);
 
-    void OnKeyUp(SDLKey sym, SDLMod mod, Uint16 unicode);
+    void    OnKeyUp(SDLKey sym, SDLMod mod, Uint16 unicode);
 
-    void OnLButtonDown(int mX, int mY);
-
-public:
-    void OnActivate();
-
-    void OnDeactivate();
-
-    void OnLoop();
-
-    void OnRender(SDL_Surface* Surf_Display);
-
-    void Reset();
+    void    OnLButtonDown(int mX, int mY);
 
 public:
-    static CAppStateGame* GetInstance();
+    void    OnActivate();
+
+    void    OnDeactivate();
+
+    void    OnLoop();
+
+    void    OnRender(SDL_Surface* Surf_Display);
+
+    void    Reset();
+
+public:
+    static  CAppStateGame* GetInstance();
 };
 
 #endif
