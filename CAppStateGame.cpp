@@ -33,6 +33,7 @@ void CAppStateGame::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode)
     }
     case SDLK_ESCAPE:
     {
+
         Reset();
         CAppStateManager::SetActiveAppState(APPSTATE_MENU);
 
@@ -40,7 +41,20 @@ void CAppStateGame::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode)
     }
     case SDLK_p:
     {
-        pause = true;
+        if(timer + 200 < SDL_GetTicks())
+        {
+            timer = SDL_GetTicks();
+
+
+
+            if(!pause) pause = true;
+
+            else
+            {
+                pause = false;
+                break;
+            }
+        }
         break;
     }
     default:
@@ -90,6 +104,9 @@ void CAppStateGame::OnLButtonDown(int mX, int mY)
 
 void CAppStateGame::OnActivate()
 {
+    pause = false;
+    timer = 0;
+    Surf_Pause = CSurface::OnLoad("splash.png");
     CArea::AreaControl.OnLoad("./maps/savearea.area");
     CScreenText::ScreenTextControl.OnLoad();
 
@@ -102,8 +119,6 @@ void CAppStateGame::OnActivate()
     CEntity::EntityList.push_back(TestWeapon);
 
     Player.Wield(TestWeapon);
-
-
 
     CEntity::EntityList.push_back(&Player);
 
@@ -125,6 +140,10 @@ void CAppStateGame::OnDeactivate()
         CEntity::EntityList[i]->OnCleanup();
     }
 
+    SDL_FreeSurface(Surf_Pause);
+    Surf_Pause = NULL;
+
+
     CEntity::EntityList.clear();
 
 
@@ -132,42 +151,49 @@ void CAppStateGame::OnDeactivate()
 
 void CAppStateGame::OnLoop()
 {
-
-    //--------------------------------------------------------------------------
-    // Entities
-    //--------------------------------------------------------------------------
-    for(int i = 0; i < CEntity::EntityList.size(); i++)
+    if(pause)
     {
-        if(!CEntity::EntityList[i]) continue;
-
-        CEntity::EntityList[i]->OnLoop(Player.X, Player.Y);
-
-        /*if (CEntity::EntityList[i]->Dead)
-        {
-            CEntity::EntityList.erase(CEntity::EntityList[i]);
-        }*/
-
+        return;
     }
-
-    //Collision Events
-    for(int i = 0; i < CEntityCol::EntityColList.size(); i++)
+    else
     {
-        CEntity* EntityA = CEntityCol::EntityColList[i].EntityA;
-        CEntity* EntityB = CEntityCol::EntityColList[i].EntityB;
 
-        if(EntityA == NULL || EntityB == NULL) continue;
-
-        if(EntityA->OnCollision(EntityB))
+        //--------------------------------------------------------------------------
+        // Entities
+        //--------------------------------------------------------------------------
+        for(int i = 0; i < CEntity::EntityList.size(); i++)
         {
-            EntityB->OnCollision(EntityA);
-            /*if((Player.Y + Player.Height) > (CEntity::EntityList[i]->Y))
+            if(!CEntity::EntityList[i]) continue;
+
+            CEntity::EntityList[i]->OnLoop(Player.X, Player.Y);
+
+            /*if (CEntity::EntityList[i]->Dead)
             {
-                Reset();
+                CEntity::EntityList.erase(CEntity::EntityList[i]);
             }*/
 
         }
+
+        //Collision Events
+        for(int i = 0; i < CEntityCol::EntityColList.size(); i++)
+        {
+            CEntity* EntityA = CEntityCol::EntityColList[i].EntityA;
+            CEntity* EntityB = CEntityCol::EntityColList[i].EntityB;
+
+            if(EntityA == NULL || EntityB == NULL) continue;
+
+            if(EntityA->OnCollision(EntityB))
+            {
+                EntityB->OnCollision(EntityA);
+                /*if((Player.Y + Player.Height) > (CEntity::EntityList[i]->Y))
+                {
+                    Reset();
+                }*/
+
+            }
+        }
+        CEntityCol::EntityColList.clear();
     }
-    CEntityCol::EntityColList.clear();
 }
 
 void CAppStateGame::OnRender(SDL_Surface* Surf_Display)
@@ -179,18 +205,24 @@ void CAppStateGame::OnRender(SDL_Surface* Surf_Display)
     Rect.h = WHEIGHT;
 
     SDL_FillRect(Surf_Display, &Rect, 0);
-
-    CArea::AreaControl.OnRender(Surf_Display, -CCamera::CameraControl.GetX(), -CCamera::CameraControl.GetY());
-    CScreenText::ScreenTextControl.OnRender(Surf_Display, Player.health, Player.canAttack);
-
-    //--------------------------------------------------------------------------
-    // Entities
-    //--------------------------------------------------------------------------
-    for(int i = 0; i < CEntity::EntityList.size(); i++)
+    if(pause)
     {
-        if(!CEntity::EntityList[i]) continue;
+        CSurface::OnDraw(Surf_Display, Surf_Pause, 0, 0);
+    }
+    else
+    {
+        CArea::AreaControl.OnRender(Surf_Display, -CCamera::CameraControl.GetX(), -CCamera::CameraControl.GetY());
+        CScreenText::ScreenTextControl.OnRender(Surf_Display, Player.health, Player.canAttack);
 
-        CEntity::EntityList[i]->OnRender(Surf_Display);
+        //--------------------------------------------------------------------------
+        // Entities
+        //--------------------------------------------------------------------------
+        for(int i = 0; i < CEntity::EntityList.size(); i++)
+        {
+            if(!CEntity::EntityList[i]) continue;
+
+            CEntity::EntityList[i]->OnRender(Surf_Display);
+        }
     }
 }
 

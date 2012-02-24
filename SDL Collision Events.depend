@@ -536,7 +536,7 @@
 	"CAppStateManager.h"
 	<cmath>
 
-1330114596 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cappstategame.h
+1330115333 c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cappstategame.h
 	"CAppState.h"
 	"CArea.h"
 	"CCamera.h"
@@ -950,7 +950,7 @@
 	"CAppState.h"
 	"CSurface.h"
 
-1330105063 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cappstatemenu.cpp
+1330114638 source:c:\documents and settings\sjohn_chambers\gamelearning_plusplus\cappstatemenu.cpp
 	"CAppStateMenu.h"
 	"CAppStateManager.h"
 	"CAppStateGame.h"

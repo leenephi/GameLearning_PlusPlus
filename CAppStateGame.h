@@ -22,6 +22,10 @@ private:
 
     bool    pause;
 
+    SDL_Surface* Surf_Pause;
+
+    int timer;
+
 public:
     static  CAppStateGame Instance;
 
