@@ -31,6 +31,8 @@ public:
 
     CPlayer	Player;
 
+    Weapon  TestWeapon;
+
     void    OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode);
 
     void    OnKeyUp(SDLKey sym, SDLMod mod, Uint16 unicode);

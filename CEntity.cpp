@@ -156,6 +156,13 @@ void CEntity::OnAnimate()
 }
 
 //------------------------------------------------------------------------------
+
+void CEntity::SetCurrentFrameCol(int col)
+{
+    CurrentFrameCol = col;
+}
+
+//------------------------------------------------------------------------------
 bool CEntity::OnCollision(CEntity* Entity)
 {
     return true;

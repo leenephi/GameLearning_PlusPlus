@@ -165,12 +165,6 @@ void CAppStateGame::OnLoop()
             if(!CEntity::EntityList[i]) continue;
 
             CEntity::EntityList[i]->OnLoop(Player.X, Player.Y);
-
-            /*if (CEntity::EntityList[i]->Dead)
-            {
-                CEntity::EntityList.erase(CEntity::EntityList[i]);
-            }*/
-
         }
 
         //Collision Events

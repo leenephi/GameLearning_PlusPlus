@@ -111,6 +111,8 @@ public:
 
     virtual void DoDamage();
 
+    virtual void SetCurrentFrameCol(int col);
+
 public:
     void    OnMove(float MoveX, float MoveY);
 

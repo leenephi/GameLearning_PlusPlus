@@ -40,14 +40,6 @@ void Weapon::OnLoop(float playerX, float playerY)
     if(used)
     {
         Flags = ENTITY_FLAG_GHOST;
-        X = playerX + 20;
-        Y = (playerY + 40) - (40 / 2);
-        /*
-        if(canHit == true)
-        {
-            CEntity::OnLoop(X, Y);
-        }
-        */
 
         if(SDL_GetTicks() - onHitTime > hitTimer)
         {
@@ -75,18 +67,7 @@ void Weapon::OnCleanup()
 //------------------------------------------------------------------------------
 void Weapon::OnAnimate()
 {
-    /*
-    if(SpeedX != 0)
-    {
-        Anim_Control.MaxFrames = 13;
-    }
-    else
-    {
-        Anim_Control.MaxFrames = 0;
-    }
-
     CEntity::OnAnimate();
-    */
 }
 
 //------------------------------------------------------------------------------
@@ -110,6 +91,7 @@ void Weapon::DoDamage()
     onHitTime = SDL_GetTicks();
 }
 
+//------------------------------------------------------------------------------
 
 
 

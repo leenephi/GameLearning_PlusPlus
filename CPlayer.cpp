@@ -48,6 +48,25 @@ void CPlayer::OnLoop(float playerX, float playerY)
         canAttack = true;
     }
 
+    // Give the coordinates to the equiped items; weapon in this case
+
+    if(armed)
+    {
+        if(MoveRight)
+        {
+            currentItem->X = X + Width;
+            currentItem->SetCurrentFrameCol(0);
+        }
+        else if(MoveLeft)
+        {
+            currentItem->X = X - currentItem->Width;
+            currentItem->SetCurrentFrameCol(1);
+        }
+
+        currentItem->Y = (Y + Height) - (Height / 2);
+    }
+
+
     CEntity::OnLoop(X, Y);
 
 }
