@@ -47,6 +47,7 @@ void Weapon::OnLoop(float playerX, float playerY)
             Flags = ENTITY_FLAG_MAPONLY;
         }
     }
+
     CEntity::OnLoop(X, Y);
 }
 

@@ -52,12 +52,14 @@ void CPlayer::OnLoop(float playerX, float playerY)
 
     if(armed)
     {
-        if(MoveRight)
+        //if facing right, face the item right
+        if(CurrentFrameCol == 0)
         {
             currentItem->X = X + Width;
             currentItem->SetCurrentFrameCol(0);
         }
-        else if(MoveLeft)
+        //if facing left, face the item left
+        else if(CurrentFrameCol == 1)
         {
             currentItem->X = X - currentItem->Width;
             currentItem->SetCurrentFrameCol(1);
@@ -94,11 +96,6 @@ void CPlayer::OnCleanup()
 //------------------------------------------------------------------------------
 void CPlayer::OnAnimate()
 {
-    /*if(IsJumping == true) {
-        Anim_Control.MaxFrames = 0;
-        Anim_Control.CurrentFrame = -1;
-    }else
-    */
     if(SpeedX != 0)
     {
         Anim_Control.MaxFrames = 13;
