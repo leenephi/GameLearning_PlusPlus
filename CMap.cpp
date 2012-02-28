@@ -1,6 +1,7 @@
 //=============================================================================
 #include "CMap.h"
 #include "CEnemy.h"
+#include "Weapon.h"
 #include <time.h>
 
 //=============================================================================
@@ -71,11 +72,14 @@ void CMap::AddEnemies(int MapX, int MapY)
             float enemyX = MapX + (X * TILE_SIZE);
             float enemyY = MapY + (Y * TILE_SIZE) - 20;
 
-            CEnemy* newenemy = new CEnemy(enemyX, enemyY, "enemy.png", 34, 47, 3);
+            CEnemy* NewEnemy = new CEnemy(enemyX, enemyY, "enemy.png", 34, 47, 3);
+            Weapon* NewWeapon = new Weapon;
+            NewWeapon->OnLoad("dagger.png", 16, 16);
+            //NewWeapon->damage = 10;
+            CEntity::EntityList.push_back(NewWeapon);
+            CEntity::EntityList.push_back(NewEnemy);
+            NewEnemy->Wield(NewWeapon);
 
-            newenemy->Type = ENTITY_TYPE_ENEMY;
-
-            CEntity::EntityList.push_back(newenemy);
 
             ID++;
 

@@ -116,13 +116,12 @@ void CAppStateGame::OnActivate()
     Weapon* TestWeapon = new Weapon;
     TestWeapon->OnLoad("dagger.png", 16, 16);
     TestWeapon->X = 75;
-    TestWeapon->Type = ENTITY_TYPE_WEAPON;
     CEntity::EntityList.push_back(TestWeapon);
 
     CEntity::EntityList.push_back(&Player);
 
     CCamera::CameraControl.TargetMode = TARGET_MODE_CENTER;
-    CCamera::CameraControl.SetTarget(&Player.X, &Player.Y);
+    CCamera::CameraControl.SetTarget(0,0);//(&Player.X, &Player.Y);
 }
 
 void CAppStateGame::OnDeactivate()
@@ -178,11 +177,6 @@ void CAppStateGame::OnLoop()
             if(EntityA->OnCollision(EntityB))
             {
                 EntityB->OnCollision(EntityA);
-                /*if((Player.Y + Player.Height) > (CEntity::EntityList[i]->Y))
-                {
-                    Reset();
-                }*/
-
             }
         }
         CEntityCol::EntityColList.clear();

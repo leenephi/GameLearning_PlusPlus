@@ -7,7 +7,6 @@ CPlayer::CPlayer()
     armed = false;
     onHitTime = 0;
     health = 100;
-    damage = 10;
     range = 10;
     canAttack = true;
     hitTimer = 500;
@@ -49,7 +48,6 @@ void CPlayer::OnLoop(float playerX, float playerY)
     }
 
     // Give the coordinates to the equiped items; weapon in this case
-
     if(armed)
     {
         //if facing right, face the item right
@@ -91,6 +89,10 @@ void CPlayer::OnRender(SDL_Surface* Surf_Display)
 void CPlayer::OnCleanup()
 {
     CEntity::OnCleanup();
+    if(armed)
+    {
+        currentItem->OnCleanup();
+    }
 }
 
 //------------------------------------------------------------------------------
@@ -149,6 +151,7 @@ void CPlayer::Wield(CEntity* itemToWield)
 {
     armed = true;
     itemToWield->used = true;
+    itemToWield->SetOwner(this);
     currentItem = itemToWield;
 }
 

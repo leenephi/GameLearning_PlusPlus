@@ -8,6 +8,7 @@ std::vector<CEntity*> 	CEntity::EntityList;
 CEntity::CEntity()
 {
     Surf_Entity = NULL;
+    Owner = NULL;
 
     health = 1;
     damage = 0;
@@ -408,6 +409,11 @@ bool CEntity::PosValidEntity(CEntity* Entity, int NewX, int NewY)
 //==============================================================================
 
 void CEntity::DoDamage()
+{
+
+}
+
+void CEntity::SetOwner(CEntity* Entity)
 {
 
 }

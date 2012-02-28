@@ -14,6 +14,7 @@ public:
     ~CPlayer();
 
     bool canAttack;
+
     bool armed;
 
     int onHitTime;

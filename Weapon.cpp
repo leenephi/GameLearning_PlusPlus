@@ -11,6 +11,7 @@ Weapon::Weapon()
     used = false;
     X = 0;
     Y = 0;
+    Type = ENTITY_TYPE_WEAPON;
     Flags = ENTITY_FLAG_MAPONLY | ENTITY_FLAG_GRAVITY;
     hitTimer = 100;
 }
@@ -74,7 +75,7 @@ void Weapon::OnAnimate()
 //------------------------------------------------------------------------------
 bool Weapon::OnCollision(CEntity* Entity)
 {
-    if(canHit == true)
+    if(canHit == true)// && Owner != Entity)
     {
         Entity->health -= damage;
         Flags = ENTITY_FLAG_MAPONLY;
@@ -93,6 +94,11 @@ void Weapon::DoDamage()
 }
 
 //------------------------------------------------------------------------------
+
+void Weapon::SetOwner(CEntity* Entity)
+{
+    Owner = Entity;
+}
 
 
 

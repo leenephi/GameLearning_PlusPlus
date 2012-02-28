@@ -33,6 +33,8 @@ public:
     bool OnCollision(CEntity* Entity);
 
     void DoDamage();
+
+    void SetOwner(CEntity* Entity);
 };
 
 #endif // Weapon_H_INCLUDED

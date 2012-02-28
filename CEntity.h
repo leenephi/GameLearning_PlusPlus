@@ -55,6 +55,8 @@ public:
     bool	MoveLeft;
     bool	MoveRight;
 
+    CEntity* Owner;
+
 public:
     int		Type;
     bool    used;
@@ -112,6 +114,8 @@ public:
     virtual void DoDamage();
 
     virtual void SetCurrentFrameCol(int col);
+
+    virtual void SetOwner(CEntity* Entity);
 
 public:
     void    OnMove(float MoveX, float MoveY);

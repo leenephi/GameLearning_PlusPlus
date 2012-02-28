@@ -7,12 +7,16 @@
 
 CEnemy::CEnemy(float startX, float startY, char* File, int Width, int Height, int MaxFrames)
 {
-
+    armed = false;
+    canAttack = true;
+    hitTimer = 1500;
+    onHitTime = 0;
     X = startX;
     Y = startY;
-    damage = 1;
     health = 100;
+    currentItem = NULL;
     OnLoad(File, Width, Height, MaxFrames);
+    Type = ENTITY_TYPE_ENEMY;
     Flags = ENTITY_FLAG_GRAVITY | ENTITY_FLAG_MAPONLY;
 
 }
@@ -47,6 +51,42 @@ void CEnemy::OnLoop(float playerX, float playerY)
         Y = 0;
         Dead = true;
     }
+
+    if(SDL_GetTicks() - onHitTime > hitTimer)
+    {
+        canAttack = true;
+    }
+
+
+    // Give the coordinates to the equiped items; weapon in this case
+    if(armed)
+    {
+        //if facing right, face the item right
+        if(CurrentFrameCol == 0)
+        {
+            currentItem->X = X + Width;
+            currentItem->SetCurrentFrameCol(0);
+        }
+        //if facing left, face the item left
+        else if(CurrentFrameCol == 1)
+        {
+            currentItem->X = X - currentItem->Width;
+            currentItem->SetCurrentFrameCol(1);
+        }
+
+        currentItem->Y = (Y + Height) - (Height / 2);
+    }
+
+    // Have the enemy start attacking if close enough
+
+    if((armed) && (canAttack) && (abs(X - playerX) < 75) && (abs(Y - playerY) < 25))
+    {
+        Jump();
+        Attack();
+    }
+
+    // Have the enemy chase the player within a certain range
+    // Enemy attempts to jump if chasing and can't move
 
     CanJump = false;
     MaxSpeedY = 10;
@@ -109,6 +149,10 @@ void CEnemy::OnRender(SDL_Surface* Surf_Display)
 void CEnemy::OnCleanup()
 {
     CEntity::OnCleanup();
+    if(armed)
+    {
+        currentItem->OnCleanup();
+    }
 }
 
 //------------------------------------------------------------------------------
@@ -133,3 +177,28 @@ bool CEnemy::OnCollision(CEntity* Entity)
 }
 
 //=============================================================================
+
+void CEnemy::Attack()
+{
+    if(armed)
+    {
+        if(canAttack == false)
+        {
+            return;
+        }
+
+        canAttack = false;
+        onHitTime = SDL_GetTicks();
+        currentItem->DoDamage();
+    }
+}
+
+//=============================================================================
+
+void CEnemy::Wield(CEntity* itemToWield)
+{
+    armed = true;
+    itemToWield->used = true;
+    itemToWield->SetOwner(this);
+    currentItem = itemToWield;
+}

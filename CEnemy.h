@@ -11,6 +11,16 @@ public:
 
     ~CEnemy();
 
+    bool canAttack;
+
+    bool armed;
+
+    int onHitTime;
+
+    int hitTimer;
+
+    CEntity* currentItem;
+
     bool OnLoad(char* File, int Width, int Height, int MaxFrames);
 
     void OnLoop(float playerX, float playerY);
@@ -22,6 +32,10 @@ public:
     void OnAnimate();
 
     bool OnCollision(CEntity* Entity);
+
+    void Wield(CEntity* itemToWield);
+
+    void Attack();
 };
 
 #endif // CENEMY_H_INCLUDED
