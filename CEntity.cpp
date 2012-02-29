@@ -10,40 +10,8 @@ CEntity::CEntity()
     Surf_Entity = NULL;
     Owner = NULL;
 
-    health = 1;
-    damage = 0;
-    range = 0;
-
-    X = 0;
-    Y = 0;
-    oldX = 0;
-    oldY = 0;
-
-    IsJumping = false;
-
-
-    Width 	= 0;
-    Height 	= 0;
-
-    MoveLeft  = false;
-    MoveRight = false;
-
     Type = ENTITY_TYPE_GENERIC;
-
-    Dead = false;
     Flags = ENTITY_FLAG_GRAVITY;
-
-    SpeedX = 0;
-    SpeedY = 0;
-
-    AccelX = 0;
-    AccelY = 0;
-
-    CanJump = false;
-    IsJumping = false;
-
-    MaxSpeedX = 5;
-    MaxSpeedY = 10;
 
     CurrentFrameCol = 0;
     CurrentFrameRow = 0;
@@ -53,6 +21,39 @@ CEntity::CEntity()
 
     Col_Width  = 0;
     Col_Height = 0;
+
+    Dead = false;
+    health = 1;
+    damage = 0;
+    range = 0;
+
+    X = 0;
+    Y = 0;
+    oldX = 0;
+    oldY = 0;
+
+    Width 	= 0;
+    Height 	= 0;
+
+    MoveLeft  = false;
+    MoveRight = false;
+
+    MaxSpeedX = 5;
+    MaxSpeedY = 10;
+
+    SpeedX = 0;
+    SpeedY = 0;
+
+    AccelX = 0;
+    AccelY = 0;
+
+    IsJumping = false;
+    CanJump = false;
+    IsJumping = false;
+
+    knockedBack = false;
+    knockBackCooldown = 300;        // time to allow knockback to occur
+    knockBackAmt = 10;             // speed of the knockback
 }
 
 //------------------------------------------------------------------------------
@@ -110,11 +111,24 @@ void CEntity::OnLoop(float playerX, float playerY)
         AccelY = 0.75f;
     }
 
+    // check the knock back count down.. it's very small; just enough for the loop to recognize it and move the enemy
+    if(knockedBack)
+    {
+        if(SDL_GetTicks() - knockBackTime > knockBackCooldown)
+        {
+            knockedBack = false;
+        }
+    }
+
+
     SpeedX += AccelX * CFPS::FPSControl.GetSpeedFactor();
     SpeedY += AccelY * CFPS::FPSControl.GetSpeedFactor();
 
-    if(SpeedX > MaxSpeedX)  SpeedX =  MaxSpeedX;
-    if(SpeedX < -MaxSpeedX) SpeedX = -MaxSpeedX;
+    if(!knockedBack)
+    {
+        if(SpeedX > MaxSpeedX)  SpeedX =  MaxSpeedX;
+        if(SpeedX < -MaxSpeedX) SpeedX = -MaxSpeedX;
+    }
     if(SpeedY > MaxSpeedY)  SpeedY =  MaxSpeedY;
     if(SpeedY < -MaxSpeedY) SpeedY = -MaxSpeedY;
 
@@ -256,6 +270,29 @@ bool CEntity::Jump()
     IsJumping = true;
 
     return true;
+}
+
+//------------------------------------------------------------------------------
+void CEntity::KnockBack()
+{
+    if(knockedBack)
+    {
+        return;
+    }
+    else
+    {
+        knockedBack = true;
+        knockBackTime = SDL_GetTicks();
+        if (CurrentFrameCol == 0)
+        {
+            SpeedX = -knockBackAmt;
+        }
+        else if(CurrentFrameCol == 1)
+        {
+            SpeedX = knockBackAmt;
+        }
+    }
+
 }
 
 //------------------------------------------------------------------------------

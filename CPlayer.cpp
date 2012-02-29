@@ -150,7 +150,6 @@ void CPlayer::TakeDamage(int damage)
 void CPlayer::Wield(CEntity* itemToWield)
 {
     armed = true;
-    itemToWield->used = true;
     itemToWield->SetOwner(this);
     currentItem = itemToWield;
 }

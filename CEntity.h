@@ -78,6 +78,10 @@ protected:
 public:
     bool	CanJump;
     bool    IsJumping;
+    float   knockBackAmt;
+    bool    knockedBack;
+    int     knockBackTime;
+    int     knockBackCooldown;
 
 public:
     float	MaxSpeedX;
@@ -121,6 +125,8 @@ public:
     void    OnMove(float MoveX, float MoveY);
 
     bool 	Jump();
+
+    void    KnockBack();
 
     void 	StopMove();
 

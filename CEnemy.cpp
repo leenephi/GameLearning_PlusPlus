@@ -9,7 +9,7 @@ CEnemy::CEnemy(float startX, float startY, char* File, int Width, int Height, in
 {
     armed = false;
     canAttack = true;
-    hitTimer = 1500;
+    hitTimer = 1300;
     onHitTime = 0;
     X = startX;
     Y = startY;
@@ -180,17 +180,14 @@ bool CEnemy::OnCollision(CEntity* Entity)
 
 void CEnemy::Attack()
 {
-    if(armed)
+    if(canAttack == false)
     {
-        if(canAttack == false)
-        {
-            return;
-        }
-
-        canAttack = false;
-        onHitTime = SDL_GetTicks();
-        currentItem->DoDamage();
+        return;
     }
+
+    canAttack = false;
+    onHitTime = SDL_GetTicks();
+    currentItem->DoDamage();
 }
 
 //=============================================================================
@@ -198,7 +195,6 @@ void CEnemy::Attack()
 void CEnemy::Wield(CEntity* itemToWield)
 {
     armed = true;
-    itemToWield->used = true;
     itemToWield->SetOwner(this);
     currentItem = itemToWield;
 }

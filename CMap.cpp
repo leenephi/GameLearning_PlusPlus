@@ -77,8 +77,9 @@ void CMap::AddEnemies(int MapX, int MapY)
             NewWeapon->OnLoad("dagger.png", 16, 16);
             //NewWeapon->damage = 10;
             CEntity::EntityList.push_back(NewWeapon);
-            CEntity::EntityList.push_back(NewEnemy);
             NewEnemy->Wield(NewWeapon);
+            CEntity::EntityList.push_back(NewEnemy);
+
 
 
             ID++;

@@ -75,9 +75,10 @@ void Weapon::OnAnimate()
 //------------------------------------------------------------------------------
 bool Weapon::OnCollision(CEntity* Entity)
 {
-    if(canHit == true)// && Owner != Entity)
+    if((canHit == true) && Owner != Entity)
     {
         Entity->health -= damage;
+        Entity->KnockBack();
         Flags = ENTITY_FLAG_MAPONLY;
         canHit = false;
     }
@@ -98,6 +99,7 @@ void Weapon::DoDamage()
 void Weapon::SetOwner(CEntity* Entity)
 {
     Owner = Entity;
+    used = true;
 }
 
 
