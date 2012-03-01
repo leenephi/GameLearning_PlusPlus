@@ -35,6 +35,8 @@ public:
     void DoDamage();
 
     void SetOwner(CEntity* Entity);
+
+    void OnDrop();
 };
 
 #endif // Weapon_H_INCLUDED

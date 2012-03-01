@@ -115,6 +115,7 @@ void CAppStateGame::OnActivate()
 
     Weapon* TestWeapon = new Weapon;
     TestWeapon->OnLoad("dagger.png", 16, 16);
+    TestWeapon->damage = 50;
     TestWeapon->X = 75;
     CEntity::EntityList.push_back(TestWeapon);
 
@@ -159,6 +160,8 @@ void CAppStateGame::OnLoop()
         //--------------------------------------------------------------------------
         // Entities
         //--------------------------------------------------------------------------
+
+        // run entity OnLoop()s
         for(int i = 0; i < CEntity::EntityList.size(); i++)
         {
             if(!CEntity::EntityList[i]) continue;
@@ -180,6 +183,20 @@ void CAppStateGame::OnLoop()
             }
         }
         CEntityCol::EntityColList.clear();
+
+
+        // delete dead entities
+        std::vector<CEntity*>::iterator it;
+        for(it = CEntity::EntityList.begin(); it < CEntity::EntityList.end();)
+        {
+            if((*it)->Dead)
+            {
+                delete * it;
+                CEntity::EntityList.erase(it);
+            }
+            else
+                it++;
+        }
     }
 }
 

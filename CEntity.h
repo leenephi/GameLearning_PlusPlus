@@ -121,6 +121,8 @@ public:
 
     virtual void SetOwner(CEntity* Entity);
 
+    virtual void OnDrop();
+
 public:
     void    OnMove(float MoveX, float MoveY);
 

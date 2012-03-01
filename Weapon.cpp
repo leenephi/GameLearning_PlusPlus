@@ -4,7 +4,7 @@
 Weapon::Weapon()
 {
     onHitTime = 0;
-    damage = 50;
+    damage = 10;
     range = 0;
     speed = 0;
     canHit = false;
@@ -45,7 +45,6 @@ void Weapon::OnLoop(float playerX, float playerY)
         if(SDL_GetTicks() - onHitTime > hitTimer)
         {
             canHit = false;
-            Flags = ENTITY_FLAG_MAPONLY;
         }
     }
 
@@ -90,7 +89,7 @@ bool Weapon::OnCollision(CEntity* Entity)
 void Weapon::DoDamage()
 {
     canHit = true;
-    Flags = ENTITY_FLAG_GHOST;
+    Flags = ENTITY_FLAG_MAPONLY;
     onHitTime = SDL_GetTicks();
 }
 
@@ -100,6 +99,16 @@ void Weapon::SetOwner(CEntity* Entity)
 {
     Owner = Entity;
     used = true;
+}
+
+//------------------------------------------------------------------------------
+
+void Weapon::OnDrop()
+{
+    Owner = NULL;
+    used = false;
+    Flags = ENTITY_FLAG_GRAVITY | ENTITY_FLAG_MAPONLY;
+    //KnockBack();
 }
 
 

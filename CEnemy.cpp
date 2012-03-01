@@ -47,9 +47,13 @@ void CEnemy::OnLoop(float playerX, float playerY)
 
     if (health < 1)
     {
-        X = 0;
-        Y = 0;
         Dead = true;
+        if(armed)
+        {
+            currentItem->OnDrop();
+            currentItem = NULL;
+            armed = false;
+        }
     }
 
     if(SDL_GetTicks() - onHitTime > hitTimer)
@@ -81,7 +85,7 @@ void CEnemy::OnLoop(float playerX, float playerY)
 
     if((armed) && (canAttack) && (abs(X - playerX) < 75) && (abs(Y - playerY) < 25))
     {
-        Jump();
+        //Jump();  // I had them jump just to test this if statement, since they were not Attack()ing
         Attack();
     }
 
@@ -149,10 +153,6 @@ void CEnemy::OnRender(SDL_Surface* Surf_Display)
 void CEnemy::OnCleanup()
 {
     CEntity::OnCleanup();
-    if(armed)
-    {
-        currentItem->OnCleanup();
-    }
 }
 
 //------------------------------------------------------------------------------
@@ -180,20 +180,24 @@ bool CEnemy::OnCollision(CEntity* Entity)
 
 void CEnemy::Attack()
 {
-    if(canAttack == false)
+    if(armed)
     {
-        return;
-    }
+        if(canAttack == false)
+        {
+            return;
+        }
 
-    canAttack = false;
-    onHitTime = SDL_GetTicks();
-    currentItem->DoDamage();
+        canAttack = false;
+        onHitTime = SDL_GetTicks();
+        currentItem->DoDamage();
+    }
 }
 
 //=============================================================================
 
 void CEnemy::Wield(CEntity* itemToWield)
 {
+    if(armed) return;
     armed = true;
     itemToWield->SetOwner(this);
     currentItem = itemToWield;

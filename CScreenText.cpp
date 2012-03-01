@@ -43,14 +43,8 @@ void CScreenText::OnRender(SDL_Surface* Surf_Display, int playerHealth, bool can
 
     // The following is to see test stuff on the screen.. for testing!
 
-    if (canAttack == true)
-    {
-        sprintf(testing, "Can attack: true");
-    }
-    else
-    {
-        sprintf(testing, "Can attack: false");
-    }
+    sprintf(testing, "Objects: %d", CEntity::EntityList.size());
+
     Surf_Text = TTF_RenderText_Solid(font, testing, textColor);
     CSurface::OnDraw(Surf_Display, Surf_Text, 0, 20);
     SDL_FreeSurface(Surf_Text);
